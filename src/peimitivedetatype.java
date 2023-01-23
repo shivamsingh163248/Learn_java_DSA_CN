@@ -14,6 +14,11 @@ public class peimitivedetatype {
 		value2 = value.nextFloat();
 		vlaue3 = (value1/value2)*100;
 		System.out.println("your parcentage is the"+vlaue3+"%");
+		if (vlaue3 > 33) {
+			System.out.println("you are the passed !");
+		} else {
+  System.out.println("you are the fial");
+		}
 		value.close();
 		
 
