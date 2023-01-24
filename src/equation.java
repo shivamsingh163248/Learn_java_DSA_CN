@@ -13,6 +13,9 @@ public static void main(String[] args) {
 	b = input.nextFloat();
 	c = (a*a)+(b*b)+(2*a*b);
 	System.out.println("the value of the (a+b)*(a+b) "+c);
+	// if we are the using type casting then uses the eplicit o the implicit type casting
+	int d = (int)c;
+	System.out.println("the value of the a+b whole aquare is the "+d);
 	input.close();
 	
 }
