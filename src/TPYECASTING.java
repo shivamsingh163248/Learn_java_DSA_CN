@@ -21,6 +21,11 @@ public class TPYECASTING {
 		int v8 = 8;
 		float v9 = v8;
 		System.out.println("now this is the my   girlfriend itisha birthday " +v6+v9);
+		// now we are the learn the next chapter 
+		 float g5 = 10.0f;
+		 double g6 = (double)g5 ;
+		 System.out .println("hear we are the changig the float point the the double point"+g6);
+		 
 		
 	}
 
