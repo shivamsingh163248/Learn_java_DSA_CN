@@ -1,5 +1,10 @@
 import java.util.*;
+
 public class operator {
+	 static void shivam(){
+		 System.out.println("my name is shivam");
+	  }
+		
 
 	public static void main(String[] args) {
 		// now we are the learn the arthmatic oprators 
@@ -22,6 +27,12 @@ public class operator {
 		value2 = input.nextInt();
 		value3 = valu1 + value2 ;
 		System.out.println(E3+value3);
+		// now we are the using the modulus oprators that given the remendor value o the division 
+		// now we are the test the   increment oprators 
+		System.out.println("here er are the update  the value "+ ++value3);
+		
+		// now we are try to make the funstion and used it
+	   shivam();
 		input.close();
 		
 
