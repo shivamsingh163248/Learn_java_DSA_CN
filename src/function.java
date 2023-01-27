@@ -78,7 +78,7 @@ public class function {
 		//now we are the write the function of the scanner
 		Scanner input = new Scanner(System.in);
 		System.out.println("select the opration number" );
-		System.out.print("1 = adding " +'\n' + "2 = subtraction"+'\n' +"3 = multiply"+'\n' +"4 = divide"+'\n' +"5 = modulus");
+		System.out.print("1 = adding " +'\n' + "2 = subtraction"+'\n' +"3 = multiply"+'\n' +"4 = divide"+'\n' +"5 = modulus"+'\n' );
 		// now we are the using the switch case for the selecting option 
 		int inputvalue ; 
 		System.out.println("enter the opration number");
@@ -106,11 +106,105 @@ public class function {
 				break;
 				
 			}
+			case 2:{
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				subtraction(value1 , value2);
+				break;
+			}
+			case 3:{
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				multiply(value1 , value2);
+				break;
+			}
+			case 4:{
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				divide(value1 , value2);
+				break;
+			}
+			case 5:{
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				modulus(value1 , value2);
+				break;
+			}
 			default:
-				throw new IllegalArgumentException("Unexpected value: " + inputvalue);
+				System.out.println("Unexpected value: " + inputvalue +'\n'+"you enter the wrong value");
 			}
 		}else {
-			System.out.println("you are the giving wrong input");
+			System.out.println(" Again select the opration number" );
+			System.out.print("1 = adding " +'\n' + "2 = subtraction"+'\n' +"3 = multiply"+'\n' +"4 = divide"+'\n' +"5 = modulus"+'\n' );
+			// now we are the using the switch case for the selecting option 
+			int inputvaluee ; 
+			System.out.println("enter the opration number");
+			inputvaluee = input.nextInt();
+			// now we are the selected the value show the user . user the value the right selected ot not
+			System.out.println("you are the selected value is "+inputvaluee);
+			
+			switch (inputvaluee) {
+			case 1: {
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				add(value1 , value2);
+				break;
+				
+			}
+			case 2:{
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				subtraction(value1 , value2);
+				break;
+			}
+			case 3:{
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				multiply(value1 , value2);
+				break;
+			}
+			case 4:{
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				divide(value1 , value2);
+				break;
+			}
+			case 5:{
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				modulus(value1 , value2);
+				break;
+			}
+			default:
+				System.out.println("Unexpected value: " + inputvaluee +'\n'+"you enter the wrong value");
+			}
 		} 
 		
 	}
