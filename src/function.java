@@ -62,10 +62,57 @@ public class function {
 		System.out.println("the modulus value of the "+value4);
 				}
 	
+	// hear we are the making the now function for the selected value 
+	/*static void 
+	switch (key) {
+	case value: {
+		
+		yield type;
+	}
+	default:
+		throw new IllegalArgumentException("Unexpected value: " + key);
+	}*/
+	
 	public static void main(String[] args) {
 		//today we are the learn the condition function with the help of the function
-		//now we are the write the function
-
+		//now we are the write the function of the scanner
+		Scanner input = new Scanner(System.in);
+		System.out.println("select the opration number" );
+		System.out.print("1 = adding " +'\n' + "2 = subtraction"+'\n' +"3 = multiply"+'\n' +"4 = divide"+'\n' +"5 = modulus");
+		// now we are the using the switch case for the selecting option 
+		int inputvalue ; 
+		System.out.println("enter the opration number");
+		inputvalue = input.nextInt();
+		// now we are the selected the value show the user . user the value the right selected ot not
+		System.out.println("you are the selected value is "+inputvalue);
+		// we ask the question from the user  
+		System.out.println(" is opration  correct ? yes/no");
+		String yes  = input.next();
+		String y = "yes" , Y = "YES";
+		String n = "no" , N = "NO";
+		
+		// now we take input from user for the calculation 
+	    
+	
+		if ((yes.equals(y))||(yes.equals(Y))) {
+			 switch (inputvalue) {
+			case 1: {
+				System.out.println("Enter hte fist value");
+				float value1 = input.nextFloat();
+				System.out.println("Enter the second value");
+				float value2  = input.nextFloat();
+				// now we calling the function of the adding
+				add(value1 , value2);
+				break;
+				
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + inputvalue);
+			}
+		}else {
+			System.out.println("you are the giving wrong input");
+		} 
+		
 	}
 
 }
