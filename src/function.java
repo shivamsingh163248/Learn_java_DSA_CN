@@ -206,7 +206,8 @@ public class function {
 				System.out.println("Unexpected value: " + inputvaluee +'\n'+"you enter the wrong value");
 			}
 		} 
-		
+		input.close();
+		// i can't close n and the N
 	}
 
 }
