@@ -4,7 +4,10 @@ public class operator {
 	 static void shivam(){
 		 System.out.println("my name is shivam");
 	  }
-		
+	// now again the make function nd usin the parameter
+	 // now this the the best opton for me
+	 // i will chack the parameters 
+	 // use it 
 
 	public static void main(String[] args) {
 		// now we are the learn the arthmatic oprators 
