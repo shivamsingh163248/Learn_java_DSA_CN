@@ -21,7 +21,7 @@ public class condationoprator {
 		}else {
 			System.out.println("y is grater the x");
 		}
-			
+			// heare the we are the close the input that are the using by the scanner function 
     input.close();
 	}
 
