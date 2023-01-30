@@ -27,5 +27,6 @@ System.out.println("this is the condation or the else");
   System.out.println("this is the condition of the false");
   
 	}
+	// again we using the both condition at the same 
 }
 }
