@@ -13,7 +13,7 @@ public class nestedswitch {
 	            int s = b<<i;
 	            j+=s;
 	           
-	          System.out.println(j);
+	          System.out.print(j+" ");
 			 
 	        }
 	}
