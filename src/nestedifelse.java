@@ -18,6 +18,7 @@ public class nestedifelse {
 			System.out.println("you are the not eligible for the donatin the blood ");
 		}
 	}
+	input.close();
 			}
 	}
 		
