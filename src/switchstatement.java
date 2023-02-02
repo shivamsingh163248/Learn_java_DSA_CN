@@ -34,7 +34,7 @@ public class switchstatement {
 		
 		default:
 			System.out.println("wwrong value");
-		}
+		}// simple we are the using the switch program and write a code of the days program
 	}
 
 }
