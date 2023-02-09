@@ -12,11 +12,12 @@ public class lovepurposing {
 		System.out.println("enter your age");
 		int age = name.nextInt();
 		System.out.println("enter you gender example M/F");
+		char love = '\u2665';
 		char gender = name.next().charAt(0);
 		if ((age>18 && age<25)&& (gender == 'F')) {
-			System.out.println("i love you "+user_name);
+			System.out.println("i love you "+user_name+""+love);
 		} else {
-
+           System.out.println("sorry you are the not perfect not me ");
 		}
 		
 
