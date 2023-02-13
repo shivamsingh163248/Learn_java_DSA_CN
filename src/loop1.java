@@ -20,9 +20,13 @@ public class loop1 {
 				int m = j*k;
 				//System.out.print(j+"*"+k+" = "+m+"      ");
 				System.out.printf("%4d*%d = %1d  ", j,k,m);
-			}
+			}//https://www.javatpoint.com/java-output-formatting 
+			// learning the java output formating that are the use in the java 
 			System.out.println("");
 		}
+		// now we are the simple output 
+		int $a = 10 ;
+		System.out.println($a);
 	}
 
 }
