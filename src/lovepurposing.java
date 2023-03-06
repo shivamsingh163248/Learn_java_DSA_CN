@@ -13,19 +13,18 @@ Scanner name = new Scanner(System.in);
 		float your_hight = name.nextFloat();
 		if ((age > 18 && age < 25) && (gender == 'F' || gender == 'f')) {
             if ((your_hight >= 5) && (your_hight <= 6)) {
-				System.out.println("i love you " + user_name + "" + love);
+				System.out.println("i love you " + user_name + "" + love+love+love);
 			} else {
 				if (your_hight > 6) {
-					System.out.println("sorry !you hight is the greater  then 6  fit ");
+					System.out.println("sorry !"+user_name+" you hight is the greater  then 6  fit ");
 				} else {
-					System.out.println("sorry ! your hight is less then 5 fit");
+					System.out.println("sorry ! "+user_name+" hight is less then 5 fit");
 				}
 			}
 		} else {
-			System.out.println("sorry you are the not perfect for me ");
+			System.out.println("sorry! "+user_name+" you are the not perfect for me ");
 		}
 
 		name.close();
 	}
-
 }
