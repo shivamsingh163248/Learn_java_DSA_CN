@@ -55,6 +55,29 @@ default:
        System.out.println("system are not desiding the what are the your name ");
 	break;
 }
+ 
+ 
+ // FOR THE using the lower case we are the converting the into the lower case 
+ // this is vary importing the for the converting the lower case 
+ // take any string as a input  in the switch case these input are the the key value and case  value are the compare  with the key value and test the case 
+ System.out.println("enter your name ");
+ String $_user_name = input.next();
+ System.out.println("enter your age ");
+ int $_user_age = input.nextInt();
+switch ($_user_name.toLowerCase())//.to lower case use for the convert for the lower case 
+{
+case  "shivam":
+	System.out.println("your name is the "+$_user_name);
+	if ($_user_age < 50) {
+		System.out.println("your age is less then the 50");
+	}
+	break;
+case "ankita": System.out.println("your name is staritng from the a ");
+break;
+default: System.out.println("this is the default case use in the switch case ");
+	break;
+}
+ 
 	}
 
 }
