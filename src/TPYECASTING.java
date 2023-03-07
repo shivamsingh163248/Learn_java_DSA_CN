@@ -26,6 +26,10 @@ public class TPYECASTING {
 		 double g6 = (double)g5 ;
 		 System.out .println("hear we are the changig the float point the the double point"+g6);
 		 
+		 
+		 double s = 100/9;
+		 System.out.println(s);
+		 
 		
 	}
 
