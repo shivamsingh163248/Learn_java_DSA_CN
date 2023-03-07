@@ -1,3 +1,4 @@
+import java.awt.desktop.PrintFilesEvent;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -15,7 +16,8 @@ public class pattern {
 			for (int j = 0; j < i; j++) {
 				System.out.print("*");
 				
-			}
+				
+				}
 			System.out.println("");
 		}
 		
@@ -28,6 +30,44 @@ public class pattern {
 			}
 			System.out.println("");
 		}
+		
+		// now printing the left side  of the pattern 
+		// for using the for loop we implement the left side pattern 
+		for (int  i = 0;  i <= $max_num;  i++) {
+			for (int j = $max_num; j >i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 0; k < i; k++) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+		// now make the pattern of the triangle this is the same we only do the 
+		
+		for (int  i = 0;  i <= $max_num;  i++) {
+			for (int j = $max_num; j >i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 0; k < i; k++) {
+				System.out.print("* ");
+			}
+			System.out.println("");
+		}
+		// now again making the triangle  
+		
+		for (int  i = 0;  i <= $max_num;  i++) {
+			for (int j = $max_num; j >i; j--) {
+				System.out.print(" ");
+			}
+			for (int k = 0; k < i; k++) {
+				System.out.print("*");
+			}
+			for (int j = 0; j < i; j++) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+		
 	}
 
 }
