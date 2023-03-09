@@ -24,7 +24,7 @@ public class pattern {
 		System.out.println("making the reversve printing ");
 		//now making the reverse pattern of the star 
 		// so how you are the write the reverse program 
-		for (int i = 0; i <= $max_num ; i++) {
+		for (int i = 0; i <$max_num ; i++) {
 			for (int j = $max_num; j > i; j--) {
 				System.out.print("*");
 			}
@@ -42,7 +42,7 @@ public class pattern {
 			}
 			System.out.println("");
 		}
-		// now make the pattern of the triangle this is the same we only do the 
+		 
 		
 		for (int  i = 0;  i <= $max_num;  i++) {
 			for (int j = $max_num; j >i; j--) {
