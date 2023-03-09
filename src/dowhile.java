@@ -13,6 +13,7 @@ public class dowhile {
 			// so write the condition of the do loop 
 			i++;
 		} while (i<10);
+		// now we can see hear run the program perfectly you can the see the result 
 	}
 
 }
