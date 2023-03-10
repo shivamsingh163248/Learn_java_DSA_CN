@@ -16,18 +16,41 @@ public class breakcontinew {
 			}
 			// we re the removing the 8 by the using break 
 			if (i != 7) {
-				System.out.print("this is the 7 numbeer ");
+				System.out.println("this is the 7 numbeer ");
 				
 			}else {
-				System.out.print("this is not A 7 number");
+				System.out.println("this is not A 7 number");
 				break;
 			}
 			
 			
 			 System.out.println(i);
 			 // so i will try to printing the  table after removing 5
-			 // so now i learning the break and continue statement ;			 
-		
+			 // so now i learning the break and continue statement ;
+			
+		}
+		// now i will try to printing the triangle pattern 
+		for (int i = 0; i < 10; i++) {
+			for (int j = 10; j > i; j--) {
+				System.out.print(" ");
+			}
+			for (int j = 0; j < i; j++) {
+				
+				if (j == (i-1)|| j == 0) {
+					System.out.print(" *");
+					continue;
+				}
+				if (i==(10-1)) {
+					System.out.print(" *");
+					continue;
+				}
+				
+				
+				System.out.print("  ");
+				
+			}
+			System.out.println("");
+			
 		}
 
 	}
