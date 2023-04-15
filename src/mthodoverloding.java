@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class mthodoverloding {
 
 	public static void main(String[] args) {
@@ -38,15 +37,18 @@ public static void gretestnum() {
 	// now we re the writing the condition
 	if (a>b) {
 		 i = a ;
-	} else if(b>a) {
-          i = b;
-	}else if (c > b) {
-			i = c ;
-    }else if (d > c) {
-    	i = d ;
-    }else if (e>d) {
-    	i = e ;
-    }
+	}else{
+		i = b;
+	}
+	if (c>i) {
+		i = c;
+	} 
+	if (d>i) {
+		i = d;
+	}
+	if(e>i) {
+    i = e;
+	}
 	System.out.println(i);
 }
 }
