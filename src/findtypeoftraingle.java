@@ -16,6 +16,7 @@ public class findtypeoftraingle {
 		 float b = input.nextFloat();
 		 System.out.println("enter the length of the trinalge of AC");
 		 float c = input.nextFloat();
+		 System.out.println("this is the number");
 		 
 		classifcationtriange(a, b, c);
 		input.close();
