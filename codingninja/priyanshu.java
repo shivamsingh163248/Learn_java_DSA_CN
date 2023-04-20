@@ -7,11 +7,17 @@ public class priyanshu {
 		// TODO Auto-generated method stub
 		// no we are genearting the scanner of the taking input from user 
 		Scanner input = new Scanner(System.in);
+		System.out.println("enter your  first name ");
 		String c1 = input.nextLine();
 		char c2 = c1.charAt(0);
-		String c2 = input.next();
-		if (c) {
-			
+		System.out.println("enter your second name ");
+		String c3 = input.next();
+		
+		if (c2 == 'P') {
+			System.out.println("happy birthddd to u "+birthday);
+		}
+		else {
+			System.out.println("sorry not your birthday");
 		}
 
 	}
