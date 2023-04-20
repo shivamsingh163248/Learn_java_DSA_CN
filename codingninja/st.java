@@ -11,7 +11,7 @@ public class st {
 		
 		// we are the printing the asci value now we are the talking about the
 		char ch = 'a';
-		System.out.println('a'+10);
+		System.out.println('a'+1);
 		//also we are the character character also storing in the integer value so lets example 
 		int i = 'a'+3;
 		System.out.println(i);

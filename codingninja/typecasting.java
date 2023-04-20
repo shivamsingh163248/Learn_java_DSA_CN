@@ -22,6 +22,11 @@ public class typecasting {
 		int j = (int)e;
 		// here the checking the value data are the lossed are not 
 		System.out.println(j);
+		int i = 'c';
+		System.out.println(i);
+		String c1 =  "priyanshu";
+		System.out.println(c1);
+		
 		
 		
 		
