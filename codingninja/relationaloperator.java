@@ -32,14 +32,51 @@ public class relationaloperator {
 //        	}
 	
 //      
-		int C =50;
-		if(C>10)
-		System.out.print("Coding");
-		if (C<5) {
-			System.out.print("Codingjhiui");
-		} else {
-			System.out.print("Codyrtshiulydting");
-		}
+//		int C =50;
+//		if(C>10)
+//		System.out.print("Coding");
+//		if (C<5) {
+//			System.out.print("Codingjhiui");
+//		} else {
+//			System.out.print("Codyrtshiulydting");
+//		}
+		
+//		 int a=50;
+//		    int b=5;
+//		    if(a/0==b)
+//		    {
+//
+//		        System.out.println("Hello");
+//		    }
+//		    else
+//		    {
+//		        System.out.println("Hi");
+//		    }
+//		    int a=50,b=20;
+//		    if(a>b)
+//		    {
+//		        if(a>100) {
+//		            system.out ("Ace");
+//		        }
+//		        if(b<100)
+//		            b=50;
+//		    }
+//		    else if(a==b)
+//		    {
+//		       print ("King");
+//		    }
+//		    else 
+//		    {
+//		        print ("Queen");
+//		    }
+		
+		int x=5;
+	    int y=5;
+	    while(x == y){
+	        System.out.println("Hello");
+	        x++;
+	        y++;
+	    }
 		
 		
 		
