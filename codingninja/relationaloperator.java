@@ -70,15 +70,23 @@ public class relationaloperator {
 //		        print ("Queen");
 //		    }
 		
-		int x=5;
-	    int y=5;
-	    while(x == y){
-	        System.out.println("Hello");
-	        x++;
-	        y++;
+//		int x=5;
+//	    int y=10;
+//	    System.out.println(x-y);
+//	   
+		int i=9;
+	    while(i>1)
+	    {
+	        System.out.println(i);
+	        
+	        if(i%5==0) {
+	        	System.out.println("composit");
+	            return;
+	        	
 	    }
-		
-		
+	        --i;
+	    }
+	    System.out.println("my name is shivam singh");
 		
 
 	}
