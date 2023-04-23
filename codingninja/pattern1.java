@@ -34,7 +34,24 @@ public class pattern1 {
 			System.out.println("");
 			i++;
 		}
+		
+		System.out.println(" ");
+		System.out.println(" ");
+		// now we are the learn the again the next pattern 
+		// with the  new type of the 
 
+		int m= 0;
+		while (m<8) {
+			int j= 0;
+			while (j<m) {
+				
+				System.out.print(j+" ");
+				j++;
+			}
+			System.out.println("");
+			
+			m++;
+		}
 	}
 
 }
