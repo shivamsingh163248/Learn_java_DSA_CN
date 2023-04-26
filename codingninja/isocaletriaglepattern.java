@@ -22,14 +22,14 @@ while (j<=(n-i)) {
 int k = i; 
 while (k<n-(n-i)+i) {
 	// now print number
-	System.out.print("*");
+	System.out.print(k);
 	k++;
 };
 // now writng the next pattern loop 
 
 int l =2*(i-1);
 while (l>=i){
-	System.out.print("*");
+	System.out.print(l);
 	l--;
 }
 
