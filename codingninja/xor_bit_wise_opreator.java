@@ -44,6 +44,41 @@ public class xor_bit_wise_opreator {
 		           System.out.print("Inside else  ");
 		            }
 		            System.out.println(x5  + " " + y5);
+		            
+		            
+		            int a6=5;
+		            a6+=5+(++a6)+(a6++);
+		            System.out.print(a6);
+		            
+		            
+		            
+		            int a7=10,b7=20;
+		            System.out.println(a7+++--b7);//line 1
+		          //  System.out.println(a7--+++b7);//line 2
+		            System.out.println(a7++-++b7);//line 3
+		        //    System.out.println(a7+++++b7);//line 4
+		            
+		            int a8=10;
+		            a8+=++a8-5/3+6*a8;
+		            System.out.print(a8);
+		            
+		            for(int i=1;i<10;i*=2)
+		            {
+		                 System.out.println(i);
+		            } 
+		            
+		            
+		            for(int i=483;i>0;i=i%3)
+		            {
+		                System.out.print("*");
+		            }
+		            
+		            
+		            for(int i = 0; i < 3; i++) {
+		                System.out.print(i + " ");
+		                }
+		            System.out.print(i + " ");
+		            
 		    
 		
 
