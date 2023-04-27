@@ -6,26 +6,18 @@ public class faboncsirius {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		int n = input.nextInt();
-		int value = 0 ;
-		for (int i = 2; i <=n; i++) {
-			int j = i-1;
-		
-		  for (; j <i; j++) {
-			  System.out.print(j);
-			  //j = f;
-		  } 
-		  // now using the second loop to solve this problem 
-		  int k = i-2;
-		  for (; k <i-1; k++) {
-			System.out.print("("+k+")");
-			//k = f2;
-		}
-		  
-      value = j+k;
-      System.out.println("="+value);
-      
-
-		}
+		int n1=0,n2=1; 
+		int n3 = 0;
+		 System.out.print(n1+" "+n2);//printing 0 and 1    
+		    
+		 for(int i=2;i<=n;++i)//loop starts from 2 because 0 and 1 are already printed    
+		 {    
+		  n3=n1+n2;    
+		  System.out.print(" "+n3);    
+		  n1=n2;    
+		  n2=n3;    
+		 } 
+		 System.out.println(n3);
 	}
 
 }
