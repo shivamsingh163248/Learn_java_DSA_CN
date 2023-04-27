@@ -73,13 +73,35 @@ public class xor_bit_wise_opreator {
 		                System.out.print("*");
 		            }
 		            
+//		            
+//		            for(int i = 0; i < 3; i++) {
+//		                System.out.print(i + " ");
+//		                }
+//		            System.out.print(i + " ");
+//		            
+//		            
+//		            for(int i = 0; i < 5; i = i + 1){
+//		                System.out.print(i + " ");
+//		                i = i + 1;
+//		            }
+//		            for(int i = 1; i < 5; i = i + 1){
+//		                System.out.print(i +" ");
+//		                i = i - 1;
+//		            }
 		            
-		            for(int i = 0; i < 3; i++) {
-		                System.out.print(i + " ");
-		                }
-		            System.out.print(i + " ");
+		            int i=0;
+		            for(;;)
+		            {
+		                if(i==5)
+		                    break;
+		                System.out.print(i);
+		                i++;
+		            }
 		            
-		    
+		            for(int j=7;j!=0;j--)
+		            {
+		                System.out.print(j--);
+		            }
 		
 
 	}
