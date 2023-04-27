@@ -98,11 +98,15 @@ public class xor_bit_wise_opreator {
 		                i++;
 		            }
 		            
-		            for(int j=7;j!=0;j--)
-		            {
-		                System.out.print(j--);
-		            }
-		
+//		            for(int j=7;j!=0;j--)
+//		            {
+//		                System.out.print(j--);
+//		            }
+//		
+		            
+		            
+		            
+		            
 
 	}
 
