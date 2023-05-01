@@ -35,6 +35,11 @@ public class prime_number {
 		System.out.println(n1);
 		System.out.println(n2);
 		
+		boolean w  = true ; 
+		boolean t = true ;
+		
+		
+		
   for (int i = 1; i <= j; i++) {
 	  
 	  int k = (6*i)+1;
@@ -42,35 +47,46 @@ public class prime_number {
 	  
 	  for (int m = 2; m < l; m++) {
 			int checknum = l%m;
-			if (checknum != 0) {
-				
-				// chack the condation not gratern then n 
-				if(l<=n ) {
-					System.out.println(l);
-
-				}
+			if (checknum == 0) {
+				w = false   ; 
+				break ;
 			}
+				
+				
+			}
+	  if(l<=n && w ) {
+			System.out.println(l);
+
 		}
+	  
+		
 	  
 	  
 	  // check number prime or not 
-	  for (int h = 2; h < k; h++) {
-		int checknum = k%h;
-		if (checknum != 0) {
-			
-			// chack the condation not gratern then n 
-			if(k<=n ) {
-				System.out.println(k);
-
+	  
+	  for (int n4 = 2; n4 < k; n4++) {
+			int checknum = k%n4;
+			if (checknum == 0) {
+				t = false   ; 
+				break ;
 			}
-		}
+				
+				
+			}
+	  
+	  if(k<=n && t ) {
+			System.out.println(k);
+
+	 
 	}
 	  
 	  
+	  
 	
+	}
+	}
 	
-  }
 	}
 	}
 
-}
+
