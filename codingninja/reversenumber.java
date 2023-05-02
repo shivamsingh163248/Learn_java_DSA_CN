@@ -8,8 +8,21 @@ public class reversenumber {
 		Scanner input = new Scanner(System.in);
 		int n = input.nextInt();
 
-		//int div = 0;
+		
 		int reminder = 0 ;
+		int  n1 =n ;
+		
+		for (int j = n; j%10==0; j=j/10) {
+			n1 = j;
+		
+		}
+		System.out.println(n1);
+		if (n1%10==0) {
+			n1 = n1/10;
+		}
+		
+		// using for the total reverse number
+		
 		// using the for loop solve this probelm 
 		for (int i = n; i >0; i = i/10) {
 			reminder = i%10;
