@@ -9,25 +9,19 @@ public class reversenuber_new {
 		int n = input.nextInt();
 		// using the of the loop calculating the value 
 		int result = 0  ; 
-		int j = 1 ;
-		int out = 0 ; 
+		int j = 0 ;
+		int out = 1 ; 
 		int remender = 0; 
 		for (int i = n; i > 0; i = i/10) {
 			remender = i%10;
        
-	      for (int k = 1; k <= j; k++) {
-			  out = out*2 ; 
-		  }
 
-		 result = result +  (out*remender);
+// using the left shift operator solve this problem 
 
-         j= j+1 ; 
+		out = remender<<j;
+		result = result+out;
 
-
-
-			
-
- 
+        j++;
 
 
 		}
