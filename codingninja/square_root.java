@@ -11,7 +11,7 @@ public class square_root {
 		  int ans = 0;
 		  while (ans<= n ) {
 			  i++;
-			  System.out.println(i);
+			//  System.out.println(i);
 			  ans = i*i;
 			  
 			 
