@@ -12,6 +12,8 @@ public class powernumber {
 		    }
 		    System.out.print(ans);
 		}
+	
+		
 		public static void main (String[] args) {
 		    func1(2,5);
 		}
