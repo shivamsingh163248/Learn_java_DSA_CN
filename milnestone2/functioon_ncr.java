@@ -51,6 +51,8 @@ public class functioon_ncr {
 		int ncr = z/(u*w);
 		
 		// now i want the direct calculation of the function 
+		// hear we can see the direct calculation of the factorial 
+		System.out.println("this is calculation the of the value of the function of the return type ");
 		System.out.println(factorial(n)/(factorial(r)*factorial(n-r)));
 		
 		System.out.println("n ="+n+" r ="+r+" ncr ="+ncr);
