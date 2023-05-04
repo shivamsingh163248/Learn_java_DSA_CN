@@ -50,6 +50,9 @@ public class functioon_ncr {
 		// now we are the calcuAltion the factorial 
 		int ncr = z/(u*w);
 		
+		// now i want the direct calculation of the function 
+		System.out.println(factorial(n)/(factorial(r)*factorial(n-r)));
+		
 		System.out.println("n ="+n+" r ="+r+" ncr ="+ncr);
 		System.out.println("calcualtion ncr = "+ncr);
 		
