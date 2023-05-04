@@ -12,7 +12,7 @@ public class functioon_ncr {
 		// fectorial of the number
 		int fector = 1;
 		int i = 1 ; 
-		while (i>= n) {
+		while (i<= n) {
 			// using the assigment operator for the calculating value 
 			fector *= i;
 			i++ ; 
@@ -37,6 +37,7 @@ public class functioon_ncr {
 		// now hear we are the using the function for the calculation the factorial 
 		// fist we are calculation of the n! 
 		int z = factorial(n); // factorial are the inilazation in the z varialbe 
+		// System.out.println(z);
 		// now again we are calculation the r! 
 		int w = factorial(r);
 		
@@ -48,7 +49,9 @@ public class functioon_ncr {
 		
 		// now we are the calcuAltion the factorial 
 		int ncr = z/(u*w);
-		System.out.println(ncr);
+		
+		System.out.println("n ="+n+" r ="+r+" ncr ="+ncr);
+		System.out.println("calcualtion ncr = "+ncr);
 		
 		input.close();
 
