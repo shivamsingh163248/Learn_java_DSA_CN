@@ -61,13 +61,15 @@ public static int maxvalue(int[] arr) {
 		max_num = input();
 		// now printing the value 
 		print(max_num);
+		// testing the print the max value 
+		System.out.println(max_num);
 		
 		// now calling the function of the max value 
 		// System.out.println();
 	//	System.out.println(maxvalue(max_num));
-		// System.out.println("\n your maximum value is :"+maxvalue(max_num));
-		System.out.println(maxvalue(max_num));
-		System.out.print("67");
+		 System.out.println("\n your maximum value is :"+maxvalue(max_num));
+//		System.out.println(maxvalue(max_num));
+//		System.out.print("67");
 
 	}
 
