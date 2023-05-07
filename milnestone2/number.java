@@ -16,16 +16,32 @@ public class number {
 	            	
 	            	
 	                arr[i] = k;
-	                System.out.print(" "+k+"  ");
+	               // System.out.print(" "+k+"  ");
 	           }
 	            k += 2;
 	           
 	        }
 	        
-	        // now again the in
+	        // now again the initialization the value of the even number in the array 
+	         // fill the value in the last index in the array 
+	        int u = 2;
+	        for (int i = n-1; i > 0; i--) {
+				//now iniatialization the value 
+	        	 if (u <= n) {
+		            	
+		            	
+		                arr[i] = u;
+		               // System.out.println(" "+u+"  ");
+		           }
+		            u += 2;
+		           
+			}
+	        
+	        
+	        
 	        // now the testing the vlaue of the printing the value of the array
 	        for (int i = 0; i < arr.length; i++) {
-				System.out.println(arr[i]);
+				System.out.print(arr[i]+" ");
 			}
 	        
 	        
