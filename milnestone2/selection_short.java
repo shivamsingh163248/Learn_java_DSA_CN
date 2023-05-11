@@ -43,36 +43,48 @@ public class selection_short {
      // now write the algorithm of the shorting algorithm 
 		
 		// finding the minimum element in the array and use the shifting process 
-		int temp1 = 0 ;
+	
 		
 		for (int i = 0; i < shorintg.length; i++) {
 			// this array using for the compare of the next element of the array 
-			//int temp = 0;
+			int minindex = -1;
+			int minvalue = Integer.MAX_VALUE;
+			
 			for (int j = i; j < shorintg.length; j++) {
 				// finding the minimum element 
-				if (shorintg[i] >= shorintg[j] ) {
-					//temp = j;
-					 temp1 = shorintg[i];
-					 shorintg[i] = shorintg[j];
-					 shorintg[j] = temp1 ;
+//				if (shorintg[i] > shorintg[j] ) {
+//					temp = j;
+//					 temp1 = shorintg[i];
+//					 shorintg[i] = shorintg[j];
+//					 shorintg[j] = temp1 ;
+//				}
+				if (minvalue > shorintg[j] ) {
+					minvalue = shorintg[j];
+					minindex = j ;
 				}
 				
 				}
 //			// now replacing the array 
 //			
 //			if (shorintg[i] > shorintg[temp]) {
-//				
-//			
-//		 temp1 = shorintg[i];
-//		 shorintg[i] = shorintg[temp];
-//		 shorintg[temp] = temp1 ;
-//			
+//		
+			
+			
+			
+		
+//		
+			
+	//		System.out.println(minindex+" ) ");
+		int temp1 = shorintg[minindex];
+		 shorintg[minindex] = shorintg[i];
+		 shorintg[i] = temp1 ;
+			
 			
 			
 			
 			
 		}
-		return shorintg ;
+	return shorintg ;
 		
 	}
 	
