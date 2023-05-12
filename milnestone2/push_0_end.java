@@ -2,33 +2,21 @@ import java.util.Scanner;
 
 public class push_0_end {
 	
-	    public static int[] separateNegativeAndPositive(int a[]) {
-	        // now write the code of the negarive number that are the shifted in the frist position of the array so 
-	        // we see the hear retearning the new array
-	        int[] shiva = new int [a.length];
-	        // frist copy -1 number n
-	         // find the maxium value less then 0 
-	      
-	        for (int i = 0; i < a.length; i++) {
-	            // for (int j = 0; j < a.length; j++) {
-	                   int max_vale = Integer.MAX_VALUE;
-	            // }
-	                   
-	                   
-	                   for (int j = 0; j < a.length; j++) {
-	                	   if (max_vale > a[j] && a[j]<0) {
-	   	                    a[j] = max_vale;
-	   	                    shiva[i] = a[j];
-	   	                }
-					}
-	                   
-	                   
-	         
-	        }
-	        return shiva;
+    public static int[] separateNegativeAndPositive(int a[]) {
+ //int[] shiva = new int [a.length];
+       
+     int i = 0;
+          for (int j = i; j < a.length; j++) {
+              if ( a[j] < 0 ) {
+                  int temp = a[j];
+                  a[j] = a[i];
+                  a[i] = temp;
+                  i++;
+              }
+          }
+        return a;
 
-	    }
-	    
+    }
 		public static int[] take_input(){
 			// now creating the non primitive scanner type 
 		//
