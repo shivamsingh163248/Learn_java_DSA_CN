@@ -28,17 +28,19 @@ public class find_rotation_number {
 	
 	
 	 public static int[] shorting(int[]a ){
-	        for (int i = 0; i < a.length; i++) {
-	            for (int j = 0; j < a.length; j++) {
-	                if (a[i] < a[j]) {
+		 int[]b = new int[a.length];
+		 b= a ; 
+	        for (int i = 0; i < b.length; i++) {
+	            for (int j = 0; j < b.length; j++) {
+	                if (b[i] < b[j]) {
 	                    // now swrping perfom between the two array
 	                    int temp = a[j];
-	                    a[j] = a[i];
-	                    a[i] = temp;
+	                    b[j] = b[i];
+	                    b[i] = temp;
 	                }
 	            }
 	        }
-	        return a ; 
+	        return b ; 
 	    }
 
 	public static void main(String[] args) {
@@ -47,6 +49,7 @@ public class find_rotation_number {
 		print_array(shiva);
 		int[]shorting = shorting(shiva);
 		print_array(shorting);
+		print_array(shiva);
 		
 		
 
