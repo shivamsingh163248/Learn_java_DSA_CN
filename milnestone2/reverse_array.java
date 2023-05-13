@@ -96,8 +96,8 @@ public class reverse_array {
 		// passing in the reverse array 
 		// right the code of the rotation take input from the user 
 //		
-//		rotateright(shiva ,x);
-//		print_array(shiva);
+		rotateright(shiva ,x);
+		print_array(shiva);
 		
 		System.out.println("left rorattion outout");
 		
