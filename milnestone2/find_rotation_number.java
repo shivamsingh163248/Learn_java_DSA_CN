@@ -28,28 +28,43 @@ public class find_rotation_number {
 	
 	
 	 public static int[] shorting(int[]a ){
-		 int[]b = new int[a.length];
-		 b= a ; 
-	        for (int i = 0; i < b.length; i++) {
-	            for (int j = 0; j < b.length; j++) {
-	                if (b[i] < b[j]) {
+		 
+	        for (int i = 0; i < a.length; i++) {
+	            for (int j = 0; j < a.length; j++) {
+	                if (a[i] < a[j]) {
 	                    // now swrping perfom between the two array
 	                    int temp = a[j];
-	                    b[j] = b[i];
-	                    b[i] = temp;
+	                    a[j] = a[i];
+	                    a[i] = temp;
 	                }
 	            }
 	        }
-	        return b ; 
+	        return a ; 
 	    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[]shiva = take_input() ; 
 		print_array(shiva);
+		// copy the array 
+		int[] copyarray  = new int[shiva.length];
+		for (int i = 0; i < shiva.length; i++) {
+			copyarray[i] = shiva[i];
+		}
+		
+		
 		int[]shorting = shorting(shiva);
 		print_array(shorting);
-		print_array(shiva);
+		print_array(copyarray);
+		// now compair the array 
+		for (int i = 0; i < copyarray.length; i++) {
+			if (shorting[0] == copyarray[i]) {
+				
+				System.out.println(i);
+				break ; 
+				
+			}
+		}
 		
 		
 
