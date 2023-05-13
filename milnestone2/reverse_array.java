@@ -17,6 +17,12 @@ public class reverse_array {
 		return take ;
 	}
 	
+	
+	// now right the second function 
+// of output 
+
+	
+	
 	public static void print_array(int[]print) {
 		// now using the for loop for the printing the array 
 		System.out.print("your enter number is ");
