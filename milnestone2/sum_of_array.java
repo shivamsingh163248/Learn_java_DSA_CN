@@ -69,7 +69,7 @@ output[output_size] = carry ;
 			System.out.print("enter the number index"+i+":");
 			take[i]=input.nextInt();
 		}
-		input.close();
+		
 		return take ;
 	}
     
