@@ -43,7 +43,7 @@ public class simple_string_learn_method {
 		  System.out.println(str5.length());
 		  
 		  // check the print of the blank of the string 
-		  String lo = " ";
+		  String lo = " shivam yellow am is the my name is khan";
 		  String lc = " " ; 
 		  // fist find the length of the both string so 
 		  System.out.println(lo.length());
