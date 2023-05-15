@@ -35,6 +35,25 @@ public class simple_string_learn_method {
 		  System.out.println(str1.contains(str3));
 		  // now check  the compair between the two string 
 		  System.out.println(str1.compareTo(str3));
+		  // find the length  of the string 
+		  String str5 = input.nextLine();
+		  // printing the string and also printing the 
+		  System.out.println(str5);
+		  // now printing the length 
+		  System.out.println(str5.length());
+		  
+		  // check the print of the blank of the string 
+		  String lo = " ";
+		  String lc = " " ; 
+		  // fist find the length of the both string so 
+		  System.out.println(lo.length());
+		  System.out.println(lc.length());
+		  if (lo.equals(lc)) {
+			System.out.println("this is the equal ");
+		}
+		  // check the character length 
+		  
+		   
 
 	}
 
