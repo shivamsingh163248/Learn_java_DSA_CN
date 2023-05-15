@@ -11,6 +11,29 @@ public class reverse_of_string {
 		}
 		return st;
 	}
+	
+	public static void isPalindrome(String str) {
+		//Your code goes here
+		// find the lenght of the string and 
+		//smae string match from the reverse string then it is the 
+		String stv = "";
+		String st = "";
+		boolean result = false ;
+		for (int i = str.length()-1 ; i >=0 ; i--) {
+			stv = stv + str.charAt(i);
+		}
+		for (int i = 0; i < str.length(); i++) {
+			st = st+str.charAt(i);
+		}
+		System.out.println(stv+"=");
+		System.out.println(st);
+     
+     if (st.equals(stv)) {
+		 result = false ;
+	 }
+
+	 
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,7 +43,8 @@ public class reverse_of_string {
 		// calling the function 
 		String str3 = input.next();
 		String str4 = reverse(str3);
-		System.out.println(str4);
+		//System.out.println(str4);
+		isPalindrome(str3);
 
 	}
 
