@@ -8,6 +8,28 @@ public class simple_string {
 		char j = i.charAt(1);
 		// so now [rinting the both charecter and test both are right or not 
 		System.out.println(j);
+//		String a ="abcd";
+//		String b="abcda";
+//		System.out.println(a.compareTo(b));
+		String a="coding",b="ninjas";
+		if(a.contains("ing"))
+		{
+		    a+=b;
+		}
+		else
+		{
+		    b+="ing";
+		}
+		System.out.print(b+a);
+		
+		System.out.println();
+		
+		
+		String y="coding";
+		for(int i1=2;i1<5;i1++)
+		{
+		    System.out.print(y.substring(i1-1,i1+2));
+		}
 
 	}
 
