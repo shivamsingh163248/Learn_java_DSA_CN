@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class simple_string {
 
@@ -30,6 +31,12 @@ public class simple_string {
 		{
 		    System.out.print(y.substring(i1-1,i1+2));
 		}
+		
+		Scanner s=new Scanner(System.in); 
+		String str1=s.next();
+		String str2=s.nextLine();
+		String str3=str2+str1;
+		System.out.println(str3);
 
 	}
 
