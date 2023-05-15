@@ -33,6 +33,8 @@ public class simple_string_learn_method {
 		  // take the input form the user for the result print in the form of the boolean 
 		  String str3 = input.next();
 		  System.out.println(str1.contains(str3));
+		  // now check  the compair between the two string 
+		  System.out.println(str1.compareTo(str3));
 
 	}
 
