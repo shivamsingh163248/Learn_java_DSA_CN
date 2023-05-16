@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class simple_string_learn_method {
@@ -52,9 +53,20 @@ public class simple_string_learn_method {
 			System.out.println("this is the equal ");
 		}
 		  // check the character length 
+		  // check the printing of the substring 
+		  String shiva = "shi";
+		  System.out.println(shiva.subSequence(0,1));
+		  System.out.println(shiva.length());
+		  for (int i = 0; i < shiva.length(); i++) {
+			for (int j = i+1; j <= shiva.length(); j++) {
+				System.out.println(shiva.substring(i, j));
+			}
+				
+			}
+		}
 		  
 		   
 
 	}
 
-}
+

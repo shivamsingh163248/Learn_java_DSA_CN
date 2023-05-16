@@ -45,6 +45,10 @@ public class reverse_of_string {
 		String str4 = reverse(str3);
 		//System.out.println(str4);
 		isPalindrome(str3);
+		
+		// check the simple string output 
+		String sc = new String("hellow");
+		System.out.println(sc);
 
 	}
 
