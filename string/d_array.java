@@ -1,15 +1,34 @@
 
 public class d_array {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-// creating the new array  fist coloum are the represent are the 
-		int[][]arr = new int[5][5];
-		// now store the value in the array 
-		arr[4][4] = 56 ; 
-		// now printing the array 
-		 System.out.println(arr[4][4]);
-		 System.out.println(arr[1][1]);
-	}
+	public static void  fun(int[][] arr2d)
+	{
 
+	    for(int i=0;i<arr2d.length;i++)
+	    {
+	        for(int j=0;j<arr2d[i].length;j++)
+	        {
+	            arr2d[i][j]=2*i+j;
+	        }
+	    }
+	}
+	public static void main(String[] args) 
+	{ 
+//	    int[][] arr = new int[2][2]; 
+//	    fun(arr);
+//	    for(int i=0;i<2;i++)
+//	    {
+//	        for(int j=0;j<2;j++)
+//	        {
+//	            System.out.print(arr[i][j]+" " );
+//	        }
+//	    }
+//	} 
+	
+	
+	 int arr[][]={ {1,2,3,4} , {2,4} , {3,5,7,8,9,11} };
+	    System.out.print(arr.length+arr[0].length+
+	    arr[1].length+arr[2].length);
+
+}
 }
