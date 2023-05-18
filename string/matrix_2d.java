@@ -41,6 +41,16 @@ public class matrix_2d {
 	 return arr ; 
 	}
 	
+	// now maketh the gacke d rray 
+	// creating the jacked array 
+	public static void jacked() {
+		// test and creating the reference of the array 
+		 int[][]arr = new int[5][];
+		 
+		 
+		
+	}
+	
 	
 	// creating the new function 
 	public static void out_put(int arr[][]) {
@@ -60,9 +70,20 @@ public class matrix_2d {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][]shiv = take_input_2darray() ; 
-		out_put(shiv);
+//		int[][]shiv = take_input_2darray() ; 
+//		out_put(shiv);
+//	//	System.out.println(shiv);
 		
+		 int[][]shiva = new int[3][];
+		 for (int i = 0; i < shiva.length; i++) {
+			System.out.println(shiva[i]);
+			shiva[i] = new int[5];
+		}
+		 for (int i = 0; i < shiva.length; i++) {
+				System.out.println(shiva[i]);
+			
+			}
+		 
 
 	}
 
