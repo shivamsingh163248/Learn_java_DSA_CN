@@ -70,19 +70,33 @@ public class matrix_2d {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		int[][]shiv = take_input_2darray() ; 
-//		out_put(shiv);
-//	//	System.out.println(shiv);
+		int[][]shiv = take_input_2darray() ; 
+		out_put(shiv);
+	//	System.out.println(shiv);
 		
-		 int[][]shiva = new int[3][];
+		 int[][]shiva = new int[7][];
+//		 for (int i = 0; i < shiva.length; i++) {
+//			System.out.println(shiva[i]);
+//			shiva[i] = new int[5];
+//		}
+//		 for (int i = 0; i < shiva.length; i++) {
+//				System.out.println(shiva[i]);
+//			
+//			}
+		 // creating the jacked array 
+		 //----------------------test jacked array ------------------
 		 for (int i = 0; i < shiva.length; i++) {
-			System.out.println(shiva[i]);
-			shiva[i] = new int[5];
+			shiva[i] = new int [i+1];
 		}
+		 
+		 // now printing the jacked array 
 		 for (int i = 0; i < shiva.length; i++) {
-				System.out.println(shiva[i]);
-			
+			for (int j = 0; j < shiva[i].length; j++) {
+				System.out.print(shiva[i][j]);
+
 			}
+			System.out.println();
+		}
 		 
 
 	}
