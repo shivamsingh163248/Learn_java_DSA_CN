@@ -24,7 +24,7 @@ public class reverse_each_world {
 				String each_world = "";
 				for (int j = current_world; j <= current_end ; j++) {
 					// now printing the element 
-					each_world += str1.charAt(j);
+					each_world = each_world+str1.charAt(j);
 				}
 				// update the current world ;
 				
@@ -34,7 +34,7 @@ public class reverse_each_world {
 			
 			
 		}
-		st2 =  str1.subSequence(current_world-1, str1.length())+st2;
+		st2 =  str1.subSequence(current_world, str1.length())+" "+st2;
 		System.out.println(st2);
 
 	}
