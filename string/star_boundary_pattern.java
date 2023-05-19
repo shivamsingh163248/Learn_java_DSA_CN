@@ -65,43 +65,44 @@ public class star_boundary_pattern {
 		int column_big = 0 ;
 		int row_end = row_size-1 ; 
 		int column_end = column_size-1;
-//		
-//		for (int i = row_big; i < row_end; i++) {
-//			System.out.print(arr[row_big][i]);
-//		}
-//		row_big++;
-//		System.out.println();
-//		
-//		for (int i = row_big; i < column_end; i++) {
-//			System.out.print(arr[i][row_end]);
-//		}
-//		row_end-- ;
-//		System.out.println();
-//		
-//		for (int i = column_big; i < row_end; i++) {
-//			System.out.print(arr[column_end][i]);
-//		}
-		for (int i = column_big; i <= column_end; i++) {
+       
+		int total = row_size*column_size ; 
+		
+		int count = 0 ; 
+		
+		while(count < total) {
+		
+		for (int i = column_big; i <= column_end && count< total; i++) {
 			System.out.print(arr[column_big][i]+" ");
+			count++;
 		}
 		row_big++ ;
 		System.out.println();
-		for (int i = row_big; i <= column_end; i++) {
+		System.out.println("----------");
+		for (int i = row_big; i <= column_end && count< total; i++) {
 			System.out.print(arr[i][column_end]+" ");
+			count++;
 		}
 		column_end-- ;
 		System.out.println();
-		for (int i = column_big; i <= column_end; i++) {
+		System.out.println("----------");
+		for (int i = column_big; i <= column_end && count< total; i++) {
 			System.out.print(arr[row_end][i]+" ");
+			count++;
 		}
 		row_end -- ;
 		System.out.println();
-		for (int i = row_big; i <= row_end; i++) {
+		System.out.println("--------------");
+		for (int i = row_big; i <= row_end && count< total; i++) {
 			System.out.print(arr[i][column_big]+" ");
+			count++;
 		}
+		column_big++ ; 
+		System.out.println();
+		System.out.println("-------------");
 		
 		
-		
+		} // end of the while loop 
 		
 		
 		
