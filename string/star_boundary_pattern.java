@@ -107,6 +107,27 @@ public class star_boundary_pattern {
 		
 		
 	}
+	//now creating the new function of the 2d array 
+	public static void web(int[][]arr) {
+		// fist we find the size of the row and column 
+		int row_size = arr.length ; 
+		int column_size = arr[0].length ; 
+		
+		// solve to find the fist colum 
+		 int coloum_count = 0 ;
+		int i = 0 ;
+		while(i < column_size) {
+			for (int j = 0; j < row_size && i < column_size ; j++ ) {
+				System.out.print(arr[j][i]+" ");
+			}
+			i++ ; 
+			for (int j = row_size-1; j >= 0 && i < column_size; j--) {
+				System.out.print(arr[j][i]+" ");
+			}
+			i++ ; 
+		}
+		
+	}
 	
 
 	public static void main(String[] args) {
@@ -118,7 +139,8 @@ public class star_boundary_pattern {
 		
 		//------- call the boundary function ---------
 		
-		boundy(shiva);
+		// boundy(shiva);
+		web(shiva);
 
 	}
 
