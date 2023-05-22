@@ -16,12 +16,34 @@ public class teststudent {
 		
 		
 		// set the value directly and form the function 
-		student newbatch = new student(40, "satyeindra", 50, "sarita" , "mobile");
+//		student newbatch = new student(40, "satyeindra", 50, "sarita" , "mobile");
+//		
+//		System.out.println(newbatch.class_name);
+//		System.out.println(newbatch.id);
+//		System.out.println(newbatch.father_name);
+//		System.out.println(newbatch.mother_name);
 		
-		System.out.println(newbatch.class_name);
-		System.out.println(newbatch.id);
-		System.out.println(newbatch.father_name);
-		System.out.println(newbatch.mother_name);
+	 // set the values of the of the parameter 
+		student shivam  = new student() ; 
+		shivam.setclassname(20);
+		shivam.setfathername("satyendra kumar singh ");
+		shivam.setmothername("sarita singh");
+		shivam.setname("shivam singh ");
+		
+		
+		shivam.allvlaues();
+		
+		
+		student pri = new student() ; 
+		// again the set the name of the all the object and the check the values of all the number 
+		pri.setclassname(30);
+		pri.setfathername("hready narayn singh ");
+		pri.setmothername("munnny davi");
+		pri.setname("satyendra kumar singh ");
+		
+		
+		// all the values are the print \
+		pri.allvlaues();
 
 	}
 
