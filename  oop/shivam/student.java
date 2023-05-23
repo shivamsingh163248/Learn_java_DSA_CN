@@ -27,6 +27,9 @@ public class student {
     // agian the creating the method for the class_name 
     public void setclassname(int class_name) {
     	this.class_name = class_name;
+    	System.out.println("this "+" "+this);
+    	
+    	
     }
     // again the call the vlUE OF THE   
     public void setfathername(String father_name) {

@@ -43,6 +43,10 @@ public class teststudent {
 		
 		
 		// all the values are the print \
+		//check the refrences of the value 
+		
+		System.out.println("pri"+pri);
+		System.out.println();
 		pri.allvlaues();
 
 	}
