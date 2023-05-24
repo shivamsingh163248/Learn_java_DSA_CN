@@ -21,6 +21,12 @@ public class frection_test {
 		 //again the print the number and the test the value are update or not 
 		 number.print();  
 		 
+		 // now creating the object of the new object due to its the return type 
+		 frection s3 ; 
+		s3 = frection.add_two(nextnumber, number);
+		// check the printing the value of the number 
+		s3.print();
+		 
 	}
 
 }

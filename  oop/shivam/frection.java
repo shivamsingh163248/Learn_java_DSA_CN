@@ -63,4 +63,24 @@ public void add (frection s1) {
 	this.denominater = this.denominater + s1.denominater;
 }
 
+// now passing the object as the argument in the  function  
+//  creating   function with two parameter object of the same class 
+// given the return type of the object 
+public  static frection add_two(frection s1 , frection s2) {
+	
+	// creating the variable 
+	int noninaor = s1.nominater + s2.nominater ; 
+	int denominator = s1.denominater + s2.denominater ; 
+	
+	// creating the new frection 
+	frection s3 = new frection(noninaor, denominator);
+	
+	
+	
+	return s3 ; 
+	
+}
+
+
+
 }
