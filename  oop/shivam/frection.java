@@ -55,4 +55,9 @@ public  void print() {
 //	System.out.println(nominater+"/"+denominater);
 }
 
+//now creating the function with the paramere of the object 
+public void add (frection s1) {
+	
+}
+
 }
