@@ -13,6 +13,7 @@ public class new_test {
 		// calling the function for the return the value 
 		shivam.shiva();
 		System.out.print(shivam.shiva());
+		System.out.print(test.shiva()); // when we are the using then the function are the static  keyword 
 	}
 
 }
