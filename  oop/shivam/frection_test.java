@@ -8,6 +8,10 @@ public class frection_test {
 		frection number = new frection(8,16);
 		// now printing the value using the gretter and setter method 
 		 number.print();
+		 // again  when the changed the function with the public 
+		 number.increment(); 
+		 number.print();  
+		 
 	}
 
 }

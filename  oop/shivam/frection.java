@@ -35,10 +35,24 @@ private void simplification() {
 	denominater = denominater/lcd ; 
 		
 	}
+
+// again make the function of the increment 
+
+public void increment() {
+	// that are the increment function in the fraction 
+	// using the this keyword for the   
+	// using the function 
+	this.nominater = this.nominater+this.denominater ; 
+	
+   
+	
+}
 // now printing the value of the noninator and denominator value 
 //  creating the gatter and setter method for the the printing the value 
 public  void print() {
 	System.out.println(nominater+"/"+denominater);
+//	increment() ; 
+//	System.out.println(nominater+"/"+denominater);
 }
 
 }
