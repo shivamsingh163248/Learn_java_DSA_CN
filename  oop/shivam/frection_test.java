@@ -9,7 +9,16 @@ public class frection_test {
 		// now printing the value using the gretter and setter method 
 		 number.print();
 		 // again  when the changed the function with the public 
-		 number.increment(); 
+		 number.increment();
+		 // this is the also the given the write answer 
+		 number.print();
+		 // again creatign the new object for the frection class 
+		 frection nextnumber = new frection(5, 2);
+		 // check the printing for the value of the number 
+		 nextnumber.print();
+		 //now calling the update the fraction with the same object 
+		 number.add(nextnumber);
+		 //again the print the number and the test the value are update or not 
 		 number.print();  
 		 
 	}

@@ -57,7 +57,10 @@ public  void print() {
 
 //now creating the function with the paramere of the object 
 public void add (frection s1) {
-	
+	// frist we are the adding the nominator nnd dinominator  
+	// using the noninator and the update that value in the preset object 
+	this.nominater = s1.nominater + this.nominater ; 
+	this.denominater = this.denominater + s1.denominater;
 }
 
 }
