@@ -45,6 +45,14 @@ public class test_array {
 		 for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);
 		}
+		 // copy the code from temp to another array 
+		 for (int i = 0; i < tmep.length; i++) {
+			arr[i] = tmep[i];
+		}
+		 // again the printing the array which are the new creating 
+		 for (int i = 0; i <  arr.length; i++) {
+			System.out.print(arr[i]);
+		}
 
 	}
 
