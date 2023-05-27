@@ -21,6 +21,24 @@ public class test_array {
 			System.out.println();
 			
 		}
+		
+		
+	// creating the new array of the size 4  
+		 int arr[] = new int[5];
+		 // now inisilazed the value of the array 
+		 arr[0] = 1 ; 
+		 arr[1] = 2 ; 
+		 arr[3] = 4 ; 
+		 // again the insilzation the value of the new array 
+		 for (int i = 0; i < arr.length; i++) {
+				System.out.print(arr[i]);
+			}
+		 
+		 arr = new int[7];
+		 
+		 for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
 
 	}
 
