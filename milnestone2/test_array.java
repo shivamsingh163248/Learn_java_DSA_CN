@@ -1,3 +1,4 @@
+import java.io.StringBufferInputStream;
 
 public class test_array {
 
@@ -33,9 +34,14 @@ public class test_array {
 		 for (int i = 0; i < arr.length; i++) {
 				System.out.print(arr[i]);
 			}
+		 // find the number of the student are this array 
+		// now copy the refrence of the array 
+		 int tmep[] = arr ; 
+		 System.out.println(tmep);
+		 System.out.print(arr);
 		 
 		 arr = new int[7];
-		 
+		 System.out.print(arr);
 		 for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);
 		}

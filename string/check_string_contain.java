@@ -14,9 +14,11 @@ public class check_string_contain {
 		StringBuffer sts = new StringBuffer(name);
 		sts.append("def");
 		// so hear we learn only string buffer are the use the append method and the setchar method
+		// now the set the value at the index 
+		sts.setCharAt(0, 'f');
 		
 		// now changed in the string buffer
-		sts.setCharAt(1, ' ');
+		sts.setCharAt(1, 'g');
 System.out.println(sts);
 
 
