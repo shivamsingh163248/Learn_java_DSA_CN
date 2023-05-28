@@ -50,6 +50,35 @@ public class dynamic_array {
 	private void doublelenght() {
 		
 		int temp[] = arr ; 
+		// now creating the new array of the double length 
+		arr =  new int[temp.length *2];
+		// now copy all element of the temp array 
+		//using the for loop 
+		for (int i = 0; i < temp.length; i++) {
+			arr[i] = temp[i];
+		}
+		
+	}
+	
+	// creating the set function for the set value in the index  of the array 
+	public void set(int indexvalue , int setvalue) {
+		// calling the function 
+		// if any want to set the value greater then the index then trought error
+		if (indexvalue >= nextindex) {
+			return  ; 
+		}
+		arr[indexvalue] =  setvalue ;
 	}
 
+	// now creating the function for the remove of the last element in the array 
+	public int remove_last() {
+		  if (nextindex == 0) {
+			// throw error 
+			return -1; 
+		}
+	int temp = arr[nextindex-1];
+	arr[nextindex-1] = 0 ;
+	nextindex-- ; 
+	return temp ; 
+	}
 }
