@@ -29,6 +29,8 @@ public class hello {
 		
 		// directly call the over loading constructor call the
 		
+		car shivam = new car(null, null, null, 0)
+		
 		System.out.println(shi.carstate());
 	}
 

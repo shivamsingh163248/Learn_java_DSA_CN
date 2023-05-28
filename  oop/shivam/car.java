@@ -3,28 +3,30 @@
 public class car {
 
 	private String door ;
-	private String engine ;
+	private int  engine ;
 	private String driver ;
-	public int speed ;
+	final  public int speed  = 10 ;
 	
 	
 	
 	
 	// now make the constructor 
 	public car() {
-		door = "open" ; 
-		engine = "1hz";
+		 door = "open" ; 
+		engine = speed; // inisalize the constructer with final keyworld 
 		driver = "shivam";
-		speed = 6 ; 
+         
 	}
 	
 	
 	 public car(String door, String engine, String driver, int speed) {
+		 
+		 this();
 		
 		this.door = door;
 		this.engine = engine;
 		this.driver = driver;
-		this.speed = speed;
+		// this.speed = speed;
 	}
 
 
@@ -58,6 +60,9 @@ public class car {
 		this.driver = driver;
 		
 	}
+	
+	
+
 	
 	
 	// make the function for the test theae function are in running state or not 
