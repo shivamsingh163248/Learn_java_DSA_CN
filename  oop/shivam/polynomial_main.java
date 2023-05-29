@@ -64,7 +64,14 @@ public class polynomial_main {
 		
 		
 		// now passing the value in the in the object 
-		
+		// creating the new object for the passing the value in the array 
+		polynomial_class shi = new polynomial_class() ; 
+		// using the for loop set the value 
+		for (int i = 0; i < degree.length; i++) {
+			
+			// calling the function of the set value 
+			
+		}
 		
 		
 		
