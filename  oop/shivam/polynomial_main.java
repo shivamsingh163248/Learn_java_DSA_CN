@@ -61,6 +61,33 @@ public class polynomial_main {
 			degeree_next_user_input[i] = input.nextInt() ; 
 		}
 		// check  for the outing value 
+		
+		
+		// now passing the value in the in the object 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		for (int i = 0; i < cofficent.length; i++) {
 			System.out.print(cofficent[i]+"x"+degree[i]+"+");
 			// if there same element on the polymomial then we are the input 
