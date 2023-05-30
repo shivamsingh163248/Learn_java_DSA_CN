@@ -51,6 +51,8 @@ public class polynomial_class {
 			size = degree+1 ; 
 		}
 		
+		// check the 
+		
 		arr[degree] = cofficet ; 
 		
 		
@@ -72,7 +74,7 @@ public class polynomial_class {
 		
 		// check the degeree are the same then add 
 		// check the size of the lenght 
-		int bigsize = Math.max(this.size, s1.size);
+		int bigsize = Math.max(this.size, s1.size); // check the length of the two array size which one is bigger
 		for (int i = 0; i < bigsize; i++) {
 			this.arr[i] = this.arr[i]+s1.arr[i];
 		}
