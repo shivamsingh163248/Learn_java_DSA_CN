@@ -106,6 +106,8 @@ public class polynomial_main {
 		   System.out.println(shi_next.array_size());
 		   System.out.println();
 		   shi_next.print_array_value();
+		   
+		  
 		
 		
 		

@@ -1,4 +1,4 @@
-package java_oops;
+  package java_oops;
 
 public class school {
 
@@ -11,6 +11,10 @@ public class school {
 		shivam.print_student();
 		shivam.setName("mom");
 		shivam.print_student();
+		
+		classs teacher = new classs(205568, "shashi") ; 
+		teacher.print_student();
+				
 		
 	}
 }
