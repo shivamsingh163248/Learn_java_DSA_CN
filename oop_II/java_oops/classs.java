@@ -64,6 +64,16 @@ public class classs extends  student {
 		
 	}
 	
+	// agian the creating the function of the student 
+	public void set_student_value(int roll_number , String name , String father_name , String mother_name) {
+		setName(name);
+		setRoll_no(roll_number);
+		setFather_name(father_name);
+		setMother_name(mother_name);
+	}
+	
+	
+	
 
 	public String getTeacher_name() {
 		return teacher_name;
@@ -119,13 +129,23 @@ public class classs extends  student {
 	
 	// creating the printing the value 
 	
-	public void print_class_student() {
-		System.out.print(getroll_no());
-		System.out.println(getName());
-		
-	}
+	
 	//  again printing for the class value 
 	public void print_class_teacher() {
+ System.out.println("teacher_id = :- "+getTeacher_id());
+ System.out.println("teacher_name :- "+getTeacher_name());
+ System.out.println("teacher_subject :- "+getTeacher_subject());
+ System.out.println("student_class :- "+getStudent_class());
+ System.out.println("total_student :- "+getTotal_student());
+		
+	}
+	public void print_class_student() {
+		System.out.println("student_roll_no :- "+getroll_no());
+		System.out.println("student_name :- "+getName());
+		System.out.println("student_father_name :- "+getFather_name());
+		System.out.println("student_mother_name :- "+getMother_name());
+		// now call the above fucntion 
+		print_class_teacher();
 		
 	}
 	
