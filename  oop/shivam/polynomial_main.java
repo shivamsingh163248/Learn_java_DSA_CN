@@ -79,9 +79,19 @@ public class polynomial_main {
 		 
 		 for (int i = 0; i < degeree_next_user_input.length; i++) {
 			shi_next.set_cofficent(cofficent_next_user_input[i], degeree_next_user_input[i]);
+			
+	
 		}
 		 
+		 // check the value for the testing 
+		  System.out.println();
+		   // check the array size 
+		  System.out.println(shi.array_size());
+		  System.out.println();
+		  shi.print_array_value(); 
 		 // now calling the adding function fist creating the new obgect 
+		  System.out.println();
+		  
 		  polynomial_class result  ; 
 		  
 		   result = shi.add(shi_next) ; 
