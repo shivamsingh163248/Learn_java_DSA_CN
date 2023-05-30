@@ -4,7 +4,7 @@ public class classs extends student {
 
 //	public classs(int roll_number) {
 //		super(roll_number);
-		// TODO Auto-generated constructor stub
+//		// TODO Auto-generated constructor stub
 // }
 	// i creating the class of the constructor 
 	// hear creating the class name class_teacher name total number of the studet class_teacheraa_subject 
@@ -13,8 +13,32 @@ public class classs extends student {
 	
 	// creating the 
 
+
+	
 	private int teacher_id ;
 	private String teacher_name ;
+	
+	
+	
+	public classs(int roll_number, int teacher_id, String teacher_name) {
+		super(roll_number);
+		this.teacher_id = teacher_id;
+		this.teacher_name = teacher_name;
+	}
+
+
+
+	public classs() {
+	super(this.teacher_id);	
+	 
+		this.teacher_name = "teacher name" ;
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 	
