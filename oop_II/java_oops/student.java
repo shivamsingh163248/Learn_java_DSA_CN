@@ -34,9 +34,12 @@ public class student {
 	// now creating the constructor for the default values 
 	// check the printing the whole value 
  public void print_student() {
-	System.out.println("name :"+this.name);
+	System.out.println("name :- "+this.name+"  roll_no :- "+this.roll_number+" father_name :- "+this.father_name+" mother_name :- "+this.mother_name);
 }
 
+ // all the geeter ********************************** settter method
+ 
+ 
 public String getName() {
 	return this.name;
 }
@@ -44,6 +47,30 @@ public String getName() {
 public void setName(String name) {
 	this.name = name;
 }
+public void setRoll_no(int roll_no) {
+	this.roll_number = roll_no ; 
+}
+// get roll number 
+public int getroll_no() {
+	return this.roll_number ;
+}
+public String getFather_name() {
+	return father_name;
+}
+
+public void setFather_name(String father_name) {
+	this.father_name = father_name;
+}
+
+public String getMother_name() {
+	return mother_name;
+}
+
+public void setMother_name(String mother_name) {
+	this.mother_name = mother_name;
+}
+
+//-------------------------------******************------------------****************
 	
 
 	

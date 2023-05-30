@@ -11,5 +11,7 @@ public class school {
 		shivam.print_student();
 		shivam.setName("mom");
 		shivam.print_student();
+		classs shiva = new classs(10);
+		shiva.print_student();
 	}
 }
