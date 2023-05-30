@@ -13,7 +13,14 @@ public class school {
 		shivam.print_student();
 		
 		classs teacher = new classs(205568, "shashi") ; 
+		 
 		teacher.print_student();
+		teacher.print_class_student();
+		
+		
+		teacher.setallvalue(2456, "anil kumar mishra", "english", 11, 48);
+		
+
 				
 		
 	}

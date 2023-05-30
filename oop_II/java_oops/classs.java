@@ -1,6 +1,6 @@
 package java_oops;
 
-public class classs extends student {
+public class classs extends  student {
 
 
 
@@ -54,6 +54,16 @@ public class classs extends student {
 	this.total_student = total_student;
 }
 	
+// set the value of the all the number
+	public void setallvalue(int teacher_id, String teacher_name, String teacher_subject, int student_class, int total_student) {
+		this.teacher_id = teacher_id;
+		this.teacher_name = teacher_name;
+		this.teacher_subject = teacher_subject;
+		this.student_class = student_class;
+		this.total_student = total_student;
+		
+	}
+	
 
 	public String getTeacher_name() {
 		return teacher_name;
@@ -82,6 +92,43 @@ public class classs extends student {
 		// TODO Auto-generated method stub
 		super.print_student();
 	}
+
+	public String getTeacher_subject() {
+		return teacher_subject;
+	}
+
+	public void setTeacher_subject(String teacher_subject) {
+		this.teacher_subject = teacher_subject;
+	}
+
+	public int getStudent_class() {
+		return student_class;
+	}
+
+	public void setStudent_class(int student_class) {
+		this.student_class = student_class;
+	}
+
+	public int getTotal_student() {
+		return total_student;
+	}
+
+	public void setTotal_student(int total_student) {
+		this.total_student = total_student;
+	}
+	
+	// creating the printing the value 
+	
+	public void print_class_student() {
+		System.out.print(getroll_no());
+		System.out.println(getName());
+		
+	}
+	//  again printing for the class value 
+	public void print_class_teacher() {
+		
+	}
+	
 	
 	
 	
