@@ -15,5 +15,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="oop_II"/>
+	<classpathentry kind="src" path="checkingInheritence"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

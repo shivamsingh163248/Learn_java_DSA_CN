@@ -1,19 +1,18 @@
-package java_oops;
+package checkoppssecond;
 
 
+
+import java_oops.classs;
 
 public class school {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
-		// now calling the constocter 
-		student shivam = new student(205569, "shivam");
+
 		
 		// now check for the printing 
-		shivam.print_student();
-		shivam.setName("mom");
-		shivam.print_student();
-		shivam.setFather_name("satyendra kumar singh ");
+	
 		
 		
 		classs teacher = new classs(205568, "shashi") ; 
@@ -26,9 +25,10 @@ public class school {
 		teacher.print_student();
 		
 		// ********************************************************************************
+		teacher.setprogrammer_name(" SDE SOFTWARE ENGINEERING shivam singh");
 		
 		// set the name of the programmer 
-		teacher.programmer = " SDE - shivam singh ";
+//		teacher.programmer = " SDE - shivam singh ";
 		
 		teacher.setallvalue(2456, "anil kumar mishra", "english", 11, 48);
 		// check the printing the value of 
@@ -40,17 +40,16 @@ public class school {
 
 	
 		// test hear same function name and how to write 
-			
+		
 		
 		// creating the for loop 
 	System.out.println(teacher.getFather_name());
-	System.out.println(shivam.getFather_name());
-		
-		
+	System.out.println(teacher.getProggrammer_name());
+	
+	
 		
 		
 
-				
-		
 	}
+
 }

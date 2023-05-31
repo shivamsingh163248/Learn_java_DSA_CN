@@ -92,16 +92,27 @@ public class classs extends  student {
 
 	
 	
-	
-	public String getFather_name() {
-		// TODO Auto-generated method stub
-		return super.getFather_name();
-	}
+//	public String getFather_name() {
+//		// TODO Auto-generated method stub
+//		return super.getFather_name();
+//	}	
+
 	@Override
 	public void print_student() {
 		// TODO Auto-generated method stub
 		super.print_student();
 	}
+	
+	// now creating the father function 
+	
+	//-------------------------------------------------------------------
+	
+	
+	public String getFather_name() {
+		return getTeacher_name();
+	}
+	
+	//---------------------------------------------------------------------
 
 	public String getTeacher_subject() {
 		return teacher_subject;

@@ -72,6 +72,15 @@ public void setMother_name(String mother_name) {
 }
 
 //-------------------------------******************------------------****************
+// making the getter and seteer for the set program name 
+public void setprogrammer_name(String programmer_name) {
+	this.programmer = programmer_name ; 
+}
+// also using the programmer got the getting 
+
+public String getProggrammer_name() {
+	return this.programmer ;
+}
 	
 
 	
