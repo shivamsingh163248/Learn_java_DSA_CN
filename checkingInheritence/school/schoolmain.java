@@ -1,9 +1,15 @@
 package school;
 
+
+
+
+
 public class schoolmain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+//	school s = new school() ; 
+	student j = new student(0, null) ; 
 
 	}
 

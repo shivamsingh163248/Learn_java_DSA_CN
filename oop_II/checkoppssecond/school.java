@@ -47,6 +47,8 @@ public class school {
 	System.out.println(teacher.getFather_name());
 	System.out.println(teacher.getProggrammer_name());
 	
+       
+	
 	
 		
 		

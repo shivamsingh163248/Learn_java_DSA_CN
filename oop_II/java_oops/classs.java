@@ -161,6 +161,10 @@ public class classs extends  student {
 		
 	}
 	
+	// check the superkeyword 
+	
+	String name = super.getName();
+	
 	
 	
 	

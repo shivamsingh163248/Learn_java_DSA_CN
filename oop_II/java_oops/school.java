@@ -45,6 +45,7 @@ public class school {
 		// creating the for loop 
 	System.out.println(teacher.getFather_name());
 	System.out.println(shivam.getFather_name());
+	
 		
 		
 		
