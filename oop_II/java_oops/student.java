@@ -7,6 +7,7 @@ package java_oops;
 	private String name ; 
 	private String father_name ; 
 	private String mother_name ;
+	String programmer  ;
 	
 	
 	public student(int roll_number) {

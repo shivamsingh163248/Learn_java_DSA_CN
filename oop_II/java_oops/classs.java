@@ -144,6 +144,7 @@ public class classs extends  student {
 		System.out.println("student_name :- "+getName());
 		System.out.println("student_father_name :- "+getFather_name());
 		System.out.println("student_mother_name :- "+getMother_name());
+		System.out.println("PROGRAMMER_NAME :- "+programmer);
 		// now call the above fucntion 
 		print_class_teacher();
 		
