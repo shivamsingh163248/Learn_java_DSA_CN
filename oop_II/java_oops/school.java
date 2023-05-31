@@ -41,10 +41,7 @@ public class school {
 			
 		
 		// creating the for loop 
-		int m = 8 ; 
-		int c = (m==6)?6:7 ;
-
-		System.out.println(-c+m);
+	
 		
 		
 		
