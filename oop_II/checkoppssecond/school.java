@@ -42,6 +42,7 @@ public class school {
 		// test hear same function name and how to write 
 		
 		
+		
 		// creating the for loop 
 	System.out.println(teacher.getFather_name());
 	System.out.println(teacher.getProggrammer_name());
