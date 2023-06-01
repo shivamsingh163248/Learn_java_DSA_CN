@@ -6,7 +6,8 @@ public class cpolymorphisam_class {
 	private int user_id_number ; 
 	private int bank_amount ; 
 	private static int total_bank_amount ; 
-	private final String government_program  = "JAN DHAN ACCOUNT YOJANA" ;
+	private String governament_program_name ; 
+	private final String government_program  = governament_program_name ;
 	
 	// creating the constructor  for the  set above value 
 	
@@ -63,7 +64,7 @@ public cpolymorphisam_class(String bank_name, int user_id_number, int bank_amoun
 		this.bank_amount = bank_amount;
 	}
 
-	public static int getTotal_bank_amount() {
+	public  int getTotal_bank_amount() {
 		return total_bank_amount;
 	}
 
@@ -97,9 +98,17 @@ public cpolymorphisam_class(String bank_name, int user_id_number, int bank_amoun
 	public char getHand_write_sysmbol() {
 		return hand_write_sysmbol;
 	}
+	public String getGovernament_program_name() {
+		return governament_program_name;
+	}
+	public void setGovernament_program_name(String governament_program_name) {
+		this.governament_program_name = governament_program_name;
+	}
 	
 	// create some function with same name 
-	
+	public void print() {
+		System.out.print("this is the bank class");
+	}
 
 	
 	
