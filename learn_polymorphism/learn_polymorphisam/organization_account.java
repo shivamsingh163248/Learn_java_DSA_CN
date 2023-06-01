@@ -50,6 +50,55 @@ public class organization_account extends cpolymorphisam_class {
 		super.printBankDetail();
 		carporaion_print();
 	}
+
+
+	public String getCorporation_name() {
+		return corporation_name;
+	}
+
+
+	public void setCorporation_name(String corporation_name) {
+		this.corporation_name = corporation_name;
+	}
+
+
+	public int getCoporation_account_number() {
+		return coporation_account_number;
+	}
+
+
+	public void setCoporation_account_number(int coporation_account_number) {
+		this.coporation_account_number = coporation_account_number;
+	}
+
+
+	public String getCeo_name() {
+		return ceo_name;
+	}
+
+
+	public void setCeo_name(String ceo_name) {
+		this.ceo_name = ceo_name;
+	}
+
+
+	public String getCompny_address() {
+		return compny_address;
+	}
+
+
+	public void setCompny_address(String compny_address) {
+		this.compny_address = compny_address;
+	}
+	
+	// creating the constructor  for the set all vlues 
+	
+	// creaitn the same function whare using his parents class 
+	
+	public void print() {
+		System.out.println("this is the corporatin fild ");
+		
+	}
 	
 	
 
