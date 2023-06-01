@@ -54,6 +54,9 @@ public class USER_DETAIL_LEARN_POLYMORPHISM extends cpolymorphisam_class{
 		super.printBankDetail();
 		// now printing the user name 
 	    print_user_name();
+	    print_account_number();
+	    parents_detail();
+	    
 	    
 	}
 	
@@ -61,19 +64,33 @@ public class USER_DETAIL_LEARN_POLYMORPHISM extends cpolymorphisam_class{
 		System.out.println();
 		System.out.println("----------------------------------------------------------------");
 		System.out.println();
-		System.out.println("USER_NAME :- "+getUser_name());
+		System.out.println(getHand_write_sysmbol()+" USER_NAME :- "+getUser_name());
 		System.out.println();
 		System.out.println("----------------------------------------------------------------");
 	}
 	private void parents_detail(){
 		
-		System.out.print("FATHER_NAME :- "+getUser_father_name());
+		System.out.print(getRight_arrow_symobl()+" FATHER_NAME :- "+getUser_father_name());
 	}
 	// print the a/c number 
 	  private void print_account_number(){
 		  // now hear we are the  define the sum unicode for the account sysmbol 
-		  
+		 System.out.print(getRight_arrow_symobl()+" A/C :- "+this.user_account_number); 
 	  }
+	  
+	  
+	  // call some function for the direct printing 
+	  @Override
+	public void printBankDetail() {
+		// TODO Auto-generated method stub
+		super.printBankDetail();
+	}
+	  
+	 
+	public void print() {
+		// TODO Auto-generated method stub
+		System.out.println("this is the user detail ");
+	}
 	
 	
 
