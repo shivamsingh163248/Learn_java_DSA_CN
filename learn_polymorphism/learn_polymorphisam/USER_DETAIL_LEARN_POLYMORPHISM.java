@@ -11,6 +11,7 @@ public class USER_DETAIL_LEARN_POLYMORPHISM extends cpolymorphisam_class{
 	private int user_account_number ; 
 	private String user_father_name ; 
 	
+	
 	// now creating the constructor for the above value 
 	 public USER_DETAIL_LEARN_POLYMORPHISM(String bank_name, int user_id_number, int bank_amount ,
 			 String user_name , int user_account_number , String user_father_name) {
@@ -49,9 +50,30 @@ public class USER_DETAIL_LEARN_POLYMORPHISM extends cpolymorphisam_class{
 	 // now hear i generate the getter the getter and setter for all function
 	 
 	 // now using the same print function 
-	public void user_detail() {
-		
+	public void print_user_detail() {
+		super.printBankDetail();
+		// now printing the user name 
+	    print_user_name();
+	    
 	}
+	
+	private void print_user_name() {
+		System.out.println();
+		System.out.println("----------------------------------------------------------------");
+		System.out.println();
+		System.out.println("USER_NAME :- "+getUser_name());
+		System.out.println();
+		System.out.println("----------------------------------------------------------------");
+	}
+	private void parents_detail(){
+		
+		System.out.print("FATHER_NAME :- "+getUser_father_name());
+	}
+	// print the a/c number 
+	  private void print_account_number(){
+		  // now hear we are the  define the sum unicode for the account sysmbol 
+		  
+	  }
 	
 	
 
