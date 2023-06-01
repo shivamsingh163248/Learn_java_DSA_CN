@@ -7,7 +7,7 @@ public class cpolymorphisam_class {
 	private int bank_amount ; 
 	private static int total_bank_amount ; 
 	private String governament_program_name ; 
-	private final String government_program  = governament_program_name ;
+	private final String government_program  = "JAN DHAN YOJANA" ;
 	
 	// creating the constructor  for the  set above value 
 	
@@ -84,8 +84,9 @@ public cpolymorphisam_class(String bank_name, int user_id_number, int bank_amoun
 		// printing the final world for the heading which program enrolling 
 		System.out.println(right_arrow_symobl+" GOVERNEMENT PROGRAM NAME : - "+getGovernment_program());
 		System.out.println("-----------------------------------------------------------------------------------");
-		System.out.print(hand_write_sysmbol+" BANK NAME :- "+getBank_name()+"::::::"+"USER_ID_NUMBER :- "+getUser_id_number()+":::::::"
-				+"TOTALA_AMOUNT_USER :- "+getTotal_bank_amount());
+		System.out.print(hand_write_sysmbol+" BANK NAME :- "+getBank_name()+"  :::::: "+"    USER_ID_NUMBER :- "+getUser_id_number()+"  :::::::  "
+				+"  TOTALA_AMOUNT_USER :- "+getTotal_bank_amount());
+		
 	}
 	
 	

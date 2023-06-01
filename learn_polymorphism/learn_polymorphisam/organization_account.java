@@ -22,6 +22,19 @@ public class organization_account extends cpolymorphisam_class {
 		// TODO Auto-generated constructor stub
 	} 
 	
+	
+	
+	
+	public organization_account(String bank_name, String corporation_name, int coporation_account_number,
+			String ceo_name, String compny_address) {
+		super(bank_name);
+		this.corporation_name = corporation_name;
+		this.coporation_account_number = coporation_account_number;
+		this.ceo_name = ceo_name;
+		this.compny_address = compny_address;
+	}
+
+
 	@Override
 	public void setBank_amount(int bank_amount) {
 		// TODO Auto-generated method stub
