@@ -90,6 +90,12 @@ public class USER_DETAIL_LEARN_POLYMORPHISM extends cpolymorphisam_class{
 	public void print() {
 		// TODO Auto-generated method stub
 		System.out.println("this is the user detail ");
+		System.out.println("******************************************************");
+		super.printBankDetail();
+		// now printing the user name 
+	    print_user_name();
+	    print_account_number();
+	    parents_detail();
 	}
 	
 	

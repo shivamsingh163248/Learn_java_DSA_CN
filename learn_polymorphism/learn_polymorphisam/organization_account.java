@@ -110,6 +110,9 @@ public class organization_account extends cpolymorphisam_class {
 	
 	public void print() {
 		System.out.println("this is the corporatin fild ");
+		System.out.println("**************************************************************");
+		super.printBankDetail();
+		carporaion_print();
 		
 	}
 	

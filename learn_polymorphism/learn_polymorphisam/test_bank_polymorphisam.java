@@ -1,24 +1,51 @@
 package learn_polymorphisam;
 
 public class test_bank_polymorphisam {
+	
+	public static void space() {
+		for (int i = 0; i < 5; i++) {
+			System.out.println();
+			
+		}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+// creating the function for the 5 time space
+	
+	
 	// call the controctor 
 		
 		cpolymorphisam_class shivam = new USER_DETAIL_LEARN_POLYMORPHISM("SBI", 4567, 14000, "SHIVAM SINGH", 24345453, "SATYENDRA KUMAR SINGH");
 		shivam.setTotal_bank_amount(25600);
 		shivam.printBankDetail();
-		System.out.println();
+		space();
 		shivam.print();
+		
 	//	shivam.print_user_detail();
-		shivam.setTotal_bank_amount(45);
+		
+		// learn the type casting **************************************************
+		// now creating the refrence of the user detail 
+		USER_DETAIL_LEARN_POLYMORPHISM check_type_casting  ; 
+		// check_type_casting = shivam ; 
+		// user type casting 
+		check_type_casting = (USER_DETAIL_LEARN_POLYMORPHISM)shivam ; 
+		
+		// check the access of the printing the part of the user detail 
+		System.out.println();
+		System.out.println("#########################################################");
+		check_type_casting.print_user_detail();
+		System.out.println();
+		
+		
+		
 		shivam = new organization_account("pnb", "raghuvanshi pvt. limited", 34354, "SHIVAM", "NADIHAR RAJGRAH MIRAZAPUR");
 		shivam.printBankDetail();
-		System.out.println();
+		space();
 		shivam.print();
-		shivam.setTotal_bank_amount(45);
+		
+		
+		
 	}
 
 }
