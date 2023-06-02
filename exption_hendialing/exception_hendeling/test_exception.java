@@ -18,7 +18,7 @@ public class test_exception {
 		  
 	  
 
-	public static void main(String[] args) throws divideByZero { 
+	public static void main(String[] args) /* throws divideByZero */ { 
 		// TODO Auto-generated method stub
 		
 //		// now creating the string null 
@@ -31,7 +31,23 @@ public class test_exception {
 		
 		
 		// calling the function with the parameter 
-		divide(50, 0);
+		try {
+			divide(50, 0);
+			System.out.println("this is the  try part of the exception ");
+			
+		} catch (divideByZero e) {
+			// TODO Auto-generated catch block
+			System.out.println("hear is the generation exception and generate the record ");
+			e.printStackTrace();
+		}
+		
+		System.out.print("if i am deal with the exception then it is the print exception using the try and catch  method ");
+		
+		// exceptiom are handle with through decleration 
+		// exception are handal with the try and cautch method 
+		
+		
+		
 
 	}
 
