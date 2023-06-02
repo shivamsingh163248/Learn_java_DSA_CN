@@ -48,9 +48,14 @@ public class inseration {
                 	break;
                 }
                 
+               
+                out_put(arr); 
+                System.out.println();
              }
+            
             out_put(arr);
             System.out.println();
+            System.out.println("*******************");
             
         }
     }
