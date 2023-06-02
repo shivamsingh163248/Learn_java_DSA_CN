@@ -45,6 +45,17 @@ public class test_bank_polymorphisam {
 		shivam.print();
 		
 		
+		// creating the default object 
+		Object default_name = new USER_DETAIL_LEARN_POLYMORPHISM(null, 0, 0, null, 0, null) ; 
+//		default_name. mot show anay function 
+///***********************************************IMPORTANT FOR THE CHECKING *************************
+		// USING THE TYPE CASTING 
+		USER_DETAIL_LEARN_POLYMORPHISM default_check_polymormisam ; 
+		default_check_polymormisam = (USER_DETAIL_LEARN_POLYMORPHISM)default_name ;  // using the class  type casting 
+		// check the value 
+		default_check_polymormisam.print_user_detail();
+		
+		
 		
 	}
 
