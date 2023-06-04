@@ -6,7 +6,9 @@ public class testrecursion {
 		// TODO Auto-generated method stub
 		// creating the object 
 		recursion shi = new recursion() ; 
-		shi.factorial(5);
+		shi.factoriale(5);
+		System.out.println(shi.factorial(5));
+		//  shi.factorial(5) ;
 
 	}
 
