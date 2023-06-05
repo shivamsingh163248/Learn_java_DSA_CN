@@ -24,6 +24,23 @@ public class learn_cinstructer {
 		//sarita  devi 
 		// System.out.println("sarita singh ");
 		
+		// now creating a new array 
+		System.out.println();
+		int[]shivamm  ; 
+		 shivamm = new int [10 ] ;
+		 System.out.println(shivamm);
+		 // creating the new array 
+		 int temp[] ; 
+		 temp = shivamm ; 
+		 
+		 // now again creating the new array of the same name  
+		 shivamm = new int [11];
+		 // check the print of the length of the array '
+		 System.out.println(shivamm);
+		 System.out.println(shivamm.length);
+		 System.out.println(temp.length);
+		 
+		
 
 	}
 
