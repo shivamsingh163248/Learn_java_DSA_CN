@@ -20,6 +20,7 @@ public class string_replacement {
 	}else {
 		return name.charAt(0)+smallstring ; 
 	}
+	
 	}
 	
 
