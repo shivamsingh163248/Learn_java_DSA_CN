@@ -48,6 +48,22 @@ System.out.println(myString1.equals(my_name));
 String myString2 = new String("Sample2");
 System.out.println(myString1.hashCode());
 
+String priyansh = "lovely" ; 
+String shivam = "lovely"; 
+ shivam = new String("lovely");
+ String book = new String("lovely"); 
+
+System.out.println(priyansh.hashCode());
+ System.out.println(shivam.hashCode());
+if (priyansh == book) {
+	System.out.println(true);
+}else {
+	System.out.println(false);
+}
+
+System.out.println(shivam.equals(book));
+}
+
 	}
 
-}
+
