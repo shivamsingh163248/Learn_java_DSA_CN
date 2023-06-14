@@ -1,3 +1,4 @@
+import learn_recursion_II.string_replacement;
 
 public class check_string_contain {
 
@@ -25,6 +26,44 @@ System.out.println(sts);
 int j = 97 ;
 char g = (char)j;
 System.out.println(g);
+
+ // if now i am creating the string and want to check the string address 
+// String my_name = "shivam singh" ; 
+// String your_name = "shivam singh" ; 
+//if (my_name == your_name) {
+//	System.out.println(true);
+//}
+//
+//// check the address of the both of the string 
+//System.out.print(your_name+my_name);
+//System.out.println(my_name.hashCode());
+//System.out.println(your_name.hashCode());
+// creating the new string 
+ String my_name = new String("shivam") ; 
+System.out.println(my_name);
+
+
+String myString1 = new String(" ");
+System.out.println(myString1.equals(my_name));
+String myString2 = new String("Sample2");
+System.out.println(myString1.hashCode());
+
+String priyansh = "lovely" ; 
+String shivam = "lovely"; 
+ shivam = new String("lovely");
+ String book = new String("lovely"); 
+
+System.out.println(priyansh.hashCode());
+ System.out.println(shivam.hashCode());
+if (priyansh == book) {
+	System.out.println(true);
+}else {
+	System.out.println(false);
+}
+
+System.out.println(shivam.equals(book));
+}
+
 	}
 
-}
+

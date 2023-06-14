@@ -35,6 +35,27 @@ public class sum_of_n_natural_number {
 		return result ; 
 	}
 
+	// now creating the above method of the number for the finding the sum of the natural number
+	public static int starting_num_natural (int starting , int end , int sum ) {
+		
+		 
+		// writing the base condation 
+		if (starting == end ) {
+			
+			sum = sum + end ;
+			return sum ; 
+		}
+		sum +=starting ;
+		
+		// calling the function of the number 
+		int result = starting_num_natural(starting+1, end, sum);
+		return result ; 
+		
+	}
+	
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 // calling the function for the writing the code 
@@ -42,6 +63,10 @@ public class sum_of_n_natural_number {
 		System.out.println(n);
 		int s = snm_natural(5, 10) ; 
 		System.out.println(s);
+		
+		// calling the function for the printing the number of the value 
+		int result = starting_num_natural(5, 10, 0);
+		System.out.println(result+" this is the answer of the abovemethod");
 	}
 
 }
