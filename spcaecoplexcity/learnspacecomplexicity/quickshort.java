@@ -18,22 +18,22 @@ public class quickshort {
 			}
 		}
 		
-		// now swetching the point element at the right positin 
+		// now switching the point element at the right positing 
 		int temp = arr[ startingIndex +  countelement] ; 
 		arr[ startingIndex +  countelement] = poivetElement ; 
 		arr[startingIndex] = temp ; 
 		
-		// now agian sweping the element using the while loop 
+		// now again sweeping the element using the while loop 
 		int  i = startingIndex ; 
 		int j = LastIndex ; 
-		// using while loop sweping are formed 
+		// using while loop sweeping are formed 
 		while (i<j) {
 			if (arr[i]< poivetElement) {
 				i++ ; 
 			}else if (arr[j]> poivetElement) {
 				j-- ; 
 			}else {
-				// now sweping  is the preform 
+				// now sweeping  is the perform 
 				temp = arr[i] ; 
 				arr[i] = arr[j] ; 
 				arr[j] = temp ; 
@@ -49,20 +49,20 @@ public class quickshort {
 	
 	// mow make the quick short the function 
 	public static void quickshorts(int[]arr , int startIngindex , int lastIndex) {
-		// now write the base condition if this code 
-		if (startIngindex <= lastIndex) {
+		// now write the base condition if this code
+		
+		if (startIngindex >= lastIndex) {
 			return  ; 
 		}
 		
 	// find the partition index and call the function 
 		int pointindex = swepingQuickShort(arr, startIngindex, lastIndex);
 		// now function call 
-		quickshorts(arr, 0, pointindex-1);
+		quickshorts(arr, startIngindex, pointindex-1);
 		quickshorts(arr, pointindex+1, lastIndex);
 		
-		for (int i = 0; i < arr.length; i++) {
-		System.out.print(arr[i]+" ");
-		}
+	//	System.out.println(arr.length+" (*");
+	
 		
 		
 		
@@ -85,10 +85,12 @@ public class quickshort {
 		int length = input.length ; 
 		quickshorts(input, 0, length-1);
 		
-		//sysout 
-//		for (int i = 0; i < input.length; i++) {
-//			System.out.print(input[i]+" ");
-//		}
+		
+		for (int i = 0; i < input.length; i++) {
+			System.out.print(input[i]+" ");
+			
+		}
+
 		
 		
 		
