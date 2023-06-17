@@ -68,6 +68,71 @@ public class maxprofit {
 		System.out.println("the total value of the profit "+getTotal_profit());
 	}
 	
+	// creating the shorting function using the quickshort
+	
+	
+	private int quick_Short_Sweping (int[]arr , int staritng_Index , int Last_index) {
+		//frist taking the value of the poit element 
+		int poietment = arr[staritng_Index] ; 
+		int countvalue = 0 ; 
+		// now find the right position of the poiet element 
+		// using the for loop solved 
+		for (int i = staritng_Index+1; i <= Last_index; i++) {
+			if (poietment > arr[i]) {
+				countvalue++ ; 
+			}
+		}
+		
+		// now perfor the sweping 
+		int temp = arr[staritng_Index +  countvalue] ; 
+		arr[staritng_Index +  countvalue] = poietment ; 
+		arr[staritng_Index] =  temp ; 
+		
+		
+		// now sweping bigger element in right side and smaller element and right side 
+		int i = staritng_Index ; 
+		int j = Last_index  ; 
+		// now creating the while loop 
+		while (i<j) {
+			// now writing the condation 
+			if (arr[i]< poietment) {
+				i++ ; 
+			}else if (arr[j]> poietment) {
+				j-- ; 
+			}else {
+				// now sewping the 
+				temp = arr[i] ; 
+				arr[i] = arr[j] ; 
+				arr[j] = temp ; 
+			}
+		}
+		
+		return staritng_Index+countvalue ; 
+		 
+	}
+	
+	
+	
+	
+	
+	public void quickshort(int[]arr , int starting_index , int last_index ) {
+		// using the recursion solved the shorting function 
+		// fist write the base condition of the quick shoritng 
+		if (starting_index >= last_index ) {
+			return  ; 
+		}
+		
+		// fist making the function sweping 
+		int poitIndex = quick_Short_Sweping(arr, last_index, last_index) ; 
+		// calling the same function 
+		
+		quickshort(arr, starting_index, poitIndex-1);
+		quickshort(arr, poitIndex+1, last_index);
+		
+	}
+	// now getter and setter function for the quickshort
+	
+	
 	
 
 }
