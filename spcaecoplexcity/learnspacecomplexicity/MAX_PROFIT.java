@@ -2,7 +2,7 @@ package learnspacecomplexicity;
 
 import java.util.Scanner;
 
-public class MAX_PROFIT {
+ class MAX_PROFIT {
 	
 	// NOW CREATING THE FUNCTION OF THE MAXPROFIT 
 	private int[]arr ; 
