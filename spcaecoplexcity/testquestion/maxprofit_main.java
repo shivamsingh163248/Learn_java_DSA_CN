@@ -13,12 +13,17 @@ public class maxprofit_main {
 	// creating the printing function for that object 
 	shivam.printseller_name();
 	// creating the array 
-	int[]arr = {23 ,45 ,34, 65} ; 
-//	shivam.printarray(arr);
-	shivam.quickshort(arr, 0, arr.length-1);
+	int[]arr = {23 ,45 ,34, 65 ,21 , 35} ; 
+
+	
 	System.out.println();
-	// shivam.printarray(a);
+	
 	shivam.setArr(arr);
+	shivam.printarray();
+//	shivam.quickshorts(arr, 0, arr.length-1);
+  //   shivam.quick();
+	shivam.quick1();
+	System.out.println();
 	shivam.printarray();
 	}
 
