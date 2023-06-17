@@ -70,24 +70,16 @@ public class quickshort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	// 	int[]arr = {31 ,56 ,20, 18, 27,3 ,4 ,8,10 , 30 , 40 } ;
-		  Scanner s = new Scanner(System.in);
-		        int size = s.nextInt(); 
-		        int[] input = new int[size];
-		        
-		        for(int i = 0; i < size; i++){
-		            input[i] = s.nextInt();
-		        }
-		     
-		    
+	 	int[]arr = {31 ,56 ,20, 18, 27,3 ,4 ,8,10 , 30 , 40 } ;
+		 
 		
 		// find the array length 
-		int length = input.length ; 
-		quickshorts(input, 0, length-1);
+		int length = arr.length ; 
+		quickshorts(arr, 0, length-1);
 		
 		
-		for (int i = 0; i < input.length; i++) {
-			System.out.print(input[i]+" ");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+" ");
 			
 		}
 
