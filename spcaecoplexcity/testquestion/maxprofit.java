@@ -137,74 +137,11 @@ public class maxprofit {
 	}
 	
 	
-	private  int swepingQuickShort(int[]arr , int startingIndex , int LastIndex) {
-		// IF IAM TAKING THE POIET ELEMENT AT THE FRIST INEDEX 
-		int poivetElement = arr[startingIndex] ; 
-		// now find the point element at the right place 
-		int countelement =  0 ; 
-		// using the for loop for loop solving the problem 
-		for (int i = startingIndex+1; i <= LastIndex; i++) {
-			if (poivetElement > arr[i]) {
-				// then the count the value 
-				countelement++ ; 
-			}
-		}
-		
-		// now switching the point element at the right positing 
-		int temp = arr[ startingIndex +  countelement] ; 
-		arr[ startingIndex +  countelement] = poivetElement ; 
-		arr[startingIndex] = temp ; 
-		
-		// now again sweeping the element using the while loop 
-		int  i = startingIndex ; 
-		int j = LastIndex ; 
-		// using while loop sweeping are formed 
-		while (i<j) {
-			if (arr[i]< poivetElement) {
-				i++ ; 
-			}else if (arr[j]> poivetElement) {
-				j-- ; 
-			}else {
-				// now sweeping  is the perform 
-				temp = arr[i] ; 
-				arr[i] = arr[j] ; 
-				arr[j] = temp ; 
-				i++ ; 
-				j-- ; 
-			}
-		}
-		
-		// now return the element the 
-		return startingIndex+countelement ; 
-		
-	}
 	
-	// mow make the quick short the function 
-	private  void quickshorts(int[]arr , int startIngindex , int lastIndex) {
-		// now write the base condition if this code
-		
-		if (startIngindex >= lastIndex) {
-			return  ; 
-		}
-		
-	// find the partition index and call the function 
-		int pointindex = swepingQuickShort(arr, startIngindex, lastIndex);
-		// now function call 
-		quickshorts(arr, startIngindex, pointindex-1);
-		quickshorts(arr, pointindex+1, lastIndex);
-		
-	//	System.out.println(arr.length+" (*");
-	
-		
-		
-		
-	}
 
 	// now getter and setter function for the quickshort
+	
 	public void quick() {
-		quickshorts(this.arr, 0, this.arr.length-1);
-	}
-	public void quick1() {
 		quickshort(getArr(), 0, this.arr.length-1);
 	}
 	

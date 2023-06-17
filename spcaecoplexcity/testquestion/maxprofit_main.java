@@ -22,7 +22,7 @@ public class maxprofit_main {
 	shivam.printarray();
 //	shivam.quickshorts(arr, 0, arr.length-1);
   //   shivam.quick();
-	shivam.quick1();
+	shivam.quick();
 	System.out.println();
 	shivam.printarray();
 	}
