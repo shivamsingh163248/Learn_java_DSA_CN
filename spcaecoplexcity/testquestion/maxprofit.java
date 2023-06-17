@@ -61,7 +61,12 @@ public class maxprofit {
 	public  static void maxprofitt() {
 		
 	}
-	
+	public void printseller_name() {
+		System.out.println("the name of the saller is "+getSaller_name());
+	}
+	public void printTotal_profit() {
+		System.out.println("the total value of the profit "+getTotal_profit());
+	}
 	
 	
 
