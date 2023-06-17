@@ -6,6 +6,7 @@ public class MAX_PROFIT {
 	
 	// NOW CREATING THE FUNCTION OF THE MAXPROFIT 
 	private int[]arr ; 
+	private static int shivam ; 
 	
 	// now creating the constructor with the parameter 
 	MAX_PROFIT(){
@@ -35,6 +36,7 @@ public  static int[] arrayScane() {
 		System.out.print("index = "+i+" = ");
 		arr[i] = input.nextInt() ; 
 	}
+	  System.out.println(shivam);
 	  System.out.println();
 	  return arr ; 
 }
@@ -46,6 +48,17 @@ public void setArr(int[] arr) {
 
 	this.arr = arr;
 }
+
+// using the getter and setter method 
+
+public static int getShivam() {
+	return shivam;
+}
+
+public static void setShivam(int shivam) {
+	MAX_PROFIT.shivam = shivam;
+}
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -66,10 +79,14 @@ public void setArr(int[] arr) {
 			System.out.println(j);
 			
 		}
-		
+		System.out.println(shivam.shivam);
+		// now set the value of the static value that are changed in the over all class and package 
+		shivam.setShivam(24);
+		System.out.println(shivam.shivam);
 		
 		
 
 	}
+
 
 }
