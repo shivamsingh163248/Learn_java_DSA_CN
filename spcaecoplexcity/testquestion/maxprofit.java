@@ -71,7 +71,7 @@ public class maxprofit {
 	// creating the shorting function using the quickshort
 	
 	
-	private int quick_Short_Sweping (int[]arr , int staritng_Index , int Last_index) {
+	private  int quick_Short_Sweping (int[]arr , int staritng_Index , int Last_index) {
 		//frist taking the value of the poit element 
 		int poietment = arr[staritng_Index] ; 
 		int countvalue = 0 ; 
@@ -104,6 +104,8 @@ public class maxprofit {
 				temp = arr[i] ; 
 				arr[i] = arr[j] ; 
 				arr[j] = temp ; 
+				i++ ;
+				j-- ; 
 			}
 		}
 		
@@ -115,7 +117,7 @@ public class maxprofit {
 	
 	
 	
-	public void quickshort(int[]arr , int starting_index , int last_index ) {
+	public  void quickshort(int[]arr , int starting_index , int last_index ) {
 		// using the recursion solved the shorting function 
 		// fist write the base condition of the quick shoritng 
 		if (starting_index >= last_index ) {
@@ -131,8 +133,16 @@ public class maxprofit {
 		
 	}
 	// now getter and setter function for the quickshort
+//	public void quick()
 	
 	
 	
+	
+	public void printarray() {
+		// using the for loop for the printing the array 
+		for (int i = 0; i < this.arr.length; i++) {
+			System.out.print(this.arr[i]+" ");
+		}
+	}
 
 }
