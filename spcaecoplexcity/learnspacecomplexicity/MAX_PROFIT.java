@@ -11,6 +11,11 @@ public class MAX_PROFIT {
 	}
 	
 	// creating the getter and setter for the set value using the number 
+	// again the constructor with are array parameter '
+	public MAX_PROFIT (int[]arr) {
+		this(); 
+		this.arr = arr ;
+	}
 	
 	
 	
@@ -27,10 +32,13 @@ public void setArr(int[] arr) {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MAX_PROFIT shivam = new MAX_PROFIT() ; 
-		System.out.println(shivam.arr); 
+ 
+	// 	System.out.println(shivam.arr); 
+		
 		int[]arr = {5,6,5} ; 
 		// call the function for the setting the value 
+		// again the constructor with the parameter 
+		MAX_PROFIT shivam = new MAX_PROFIT(arr) ;
 		shivam.setArr(arr);
 		System.out.println(shivam.arr); 
 		// checking the printing of the array 
