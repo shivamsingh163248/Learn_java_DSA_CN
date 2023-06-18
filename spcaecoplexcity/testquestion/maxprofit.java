@@ -6,8 +6,9 @@ public class maxprofit {
 	// creating the variable in the class 
 	private String saller_name ; 
 	private int[]arr ; 
-	private int total_profit ; 
-	private int seller_priese ; 
+	private int total_profit = Integer.MIN_VALUE ; 
+	private int seller_priese ;
+	 
 	
 	
 	// creating the constructor with variable 
@@ -58,9 +59,7 @@ public class maxprofit {
 		this.seller_priese = seller_priese;
 	}
 	// now creating the function of the profit 
-	public  static void maxprofitt() {
-		
-	}
+	
 	public void printseller_name() {
 		System.out.println("the name of the saller is "+getSaller_name());
 	}
@@ -148,11 +147,32 @@ public class maxprofit {
 	
 	
 	
-	public void printarray() {
+	public void printarray() throws Exception  {
 		// using the for loop for the printing the array 
+		if (this.arr == null) {
+		Exception NullPointerException = null; // using the local variable to solved this problem 
+		
+		throw NullPointerException ; // also you can write the variable int the global  at the  top 
+		
+		}
 		for (int i = 0; i < this.arr.length; i++) {
 			System.out.print(this.arr[i]+" ");
 		}
+	}
+	
+	
+	
+	
+	// creating the function of the max_profit 
+	public  void maxprofit()  {
+		// using the while loop 
+		int i = 0 ; 
+		
+		while (i<this.arr.length) {
+			this.total_profit = Math.max(this.total_profit, this.arr[i]*this.arr.length - i) ; 
+				i++ ; 	
+		}
+		
 	}
 
 }
