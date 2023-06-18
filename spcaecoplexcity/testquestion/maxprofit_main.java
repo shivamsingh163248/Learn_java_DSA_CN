@@ -52,6 +52,9 @@ public class maxprofit_main {
 	shivam.maxprofit();
 	System.out.println(shivam.getTotal_profit());
 	System.out.println(shivam.getSeller_priese());
+	
+	shivam.printOverAllValue();
+	itisha.printOverAllValue();
 	}
 
 }

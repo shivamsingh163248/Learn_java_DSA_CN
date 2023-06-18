@@ -149,6 +149,7 @@ public class maxprofit {
 	
 	public void printarray() throws Exception  {
 		// using the for loop for the printing the array 
+	
 		if (this.arr == null) {
 		Exception NullPointerException = null; // using the local variable to solved this problem 
 		
@@ -158,6 +159,7 @@ public class maxprofit {
 		for (int i = 0; i < this.arr.length; i++) {
 			System.out.print(this.arr[i]+" ");
 		}
+		System.out.println();
 	}
 	
 	
@@ -170,16 +172,35 @@ public class maxprofit {
 		
 		while (i<this.arr.length) {
 			this.total_profit = Math.max(this.total_profit, this.arr[i]*(this.arr.length - i)) ;
-			System.out.println(this.total_profit+" "+ this.arr[i]+" " + this.arr.length +" " +i +" "+ this.arr[i]*(this.arr.length - i));
-			System.out.println(getTotal_profit());
+		//	System.out.println(this.total_profit+" "+ this.arr[i]+" " + this.arr.length +" " +i +" "+ this.arr[i]*(this.arr.length - i));
+		//	System.out.println(getTotal_profit());
 			
 			
-			if (total_profit < this.arr[i]*this.arr.length - i) {
+			if (this.total_profit == this.arr[i]*(this.arr.length - i)) {
 				this.seller_priese = this.arr[i] ; 
 			}
 				i++ ; 	
 		}
 		
+	}
+	
+	
+	// creating the function printing overall value for the printing value 
+	
+	public void printOverAllValue() {
+		System.out.println();
+		System.out.println("-------------------------------------------------------------------");
+		System.out.println("PRINTING DETEALI");
+		System.out.println("-------------------------------------------------------------------");
+		System.out.println("BUYER BUDEGET"); 
+		// CALLING THE FUBNCTION OF THE PRINTING 
+		try {
+			printarray();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(" you given the null input ");
+		}
+		System.out.println("SELLER NAME : "+this.saller_name+"  "+"SELLER PREISE :"+this.seller_priese+" "+"TOTAL PROFIT :- "+this.total_profit);
 	}
 
 }
