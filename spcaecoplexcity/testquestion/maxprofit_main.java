@@ -13,7 +13,7 @@ public class maxprofit_main {
 	// creating the printing function for that object 
 	shivam.printseller_name();
 	// creating the array 
-	int[]arr = {23 ,45 ,34, 65 ,21 , 35} ; 
+	int[]arr = {30 ,20 ,53 ,14} ; 
 
 	
 	System.out.println();
@@ -51,6 +51,7 @@ public class maxprofit_main {
 	// calling the function of the maxprofit 
 	shivam.maxprofit();
 	System.out.println(shivam.getTotal_profit());
+	System.out.println(shivam.getSeller_priese());
 	}
 
 }

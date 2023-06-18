@@ -169,7 +169,14 @@ public class maxprofit {
 		int i = 0 ; 
 		
 		while (i<this.arr.length) {
-			this.total_profit = Math.max(this.total_profit, this.arr[i]*this.arr.length - i) ; 
+			this.total_profit = Math.max(this.total_profit, this.arr[i]*(this.arr.length - i)) ;
+			System.out.println(this.total_profit+" "+ this.arr[i]+" " + this.arr.length +" " +i +" "+ this.arr[i]*(this.arr.length - i));
+			System.out.println(getTotal_profit());
+			
+			
+			if (total_profit < this.arr[i]*this.arr.length - i) {
+				this.seller_priese = this.arr[i] ; 
+			}
 				i++ ; 	
 		}
 		
