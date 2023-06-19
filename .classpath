@@ -21,5 +21,7 @@
 	<classpathentry kind="src" path="exception_handelin_2"/>
 	<classpathentry kind="src" path="recorsion"/>
 	<classpathentry kind="src" path="spcaecoplexcity"/>
+	<classpathentry kind="src" path="testchar"/>
+	<classpathentry kind="src" path="opp-3"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
