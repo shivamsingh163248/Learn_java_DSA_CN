@@ -10,4 +10,6 @@ public class vehickal {
 	
 	
 	// creating the constructor 
+	
+	
 }
