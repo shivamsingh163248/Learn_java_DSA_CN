@@ -8,8 +8,9 @@ public class vehickal {
 	private int no_doors ; 
 	private String owner_name ; 
 	
+	// then we are the creating the constructor 
 	
-	// creating the constructor 
+	
 	
 	
 }
