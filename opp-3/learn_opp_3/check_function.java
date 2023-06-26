@@ -12,6 +12,12 @@ public class check_function {
 			System.out.println(shivam.getCar_name());
 		 shivam.name_shivam("shivam");
 		System.out.println(shivam.getCar_name());
+		
+		// now agin creating the new object 
+		car itisha = new bick("shivam singh ", "yahna ") ; 
+		// now cahel the property what are the access 
+		itisha.getCar_name() ; 
+		 ((bick) itisha).getBike_oner_name(); // this property is the vary inp 
 
 	}
 
