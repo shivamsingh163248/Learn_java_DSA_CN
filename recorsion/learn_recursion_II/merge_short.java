@@ -59,7 +59,7 @@ public class merge_short {
 	    public static void mergeSort(int[] arr, int l, int r){
 	        // Write your code here
 	 //frist writeing the base case 
-	        if (arr.length <=1) {
+	        if (arr.length ==1) {
 	            return  ; 
 	        }
 	        // creating  the array
@@ -68,7 +68,7 @@ public class merge_short {
 	        int[]d = new int [arr.length - c.length ] ;
 	        // now copying the deta from 
 	        for (int i = 0; i < c.length; i++) {
-	            c[i] = arr[i] ; 
+	            c[i] = arr[i] ;  
 	        }
 	   
 	         print(c);       
