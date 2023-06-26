@@ -1,6 +1,7 @@
 package learn_abstract;
 
-public class employ_detail extends bank { // now extends the abstract class 
+public  abstract  class  employ_detail extends bank { // now extends the abstract class 
+	                                       // we are the declared the abstracet method 
  
 	
 	// now hear the call the abstract class and full fill the property 
