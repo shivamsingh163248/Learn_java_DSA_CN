@@ -11,9 +11,12 @@ public class class_school implements school {
 	@Override
 	public String schoolname() {
 		// TODO Auto-generated method stub
-		return null;
+		return "shivam";
 	}
 	
-	// now creating the print function for the printing the name 
+	// now creating the print function for the printing the name git 
+	void print() {
+		System.out.println("this is the chack function for the accessd by the interface classs ");
+	}
 
 }

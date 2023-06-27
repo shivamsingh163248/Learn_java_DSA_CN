@@ -4,11 +4,11 @@ public  interface   school { // if iam using the inteface the not need to use cl
 	
 	// learn and the creating the 
 	// creating the function 
-	public   abstract  void username();
+	public    void username(); // also you can right the abstract 
 	
 	
 	// now write the second function 
-	 public  String schoolname();
+	 public  String schoolname(); // alos you can rihgt th abstract 
 	 
 	
 }
