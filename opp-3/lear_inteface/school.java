@@ -4,6 +4,8 @@ public  interface   school { // if iam using the inteface the not need to use cl
 	
 	// learn and the creating the 
 	// creating the function 
+	// now creating the variabl; 
+	public final int number = 10 ; 
 	public    void username(); // also you can right the abstract 
 	
 	
