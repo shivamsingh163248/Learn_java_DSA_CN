@@ -1,28 +1,33 @@
 package learn_generic_method;
 
-public class school<itisha , shivam > {
+public class school<itisha , shivam > extends fill_value {
 	// now learn the generic method 
 
 	
 	// write the some private varaible 
-	private itisha user_name ; 
+	private itisha user_namee ; 
 	private shivam roll_number ; 
 	
 	// now creating the constorctur 
 	public school() {
+		super() ; 
 		// TODO Auto-generated constructor stub
 	}
 	// again now creating the constocter 
-	public school(itisha user_name , shivam roll_number){
-		this.roll_number = roll_number ; 
-		this.user_name = user_name ; 
+
+	
+	
+
+	public school(itisha user_name2, shivam roll_number) {
 		
+		user_namee = user_name2;
+		this.roll_number = roll_number;
 	}
-	public itisha getUser_name() {
-		return user_name;
+	public itisha getUser_namee() {
+		return user_namee;
 	}
 	public void setUser_name(itisha user_name) {
-		this.user_name = user_name;
+		this.user_namee = user_name;
 	}
 	public shivam getRoll_number() {
 		return roll_number;
