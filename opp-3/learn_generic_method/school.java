@@ -8,6 +8,7 @@ public class school<itisha , shivam > extends fill_value {
 	private itisha user_namee ; 
 	private shivam roll_number ; 
 	
+	
 	// now creating the constorctur 
 	public school() {
 		super() ; 
@@ -26,8 +27,8 @@ public class school<itisha , shivam > extends fill_value {
 	public itisha getUser_namee() {
 		return user_namee;
 	}
-	public void setUser_name(itisha user_name) {
-		this.user_namee = user_name;
+	public void setUser_namee(itisha user_namee) {
+		this.user_namee = user_namee;
 	}
 	public shivam getRoll_number() {
 		return roll_number;
@@ -43,7 +44,7 @@ public class school<itisha , shivam > extends fill_value {
 		System.out.println(shivam_singh);
 	}
 	// again creating the new function of the array of the return type 
-	public <itisha_shivam> itisha_shivam[] arry(itisha_shivam shivam[]){
+	public <itisha_shivam>void arry(itisha_shivam shivam[]){
 		
 		// now creating the new array 
 		// frist find the size of the array 
@@ -54,7 +55,6 @@ public class school<itisha , shivam > extends fill_value {
 		}
 		
 		
-		return shivam  ; 
-	}
+	}		
 	
 }
