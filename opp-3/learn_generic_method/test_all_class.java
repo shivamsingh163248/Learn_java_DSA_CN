@@ -39,10 +39,23 @@ Integer arr[] = new Integer[5] ;
 for (int i = 0; i < arr.length; i++) {
 	arr[i] = i ;
 }
+
+// now creating the string arr
  shivam.arry(arr);
 // calling the function 
  printtt(arr);
 
+ // now again creating the string type 
+ 
+ String[]arrstring = new String[5];
+ // now set the function 
+ // creating the for loop 
+ for (int i = 0; i < arrstring.length; i++) {
+	arrstring[i] = "shivam" ; 
+	
+}
+ // now calling the function 
+ shivam.arry(arrstring);
  
 
 
