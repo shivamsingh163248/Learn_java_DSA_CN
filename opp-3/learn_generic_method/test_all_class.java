@@ -8,10 +8,10 @@ public class test_all_class {
 
 
 	// now creating the printing  array  
-	public static <itisha> void printtt(itisha arr[]) {
+	public static <itisha extends parentdetail> void printtt(itisha arr[]) {
 		// now using the for loop for the solving these question 
 		for (int i = 0; i < arr.length; i++) {
-			System.out.println(arr[i]);
+		arr[i].prints();
 		}
 		
 	}
@@ -48,7 +48,7 @@ for (int i = 0; i < arr.length; i++) {
 // now creating the string arr
  shivam.arry(arr);
 // calling the function 
- printtt(arr);
+ //printtt(arr);
 
  // now again creating the string type 
  
@@ -73,6 +73,11 @@ for (int i = 0; i < arrp.length; i++) {
 
 
  printtt(arrp);
+ // again creating the print 
+ shivam.arry(arrp);
+ 
+ 
+ 
 
 
 

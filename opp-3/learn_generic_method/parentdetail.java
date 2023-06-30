@@ -39,9 +39,9 @@ public class parentdetail {
 	
 	// creating the constocter 
 	// noe creating the printing function 
- public void print() {
-	 System.out.println(getYour_number()+" "+getYour_number());
-	 System.out.println(getFather_name()+" "+getFather_name());
+ public void prints() {
+	 System.out.println(getYour_name()+" "+getYour_number());
+
  }
 	
 
