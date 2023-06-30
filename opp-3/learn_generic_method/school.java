@@ -1,6 +1,6 @@
 package learn_generic_method;
 
-public class school<itisha , shivam > extends fill_value {
+public class school<itisha , shivam > extends fill_value  {
 	// now learn the generic method 
 
 	
@@ -51,6 +51,7 @@ public class school<itisha , shivam > extends fill_value {
 		for (int i = 0; i < shivam.length; i++) {
 			// itisha_shivam itisha_shivam = shivam[i];
 			System.out.println(shivam[i]);
+			
 			
 		}
 		
