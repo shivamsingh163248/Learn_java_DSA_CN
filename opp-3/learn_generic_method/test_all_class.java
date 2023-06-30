@@ -2,6 +2,9 @@ package learn_generic_method;
 
 public class test_all_class {
 	
+
+
+
 	// now creating the printing  array  
 	public static <itisha> void printtt(itisha arr[]) {
 		// now using the for loop for the solving these question 
@@ -56,7 +59,18 @@ for (int i = 0; i < arr.length; i++) {
 }
  // now calling the function 
  shivam.arry(arrstring);
+
  
+ // now creating the array of the class 
+parentdetail[]arrp = new parentdetail[5] ; 
+// now creating the check for the printing 
+for (int i = 0; i < arrp.length; i++) {
+
+	parentdetail[i] = new parentdetail("satyendea kumar singh", "sarita singh", "shivam singh", 99841638) ; 
+}
+
+
+ printtt(parentdetail);
 
 
 
