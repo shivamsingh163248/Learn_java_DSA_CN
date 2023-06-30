@@ -8,7 +8,7 @@ public class busniess {
 		// using the for loop for the 
 		for (int i = 0; i < arr.length; i++) {
 			arr[i].print();
-			System.out.println(arr[i]);
+			 System.out.println(arr[i]);   // using fior
 		}
 	}
 
@@ -23,6 +23,14 @@ public class busniess {
 		// now print the varialbe 
 		print(arr);
 
+		
+		teacher[]arrt = new teacher[5] ; 
+		// now set the value 
+		for (int i = 0; i < arrt.length; i++) {
+			arrt[i] = new teacher("satyendra kumar singh" ,23450+i ) ; 
+		}
+		// now print the varialbe 
+		print(arrt);
 	}
 
 }
