@@ -1,5 +1,7 @@
 package learn_generic_method;
 
+import javax.naming.ldap.ExtendedRequest;
+
 public class test_all_class {
 	
 
@@ -66,11 +68,11 @@ parentdetail[]arrp = new parentdetail[5] ;
 // now creating the check for the printing 
 for (int i = 0; i < arrp.length; i++) {
 
-	parentdetail[i] = new parentdetail("satyendea kumar singh", "sarita singh", "shivam singh", 99841638) ; 
+	arrp[i] = new parentdetail("satyendea kumar singh", "sarita singh", "shivam singh", 99841638) ; 
 }
 
 
- printtt(parentdetail);
+ printtt(arrp);
 
 
 

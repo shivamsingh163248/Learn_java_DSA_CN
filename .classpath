@@ -23,5 +23,6 @@
 	<classpathentry kind="src" path="spcaecoplexcity"/>
 	<classpathentry kind="src" path="testchar"/>
 	<classpathentry kind="src" path="opp-3"/>
+	<classpathentry kind="src" path="learn_linklist"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
