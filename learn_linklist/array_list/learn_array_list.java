@@ -24,6 +24,28 @@ public class learn_array_list {
 		System.out.println(arrs.size());
 		System.out.println(arrs.get(0));
 		
+		// creating the second array of the size 
+		ArrayList<String> shivams = new ArrayList<>() ; 
+		// crating the new arry 
+		shivams.add("shivam singh "); 
+		shivams.add("itisha singh ") ; 
+		shivams.add("lovely singh ") ; 
+		shivams.add("tripti singh") ;
+		
+		// using the for loop 
+		for (int i = 0; i < shivams.size(); i++) {
+			System.out.println(shivams.get(i));
+		}
+		
+		// mow i check 
+		shivams.set(0, "shani singh");
+		System.out.println();
+		for (int i = 0; i < shivams.size(); i++) {
+			System.out.println(shivams.get(i));
+		}
+		
+		
+		
 		
 	}
 
