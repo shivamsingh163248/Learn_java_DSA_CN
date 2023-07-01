@@ -1,6 +1,35 @@
 package incement_link_list;
 
 public class test_increment_list {
+	
+	// creating the link list function for the solving 
+	public static node<Integer>linklsit(){
+		
+		// creating the object different 
+		node<Integer>n1 = new node<Integer>(20) ; 
+		node<Integer>n2 = new node<Integer>(32) ; 
+		node<Integer>n3 = new node<Integer>(67);
+		node<Integer>n4 = new node<Integer>(45);
+		
+		// now linking the node with the each other 
+		n1.next = n2 ; 
+		n2.next = n3 ; 
+		n3.next = n4 ; 
+		
+		// now return the main function 
+		return n1 ; 
+	}
+	
+	// now print the function 
+	public static  void print(node<Integer>head ) {
+		// creating the print function 
+		node<Integer>itisha = head ; 
+		// creating the function 
+		if (itisha != null) {
+			System.out.println(itisha.data);
+			
+		}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
