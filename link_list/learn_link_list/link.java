@@ -22,6 +22,21 @@ public class link {
 		return n1 ; 
 	}
 	// now i am using the print function 
+	
+	// creating the print function for the printing the value 
+	public static void print(node<Integer>shivam) {
+		
+		// creating the temp object 
+		node<Integer>temp = shivam ; 
+		
+		// using the while loop 
+		while (temp != null) {
+			System.out.println(temp.data);
+			temp = temp.next ; 
+			
+		}
+		
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -43,6 +58,12 @@ public class link {
 		System.out.println(head.next.next.data);
 		System.out.println(head.next.next.next.next);
 		
+		// calling the function of the print 
+		print(head);
+		// again calling the printing  function for the next value 
+		// calling the printing function for the next valu 
+		System.out.println();
+		print(head.next);
 
 	}
 
