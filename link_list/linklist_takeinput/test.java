@@ -3,6 +3,7 @@ package linklist_takeinput;
 import java.util.Scanner;
 
 public class test {
+
 	
 	// now creating the increment function 
 	public static void print(node<Integer>head ) {
@@ -10,7 +11,7 @@ public class test {
 		node<Integer>itisha = head ; 
 		
 		// now printing the each of the reference 
-		if (itisha != null ) {
+		while (itisha != null ) {
 			System.out.println(itisha.date);
 			itisha = itisha.next ; 
 		}
@@ -44,6 +45,33 @@ public class test {
 		return head ;
 		
 	} 
+	
+	// CREATING THE NEW FUNCTIONO OF THE OPTMIZAING 
+	public static node<Integer> takeinput(){
+	 // now creating the object refrence 
+		// frist creating the scanner function 
+		Scanner input = new Scanner(System.in) ; 
+		int shivam = input.nextInt() ; 
+		// creating the object 
+	//	node<Integer>head = new node<Integer>(shivam) ; 
+		
+		//creating the node 
+		node<Integer>head = null , tail = null ; 
+		// now creating the while loop 
+		while (shivam != -1) {
+			// now creating the object 
+			node<Integer>currentNode = new node<Integer>(shivam) ; 
+			if (head == null) {
+				head = currentNode ; 
+				tail = currentNode ; 
+			}else {
+				tail.next = currentNode ; 
+				tail = currentNode ; 
+			}
+			shivam = input.nextInt() ; 
+		}
+		return head ; 
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -62,8 +90,11 @@ public class test {
 		// calling the function 
 		node<Integer>itisha = takeInput() ; 
 		print(itisha);
-		
-		
+	//	System.out.println(itisha.next.date);
+		// agaon ccalling the another function 
+		node<Integer>itisha_shivam = takeinput();
+		print(itisha_shivam);
+
 		
 	}
 
