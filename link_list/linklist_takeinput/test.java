@@ -30,9 +30,18 @@ public class test {
 			// now linking prcess 
 			if (head == null) {
 				head = currentNode ; 
+			}else {
+				// again creating the again another refreance 
+				node<Integer>tail = head ;
+				while (tail.next != null) {
+					tail = tail.next ; 
+				}
+				tail.next = currentNode ;	 
 			}
+			
+			data = shivam.nextInt(); 
 		}
-		
+		return head ;
 		
 	} 
 
@@ -46,11 +55,13 @@ public class test {
 //		n1.next = n2 ;
 //		System.out.println(n1.next);
 //		System.out.println(n2);
-		node<Integer> n1 = new node<Integer>(23);
-		node<Integer>shivam = n1 ; 
-		System.out.println(shivam);
-		System.out.println(n1);
-		
+//		node<Integer> n1 = new node<Integer>(23);
+//		node<Integer>shivam = n1 ; 
+//		System.out.println(shivam);
+//		System.out.println(n1);
+		// calling the function 
+		node<Integer>itisha = takeInput() ; 
+		print(itisha);
 		
 		
 		
