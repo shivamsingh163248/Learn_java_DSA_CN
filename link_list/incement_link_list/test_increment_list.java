@@ -25,29 +25,52 @@ public class test_increment_list {
 		// creating the print function 
 		node<Integer>itisha = head ; 
 		// creating the function 
-		if (itisha != null) {
+		while (itisha != null) {
 			System.out.println(itisha.data);
-			
+			 itisha = itisha.next ;  // 
 		}
+	}
+	
+	// now creating the increment function 
+	public static void increment(node<Integer> itisha) {
+		
+		// creating the increment function 
+		while (itisha != null) {
+			itisha.data++ ;
+			itisha = itisha.next ; 
+		}
+		while (itisha != null) {
+			itisha.data++ ;
+			itisha = itisha.next ; 
+		}  
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// creating the constocter 
+//		
+//		node<Integer>n1 = new node<Integer>(20) ; 
+//		//-----------------------------------------------------------------
+//		node<Integer>n2 = new node<Integer>(24) ; 
+//		
+//		// set the address 
+//		n1.next = n2 ; 
+//		
+//		System.out.println(n1.next);
+//		System.out.println(n2);
+//
+//		// now set the deta 
+//		n1.data  = 30 ; 
+//		System.out.println(n1.data);
 		
-		node<Integer>n1 = new node<Integer>(20) ; 
-		//-----------------------------------------------------------------
-		node<Integer>n2 = new node<Integer>(24) ; 
+		// 
+		node<Integer>itisha = linklsit() ; 
+		// calling the print function 
+		print(itisha);
+		increment(itisha);
+		System.out.println();
+		print(itisha);
 		
-		// set the address 
-		n1.next = n2 ; 
-		
-		System.out.println(n1.next);
-		System.out.println(n2);
-
-		// now set the deta 
-		n1.data  = 30 ; 
-		System.out.println(n1.data);
 	}
 
 }
