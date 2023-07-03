@@ -47,13 +47,60 @@ public class insurt_node {
 			
 		}
 		return head ;
-	}   
+	} 
+	
+	
+	// creating the insurt function 
+	public static node<Integer> insurt(node<Integer>head , int pos , int value){
+		
+		// CREATING THE COPY of the head 
+		node<Integer>temp = head ; 
+		// xreaing nodw witch are the insurted 
+		node<Integer>nodeInsureted = new node<Integer>(value) ; 
+		// now we are taking about the adding the value at point 0 
+		if (pos == 0 ) {
+			nodeInsureted.next = temp ; 
+			temp = nodeInsureted ; 
+			
+		}else {
+		
+		
+		
+		
+		int count = 0 ; 
+		
+		while (count < pos-1 && temp != null) {
+			count++ ;
+			temp = temp.next ;
+			
+		}
+		
+		// after the value 
+		// if condation writing due to null ponter exception null.next value given null pointer exception 
+		 
+		if (temp != null ) {
+			
+		
+		nodeInsureted.next = temp.next ; 
+		temp.next = nodeInsureted ; 
+		 
+		}
+		}
+		
+		
+		
+		return head;
+		
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// now test the function 
 		node<Integer>itisha = takeinput() ; 
 		print(itisha);
+		node<Integer>afInsurtnode =  insurt(itisha, 3, 45) ; 
+		System.out.println();
+		print(afInsurtnode);
 
 	}
 
