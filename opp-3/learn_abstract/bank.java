@@ -62,6 +62,9 @@ public abstract  class bank {
 	public void itisha() {
 		System.out.println("this is call by the another class ");
 	}
+	
+	// agian creating the nexr abstract method 
+	public abstract boolean you_have_jab() ; 
 
 
 }
