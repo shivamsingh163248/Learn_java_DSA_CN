@@ -8,7 +8,7 @@ public class node <T> { // this is the using for the generic for the set the val
 	public node<T> next ; // this is the referencing to the object 
 	
 	// creating the node using the generic 
-	public void node(T data) {
+	public node(T data) { // this is the constocter 
 		this.data = data ; 
 	}
 }
