@@ -15,7 +15,7 @@ public class setvalue_linklist {
 		node<Integer> head = null , tail = null ; 
 		
 		// creating the while loop for thataking thei nput 
-		while (data == -1) {
+		while (data != -1) {
 			node<Integer>currentnode = new node<Integer>(data) ; 
 			
 			// creating the condation 
@@ -65,12 +65,25 @@ public class setvalue_linklist {
 			return currentnode ; 
 		}else {
 			// hear using the recrsion function 
+			// frist calling the function 
+			System.out.println(head.data +" above" + head);
+			
+		head.next = 	setvalue(head.next, pos-1, value) ; 
+		System.out.println(head.data +" after" + head );
+		return head ; 
 			
 		}
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// calling the 
+		node<Integer>shivam = takeinput() ; 
+		System.out.println();
+		print(shivam);
+		System.out.println();
+		node<Integer>newnode = setvalue(shivam, 3, 98) ; 
+		print(newnode);
 
 	}
 
