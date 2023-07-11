@@ -38,12 +38,14 @@ public class print_revers_recorsion {
 		// creating the print function 
 		// creting the while loop 
 		// creating the copy ]
+		System.out.println();
 		node<Integer>temp = head ; 
 		while (temp != null ) {
 			System.out.print(temp.data + " " );
 			// now next address store in the currrent 
 			temp = temp.next; 
 		}
+		System.out.println();
 	}
 	
 	// now again creating the recoresion fucntion 
@@ -80,9 +82,30 @@ public class print_revers_recorsion {
 	}
 	// creating the recorsion function 
 
+	 public static node<Integer>reversingprinting(node<Integer>head){
+		 // creating the base function for the solving 
+		 
+		 if (head == null || head.next == null) {
+			return head ; 
+		}
+		 
+		 // now calling the function and the writing the algorithum 
+		 
+		node<Integer>curr =  reversingprinting(head.next) ; 
+		// changed the head node 
+		print(curr);
+		print(head);
+		head.next.next = head ; 
+		head.next = null ; 
+		print(curr);
+		print(head);
+		return curr ; 
+	 }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		// calling the function for the taking the input from the user 
+		node<Integer>input = takeinput() ; 
+		reversingprinting(input) ; 
 	}
 
 }
