@@ -42,7 +42,7 @@ public class setvalue_linklist {
 		// creating the copy ]
 		node<Integer>temp = head ; 
 		while (temp != null ) {
-			System.out.println(temp.data);
+			System.out.print(temp.data + " " );
 			// now next address store in the currrent 
 			temp = temp.next; 
 		}
@@ -66,10 +66,14 @@ public class setvalue_linklist {
 		}else {
 			// hear using the recrsion function 
 			// frist calling the function 
-			System.out.println(head.data +" above" + head);
+			// System.out.println(head.data +" above" + head);
+			print(head);
+			System.out.println();
 			
 		head.next = 	setvalue(head.next, pos-1, value) ; 
-		System.out.println(head.data +" after" + head );
+		// System.out.println(head.data +" after" + head );
+		System.out.println();
+		print(head);
 		return head ; 
 			
 		}
