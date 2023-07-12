@@ -73,7 +73,12 @@ public class reversing_linklist_usingrecorsion {
 		node<Integer>curr = revernodedprinting(head.next) ; 
 		// when this function reach the final value and returning the head final link list 
 		// agian creating the new refreance 
+		
+		// CHECK FOR THE PRINT  
+	
 		node<Integer>small_head = curr ; 
+		System.out.print("resivet curr" );
+		print(curr);
 		
 		// now creating the final link list 
 		while (small_head.next != null ) {
@@ -82,6 +87,11 @@ public class reversing_linklist_usingrecorsion {
 		// now final current value set up head 
 		small_head.next = head ; 
 		head.next = null ; 
+		
+		
+		print(small_head);
+		print(curr);
+		print(head);
 		return curr ; 
 		
 	
