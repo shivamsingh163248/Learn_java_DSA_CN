@@ -95,10 +95,10 @@ public class print_revers_recorsion {
 		// changed the head node 
 		print(curr);
 		print(head);
-		head.next.next = head ; 
-		head.next = null ; 
-		print(curr);
-		print(head);
+//		head.next.next = head ; 
+//		head.next = null ; 
+//		print(curr);
+//		print(head);
 		return curr ; 
 	 }
 	public static void main(String[] args) {
