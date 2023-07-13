@@ -66,6 +66,7 @@ public class REVERAE_PAIR {
 		if (head == null || head.next == null ) {
 			
 			shivam = new doublenode()  ; 
+			System.out.println(shivam);
 			shivam.head = head ; 
 			shivam.tail = head ; 
 			return shivam ; 
@@ -74,12 +75,26 @@ public class REVERAE_PAIR {
 		// now again the calling the function same functiom 
 		
 		doublenode itisha  = revrese_print_linklist(head.next) ; 
+		
+		print(itisha.tail);
+		print(itisha.head);
+		
+		
 		itisha.tail.next = head ; 
 	    head.next = null ; 
 	    
 	    // now creating the new addressing of the shivam 
 	    
-	    shivam = new doublenode() ; 
+	  
+	    
+	    shivam = new doublenode() ;
+	    System.out.println(shivam);
+	    
+	    
+	    print(shivam.head);
+	    print(itisha.head);
+	    
+	    
 	    shivam.head = itisha.head ; 
 	    shivam.tail = head ; 
 	    return shivam ; 
@@ -110,7 +125,12 @@ public static void print(node<Integer>head) {
 		// TODO Auto-generated method stub
 		
 		// now calling the function 
-
+		node<Integer>input = takeinput() ; 
+		// now calling the function of the 
+		doublenode result = revrese_print_linklist(input) ; 
+		// now printing node of the link list 
+		print(result.head);
+		print(result.tail);
 	}
 
 }
