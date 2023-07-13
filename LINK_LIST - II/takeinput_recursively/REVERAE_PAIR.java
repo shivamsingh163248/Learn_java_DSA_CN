@@ -108,6 +108,8 @@ public static void print(node<Integer>head) {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		// now calling the function 
 
 	}
 
