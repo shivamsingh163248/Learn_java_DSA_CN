@@ -63,6 +63,14 @@ public static void print(node<Integer>head) {
 // now creating the method of the two link list merge 
  public static node<Integer> margeTwoLinkList(node<Integer>head1 , node<Integer>head2){
 	 
+	 // if the any lisnk list is null 
+	 if (head1 == null ) {
+		return head2 ; 
+	}
+	 if (head2 == null ) {
+		return head1 ; 
+	}
+	 
 	 
 	 // frist we are the taking the copy of the refrence 
 	 node<Integer>linklist1 = head1 , linklist2 = head2 ; 
@@ -82,7 +90,36 @@ public static void print(node<Integer>head) {
 		
 	}
 	 
+	 // creating the while loop for the 
+	 while (linklist1 != null && linklist2 != null  ) {
+		 
+		 // again check the condation of the deta 
+		 if (linklist1.data <= linklist2.data ) {
+			 tail.next = linklist1 ; 
+			 tail = linklist1 ; 
+			 linklist1 = linklist1.next ; 
+			
+		} else {
+
+			// if these condition fail 
+			tail.next = linklist2 ;
+			tail = linklist2 ; 
+			linklist2 = linklist2.next ; 
+		}
+		
+	}
 	 
+	 // when the condition fail 
+	 if (linklist1 != null ) {
+		
+		 // now creating the tail next attach whith dema 
+		 tail.next = linklist1 ; 
+	}else {
+		tail.next = linklist2  ; 
+	}
+	 
+	 // now return head ; 
+	 return head ; 
 	 
 	 
 	 
@@ -92,7 +129,19 @@ public static void print(node<Integer>head) {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		// now calling the function 
+		node<Integer>input1 = takeinput() ; 
+		// gain taking the input for the second linklist 
+		node<Integer>input2 = takeinput();
+		
+		// now checking the input 
+		print(input1);
+		print(input2);
+		// calling the function of the merging 
+		node<Integer>mergeLinklist = margeTwoLinkList(input1, input2) ; 
+		// now printing the result 
+		print(mergeLinklist);
 	}
 
 }
