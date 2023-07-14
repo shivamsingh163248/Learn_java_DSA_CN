@@ -63,12 +63,42 @@ public static void print(node<Integer>head) {
 
 
 // now creating the mid point function 
+public static node<Integer>midnode(node<Integer>head){
+	
+	// creating the noraml condation  
+	if (head == null || head.next == null ) {
+		return head ; 
+	}
+	
+	// now creating the slow and fast refreance 
+	node<Integer>slow = head ; 
+	node<Integer>fast = head ; 
+	
+	// now creating the while loop 
+	while (fast.next != null && fast.next.next != null ) {
+		slow = slow.next ; 
+		fast = fast.next.next ; 
+		
+	}
+	
+	// now return head 
+	 
+	head = slow ; 
+	head.next = null ;
+	return head ; 
+}
 
 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		// now calling the function for the taking the input 
+		node<Integer> result = takeinput(); 
+		// calling the mid point 
+		node<Integer>midpointnode = midnode(result) ; 
+		print(midpointnode);
+		
 	}
 
 }
