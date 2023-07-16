@@ -17,6 +17,14 @@ public class stackUsingArray {
 		  topIndex = -1 ; 
 	}
 	  
+	  // now again creating the n
+	  public stackUsingArray(int size) {
+			// TODO Auto-generated constructor stub
+			  data = new int[size] ;
+	// at noraml position 
+			  topIndex = -1 ; 
+		}
+	 
 	  // creating the finction of the empaty 
 	  public boolean isEmptey() {
 //		  if (topIndex == -1) {
