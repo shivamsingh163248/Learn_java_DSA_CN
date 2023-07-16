@@ -34,8 +34,7 @@ for (int i = 0; i < arr.length; i++) {
    // if iwant nthe size become bigger 
    
    
-   // if want the increaing the size of the array 
-   
+   // if want the increaing the size of th=e 
 
 
 }

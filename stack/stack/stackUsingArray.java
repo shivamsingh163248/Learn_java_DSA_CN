@@ -12,7 +12,7 @@ public class stackUsingArray {
 	 // now creating the constocter 
 	  public stackUsingArray() {
 		// TODO Auto-generated constructor stub
-		  data = new int[10] ;
+		  data = new int[4] ;
 // at noraml position 
 		  topIndex = -1 ; 
 	}
@@ -43,7 +43,7 @@ public class stackUsingArray {
 	  }
 	  
 	  // now creating the push function 
-	  public void push (int ele) throws stackFullException {
+	  public void push (int ele)  {
 		   //now creating the condation if the statck is the full then we are the throw the exceptiom 
 		  // when the array lenght equall is the top od the endex 
 		  if (data.length-1 == topIndex) {
@@ -53,7 +53,8 @@ public class stackUsingArray {
 //			  stackFullException e = new stackFullException();
 //			  throw e ; 
 			  
-			  throw new stackFullException() ; 
+			  // creating the double array 
+			  doublearr();
 		}
 		  
 		  
@@ -61,7 +62,25 @@ public class stackUsingArray {
 		  data[topIndex] = ele ; 
 	  }
 	  
-	  // now we are the creating the top function 
+	  private void doublearr() {
+		
+		  // frist we are the copying array 
+		  System.out.println("double array ");
+		  int [] temp = data ; 
+		  
+		  // now creating copying the arrya 
+		  data = new int[2* temp.length] ;
+		  // now copying the array 
+		  for (int i = 0; i < temp.length; i++) {
+			data[i]= temp[i] ; 
+		}
+		  
+		  
+		  
+		
+	}
+
+	// now we are the creating the top function 
 	  public int top() throws stackEmpty {
 		  
 		  // if the stack is the empety then through the exception 
