@@ -16,6 +16,9 @@ public class stackcostoctreexample {
 		stack.pop();
 		System.out.println(stack.isEmpty());
 		System.out.println(stack.size());
+		
+		// some basic function of the stack 
+		
 
 	}
 
