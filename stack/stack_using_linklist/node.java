@@ -3,9 +3,9 @@ package stack_using_linklist;
 public class node <T> { // using the generic for for the implimantation of the deta type 
 	
 	// now creating the varaivle of the deta 
-	T data ; 
+	 public T data ; 
 	// creating the address of the class 
-	node<T> next ; 
+  public 	node<T> next ; 
 	
 	// now creating the constrocter 
 	
