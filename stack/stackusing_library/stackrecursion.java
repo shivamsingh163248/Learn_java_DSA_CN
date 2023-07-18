@@ -12,19 +12,24 @@ public class stackrecursion {
         {
             return;
         }
+         
+      //    System.out.println(input.size());
         
         int top=input.pop();
+        System.out.println(top);
         reverseStack(input,extra);
         
         while(!input.isEmpty())
         {
             extra.push(input.pop());
+            System.out.println(extra.peek()+" extra  push ");
         }
         input.push(top);
         
         while(!extra.isEmpty())
         {
             input.push(extra.pop());
+            System.out.println(input.peek()+"  input push ");
         }
 	} 
 
