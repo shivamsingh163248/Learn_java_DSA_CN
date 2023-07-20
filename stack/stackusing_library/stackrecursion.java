@@ -89,6 +89,16 @@ public class stackrecursion {
 //		 
 //		 
 //		 print(shivam);
+		 
+		 // now agin we are the creatng the progect of 
+		 Stack<Integer>itisha1 = new Stack<>();
+		 // now we are the insurting the value 
+		 itisha1.push(10);
+		 itisha1.push(20);
+		 itisha1.push(30);
+		 
+		 // now check who is the pop 
+		 System.out.println(itisha1.peek());
 
 	}
 
