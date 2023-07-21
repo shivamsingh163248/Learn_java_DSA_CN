@@ -48,7 +48,7 @@ public abstract  class bank {
 	public void setAccount_number(int account_number) {
 		this.account_number = account_number;
 	}
-	public String getBramch_name() {
+	 String getBramch_name() {
 		return bramch_name;
 	}
 	public void setBramch_name(String bramch_name) {
