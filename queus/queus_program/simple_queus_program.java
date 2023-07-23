@@ -37,7 +37,35 @@ public class simple_queus_program {
 		this.rear = -1 ; 
 	}
 	
+	// creating the function of the size 
+	
+	public int size() {
+		return size ;   
+	}
+	
+	
+	// now creating the function isempty
+	public boolean isEmpty() {
+		return size == 0 ; 
+	}
+	// now creatig the function of the inques 
+	
+	public void inque(int ele) {
 		
+		
+	}
+	// now creating the front function 
+	public int font () {
+		
+		
+	}
+	
+	// now creating the deque funtion that is the return intger 
+	public int deque() {
+		
+		
+	}
+	
 		
 		
 		
