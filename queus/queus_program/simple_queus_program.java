@@ -1,6 +1,7 @@
 package queus_program;
 
 import shivam.dynamic_array;
+import stack.stackFullException;
 
 public class simple_queus_program {
 	
@@ -22,7 +23,7 @@ public class simple_queus_program {
 		this.front = -1 ; 
 		this.rear = -1 ; 
 		// creating the new array of the size 5 ; 
-		data = new int [5] ; 
+		data = new int [10] ; 
 		
 	}
 	
@@ -50,25 +51,35 @@ public class simple_queus_program {
 	}
 	// now creatig the function of the inques 
 	
-	public void inque(int ele) {
+	public void inque(int ele) throws stackFullException {
+		
+		// creating the one more condation of the cxceptiomn 
+		if (data.length == size) {
+			throw new stackFullException();
+		}
 		
 		// fist the write the condation 
-		if (front == -1 && rear ==-1 && size == 0) {
+		if (size == 0) {
 			// now increment the font 
 			// push a element in array 
-			data[size] = ele ; 
+			
 			// now increament the size the 
-			front++ ; 
-			rear++;
-			size++ ; 
+			front = 0; 
 			
-		}else {
+		} 
 			
-			data[size] = ele ; 
+			
+			
+			
+			
 			rear++;
+			if (rear == data.length) {
+				rear = 0 ; 
+			}
+			data[rear] = ele ; 
 			size++ ;
 			
-		}
+		
 		
 	
 		
@@ -103,7 +114,17 @@ public class simple_queus_program {
 		int value = data[front];
 		// now increment the front 
 		front++ ; 
+		if (front == data.length) {
+			front = 0 ; 
+		}
+		
+		
 		size-- ; 
+		
+		if (size == 0 ) {
+			front = -1 ; 
+			rear = -1 ;
+		}
 		
 		return value ; 
 		
