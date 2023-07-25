@@ -75,6 +75,36 @@ public class queue {
 	private void doublesize() {
 		// TODO Auto-generated method stub
 		
+		// copy the address of the privous array 
+		int[]temp  = data ; 
+		
+		// creating the new value int the data 
+		data = new int [data.length*2];
+		
+		// now we are the copy element front to end of the length of the array 
+		
+		// creating the varaible for the find the value fill in the array 
+		int value = 0 ; 
+		
+		for (int i = front; i < temp.length; i++) {
+			 data[value++] = temp[i] ; 
+			 // value ++ given the flaxibilty to store the value 
+			 
+		}
+		
+		// again we are the copy the value form the starting index 
+		for (int i = 0; i < front -1 ; i++) {
+			data[value++] = temp[i] ; 
+		}
+		
+		
+		// now the front and real are the changed 
+		front = 0 ; 
+		rear = temp.length -1 ; 
+		
+		// now after the calling the incrising the value 
+		
+		
 	}
 	
 	// creating the function of the front for the return the value of the front 
