@@ -1,5 +1,7 @@
 package dyanmically_queu;
 
+import java.util.Iterator;
+
 public class queue {
 	
 	// fist we are the creating the member 
@@ -37,6 +39,102 @@ public class queue {
 	}
 	
 	// creating the function of the inque 
+	public void inque(int ele) {
+		
+		// fist we are the write the codition for full queu 
+		
+		if (data.length == size) {
+			
+			// creating the double function 
+			doublesize();
+		}
+		
+		// creating the condition for the frist element '
+	if (size == 0 ) {
+		front = 0 ; 
+	}
+	
+	
+	// creating the condition for the cirulary 
+	
+	
+	
+	
+	// now excution will noramal 
+	rear++ ;
+	
+	if (rear == data.length) {
+		rear = 0 ; 
+		
+	}
+	data[rear] = ele ; 
+	size++ ; 
+		
+		
+	}
+	private void doublesize() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	// creating the function of the front for the return the value of the front 
+	
+	public int front () throws NullSQueuException {
+		if (size == 0 ) {
+			// then now throw the exception
+			throw new NullSQueuException();
+		}
+		
+		// now the return the value of the front 
+		
+		return data[front] ; 
+		
+		
+		
+		
+		
+	}
+	
+	// now creating the function of the deque 
+	
+	public int deque() throws NullSQueuException {
+		
+		
+		// fist creating the exception if the size is the zero 
+		
+		if (size == 0 ) {
+			
+			// now throw the exception 
+			throw new  NullSQueuException() ; 
+		}
+		
+		// creating the temp variable 
+		int temp = data[front] ; 
+		// now decreasing the front 
+		
+		// if the front is in the starting 
+		front ++ ;
+		if (front == data.length) {
+			front = 0 ; 
+		}
+		
+		
+		// decrasing the size 
+		size -- ; 
+		// now one is the basic condition is that 
+		if (size == 0 ) {
+			front = -1 ; 
+			rear = -1 ; 
+		}
+		
+		
+		
+		
+		
+		// now return the function of the temp deta 
+		return temp ; 
+		
+	}
 	
 
 }
