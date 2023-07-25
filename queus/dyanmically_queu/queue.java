@@ -93,7 +93,7 @@ public class queue {
 		}
 		
 		// again we are the copy the value form the starting index 
-		for (int i = 0; i < front -1 ; i++) {
+		for (int i = 0; i < front ; i++) {
 			data[value++] = temp[i] ; 
 		}
 		
