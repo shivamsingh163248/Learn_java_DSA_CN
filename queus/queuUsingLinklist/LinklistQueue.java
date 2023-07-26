@@ -81,8 +81,31 @@ public class LinklistQueue <T>{ // using the generic
 	
 	// creating the front function 
 	
-	public node<T> front(){
-		return front ; 
+	public T front(){
+		return front.data ; 
+	}
+	
+	// creating the new function 
+	
+	public T deque() throws blnakQueu {
+		
+		// creating the deque function 
+		
+		if (size == 0 ) {
+			
+	      // return the exception 
+			throw new blnakQueu();
+		}
+		
+		// creating the  store in themp 
+		 T temp = front.data ; 
+		 // now front become changed
+		 front = front.next ; 
+		 // now retun the function 
+		 return temp ; 
+		
+		
+		
 	}
 	
 	
