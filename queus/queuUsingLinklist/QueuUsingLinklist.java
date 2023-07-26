@@ -39,7 +39,7 @@ public class QueuUsingLinklist {
 		
 		// now creating the printing function 
 		
-		// print(shivam.front());
+		print(shivam.getFront());
 		// now printing the size of the linklist 
 		System.out.println();
 		System.out.println(shivam.size);
@@ -49,6 +49,7 @@ public class QueuUsingLinklist {
 		// creaitng the deque for the testing 
 		System.out.println(shivam.deque());
 		System.out.println(shivam.front());
+		System.out.println(shivam.size);
 		
 
 	}

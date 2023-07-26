@@ -58,14 +58,17 @@ public class LinklistQueue <T>{ // using the generic
 		if (size == 0 ) {
 			front = currentnode ; 
 			rear = currentnode ; 
+		}else {
+			rear.next = currentnode ; 
+			rear = currentnode ; 
+			
 		}
 		
 		// chck print of the current node
 		
 		System.out.println(currentnode);
 		
-		rear.next = currentnode ; 
-		rear = currentnode ; 
+		
 		size++ ; 
 		
 		
@@ -102,11 +105,18 @@ public class LinklistQueue <T>{ // using the generic
 		 // now front become changed
 		 front = front.next ; 
 		 // now retun the function 
+		 size-- ; 
 		 return temp ; 
 		
 		
 		
 	}
+
+	public node<T> getFront() {
+		return front;
+	}
+
+
 	
 	
 	
