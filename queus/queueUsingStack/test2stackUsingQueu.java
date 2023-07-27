@@ -16,6 +16,12 @@ public class test2stackUsingQueu {
 		// check the printing of the dequeu element 
 		
 		System.out.println(shivam.dique());
+		
+		
+		int  s = 015 ; 
+//		++s ; 
+//		s++ ; 
+		System.out.println(s);
 
 	}
 

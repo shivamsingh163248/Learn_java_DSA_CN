@@ -3,6 +3,8 @@ package queuIncollection;
 import java.util.LinkedList;
 import java.util.Queue;
 
+
+
 public class queu {
 	
 	//importing the package 
@@ -14,6 +16,8 @@ public class queu {
 	// creating the main method \
 	public static void main(String[] args) {
 		Queue<Integer> queuenum = new LinkedList<>();
+		
+		// Queue<Integer> shivam = new 
 		
 		queuenum.add(23);
 		queuenum.add(34);
