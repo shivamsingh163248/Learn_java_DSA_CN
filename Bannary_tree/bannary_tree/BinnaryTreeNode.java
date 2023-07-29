@@ -8,7 +8,7 @@ public class BinnaryTreeNode <T>{  // fist we are the creating the generic
 	
 	T data ; 
 	// creating the next node refrencing deta  type that are storing the class type 
-	BinnaryTreeNode<T> LeftNde ; 
+	BinnaryTreeNode<T> LeftNode ; 
 	// creating the refrencing for the right node 
 	BinnaryTreeNode<T> RigtNode ; 
 	
