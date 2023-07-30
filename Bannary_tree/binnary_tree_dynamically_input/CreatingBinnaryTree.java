@@ -136,6 +136,11 @@ public class CreatingBinnaryTree {
 		// now calling the printng function 
 		BinaryTreePrint(root);
 		
+		// now taking the input and the print 
+		BinaryTreeNode<Integer>shivam = takeinputBinarytree() ; 
+		
+		// calling the print function 
+		BinaryTreePrint(shivam);
 	 
 		
 
