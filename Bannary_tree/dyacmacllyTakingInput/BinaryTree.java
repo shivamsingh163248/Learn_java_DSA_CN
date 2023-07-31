@@ -17,6 +17,13 @@ public class BinaryTree {
 		int rootDeta  = input.nextInt() ; 
 		// now creating the object of the node mean creating the parent node 
 		
+		// now writing the base cindition 
+		if (rootDeta == -1 ) {
+			return null ; 
+		}
+		
+		
+		
 		BinnaryTreeNode<Integer>root = new BinnaryTreeNode<Integer>(rootDeta) ; 
 		
 		// now again creting the two refrencre 
@@ -39,7 +46,37 @@ public class BinaryTree {
 		
 	}
 	
+	// now creating the fucntion of the printing 
 	
+	public static void printBinaryTree (BinnaryTreeNode<Integer>root) {
+		
+		// fist wea are crating the base condtion 
+		
+		if (root == null ) {
+			return  ; 
+		}
+		
+		
+		// after the creating the base condtion 
+		// we are printng the root deta 
+		System.out.print(root.data +" : ");
+		
+		// now creating the some condition for the 
+		if (root.leftNode != null ) {
+		System.out.print(" L : "+ root.leftNode.data +" , ");	
+		}
+		// again creating the second condition for the 
+		if (root.RightNode != null ) {
+			System.out.print(" R "+ root.RightNode.data+" , ");
+		}
+		
+		
+		// NOW calling the function  
+		printBinaryTree(root.leftNode);
+		// again calling the funcion for the right node 
+		printBinaryTree(root.RightNode);
+		
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
