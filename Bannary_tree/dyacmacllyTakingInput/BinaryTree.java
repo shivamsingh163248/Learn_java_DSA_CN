@@ -70,6 +70,8 @@ public class BinaryTree {
 			System.out.print(" R "+ root.RightNode.data+" , ");
 		}
 		
+		System.out.println();
+		
 		
 		// NOW calling the function  
 		printBinaryTree(root.leftNode);
@@ -80,6 +82,10 @@ public class BinaryTree {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		BinnaryTreeNode<Integer>shivam = BinaryTreeInput() ; 
+		// calling FOR THE PRINTG 
+		printBinaryTree(shivam);
 
 	}
 
