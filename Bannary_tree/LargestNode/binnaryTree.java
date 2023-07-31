@@ -31,8 +31,36 @@ public class binnaryTree {
 	
 	public static int sumNode(BinnaryTreeNode<Integer>root) {
 		
+		// creating the base condtion due to using the recosrion for the solving 
+		if (root== null) {
+			return 0 ;
+		}
+		
+		// now calling the functiion 
+		int left = sumNode(root.leftNode) ; 
+		int right = sumNode(root.RightNode) ; 
+		
+		// now creating the return function 
+		return left + right + root.data ; 
 		
 		
+		
+		
+	}
+	
+	// again now creating the function of the larget number 
+	
+	public static int largestNode(BinnaryTreeNode<Integer>root) {
+		
+		// creating the base condition 
+		if (root == null ) {
+			return 0 ; 
+		}
+		
+		// mow calling the function 
+		
+		int leftNode = largestNode(root.leftNode);
+		int rightNode = 
 		
 		
 	}
