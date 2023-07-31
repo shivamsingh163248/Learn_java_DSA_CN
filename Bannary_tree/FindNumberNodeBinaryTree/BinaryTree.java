@@ -142,5 +142,25 @@ public class BinaryTree {
 	
 	// now we are the creating the function 
 	
+	
+	public int countnoded(BinnaryTreeNode<Integer>root ) {
+		
+		// creating the base condtion 
+		if (root == null) {
+			return 0 ; 
+		}
+		
+		// now calling the fucntion and return the value 
+		int leftnode = countnoded(root.leftNode) ; 
+		// creating ofr the right node 
+		int rightnode = countnoded(root.RightNode) ; 
+		
+		// creating the return function 
+		return 1+leftnode+rightnode ; 
+		
+		
+	}
+	
+	
 
 }
