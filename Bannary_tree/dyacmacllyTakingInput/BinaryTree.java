@@ -142,9 +142,14 @@ public class BinaryTree {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		BinnaryTreeNode<Integer>shivam = BinaryTreeInput() ; 
-		// calling FOR THE PRINTG 
-		printBinaryTree(shivam);
+//		BinnaryTreeNode<Integer>shivam = BinaryTreeInput() ; 
+//		// calling FOR THE PRINTG 
+//		printBinaryTree(shivam);
+		
+		BinnaryTreeNode<Integer>itisha = takeinputBinaryTree(true, 0, false) ; 
+		
+		// creating the printing function 
+		printBinaryTree(itisha);
 
 	}
 
