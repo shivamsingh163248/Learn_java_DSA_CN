@@ -80,6 +80,65 @@ public class BinaryTree {
 		
 	}
 
+	
+	// now creating the new function for the taking taking input isly 
+	
+	public static BinnaryTreeNode<Integer> takeinputBinaryTree( boolean isRoot , int parent , boolean isLeft){
+		
+		// we are the using the two boolean function 
+		
+		if (isRoot) {
+			// now printing the simple user display 
+			System.out.println("Ener the root : ");
+		}else if (isLeft) {
+			System.out.println("Enter left node "+ parent);
+		}else {
+			System.out.println("Enter Right node "+ parent);
+		}
+		
+		
+		
+		// now creating the scanner function 
+		
+		Scanner input = new Scanner(System.in) ; 
+		// now taking user for the input 
+		int rootdeta = input.nextInt();
+		
+		// now creating the condition 
+		if (rootdeta == -1) {
+			return null ; 
+		}
+		
+		// now creating the object 
+		
+		BinnaryTreeNode<Integer>root = new BinnaryTreeNode<Integer>(rootdeta) ; 
+		
+		// now calling the function  nad creating the refrence 
+		
+		BinnaryTreeNode<Integer>LeftNode = takeinputBinaryTree(false, rootdeta, true) ;
+		// now creating the refrence for the right node 
+		BinnaryTreeNode<Integer>RightNode = takeinputBinaryTree(false, rootdeta, false);
+		
+		// now creating the the linking process 
+		
+		root.leftNode = LeftNode ; 
+		root.RightNode = RightNode ; 
+		
+		
+		// now return the function 
+		return root ; 
+		
+	
+		
+	
+		
+		
+		
+	}
+	
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
