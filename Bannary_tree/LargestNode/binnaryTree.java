@@ -1,5 +1,6 @@
 package LargestNode;
 
+import FindNumberNodeBinaryTree.BinaryTree;
 import FindNumberNodeBinaryTree.BinnaryTreeNode;
 
 public class binnaryTree {
@@ -60,7 +61,11 @@ public class binnaryTree {
 		// mow calling the function 
 		
 		int leftNode = largestNode(root.leftNode);
-		int rightNode = 
+		int rightNode = largestNode(root.RightNode) ; 
+		
+		
+		// now writing the return statement 
+		return Math.max(root.data, Math.max(leftNode, rightNode)) ; 
 		
 		
 	}
@@ -72,6 +77,28 @@ public class binnaryTree {
 	
 	
 	public static void main(String[] args) {
+		
+		
+		// now creating object 
+		
+		BinaryTree itisha = new BinaryTree() ; 
+		
+		// now creating a refeance for the storing node 
+		BinnaryTreeNode<Integer>shivam = itisha.takeinputBinaryTree(true, 0, false);
+		
+		System.out.println("---------------------------");
+		// creating the print function 
+		itisha.printBinaryTree(shivam);
+		
+		System.out.println(" number of the node -------------------------");
+
+		numberNode(shivam) ; 
+		System.out.println("sum of the node");
+		sumNode(shivam) ; 
+		System.out.println("largest node ");
+		largestNode(shivam) ; 
+		
+		
 		
 	}
 
