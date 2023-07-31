@@ -14,10 +14,23 @@ public class testBinaryTree {
 		
 		
 		BinnaryTreeNode<Integer>shivam = itisha.BinaryTreeInput();
+		System.out.println(itisha);
+		BinnaryTreeNode<Integer>LOVEu = itisha.BinaryTreeInput();
+		System.out.println(itisha);
 		
 		// now creating the print function 
 		
 		itisha.printBinaryTree(shivam);
+		// now using the print function 
+		itisha.printBinaryTree(LOVEu);
+		System.out.println("----------------------------");
+		itisha.printBinaryTree(shivam);
+		
+		
+		// now checking the address 
+		
+		System.out.println(itisha.BinaryTreeInput());
+		System.out.println(itisha.BinaryTreeInput());
 
 	}
 
