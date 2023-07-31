@@ -93,10 +93,14 @@ public class binnaryTree {
 		System.out.println(" number of the node -------------------------");
 
 		numberNode(shivam) ; 
+		System.out.println(numberNode(shivam));
 		System.out.println("sum of the node");
-		sumNode(shivam) ; 
+		sumNode(shivam) ;
+		System.out.println(sumNode(shivam) );
 		System.out.println("largest node ");
+		
 		largestNode(shivam) ; 
+		System.out.println(largestNode(shivam) );
 		
 		
 		
