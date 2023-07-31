@@ -12,6 +12,27 @@ public class  student extends school {
 		this.student_name = studnet_name;
 		this.student_rollno = student_rollno ; 
 		System.out.println(this.student_name+"   "+this.student_rollno);
+		
+	//	super.itisha = 20 ; 
+		//calling the functio itisha 
+		
+		
+		
+		
+		
+		
 	}
 
+@Override
+public void name(int a) {
+	// TODO Auto-generated method stub
+	super.name(a);
 }
+
+	
+
+	
+
+}
+
+
