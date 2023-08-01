@@ -97,7 +97,28 @@ public class binnaryTree {
 		}
 	}
 	
-	
+	 // creating the second fucntion 
+	public static int NumberLeafNode(BinnaryTreeNode<Integer>root) {
+		
+		// now creating the base condtion 
+		if (root == null ) {
+			return 0 ; 
+		}
+		
+		// now creating the condtion 
+		
+		if (root.leftNode == null && root.RightNode == null) {
+			return 1 ; 
+		}
+		
+		// now calling the both 
+		int left = numberNode(root.leftNode) ; 
+		int right = numberNode(root.RightNode) ; 
+		
+		
+		// now return the function 
+		return left+right ; 
+	}
 	
 	
 	
@@ -130,6 +151,14 @@ public class binnaryTree {
 		
 		largestNode(shivam) ; 
 		System.out.println(largestNode(shivam) );
+		
+		
+		// calling the two function for the finding the number 
+		System.out.println("hight of the binnary treee");
+		
+		System.out.println(hight(shivam));
+	 System.out.println("number of the leaf node");
+	 System.out.println(numberNode(shivam));
 		
 		
 		
