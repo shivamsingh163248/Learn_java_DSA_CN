@@ -112,12 +112,16 @@ public class binnaryTree {
 		}
 		
 		// now calling the both 
-		int left = numberNode(root.leftNode) ; 
-		int right = numberNode(root.RightNode) ; 
+		
 		
 		
 		// now return the function 
+	//	return numberNode(root.leftNode)+ numberNode(root.RightNode) ; 
+		int left = NumberLeafNode(root.leftNode) ; 
+		int right = NumberLeafNode(root.RightNode) ; 
 		return left+right ; 
+		
+		
 	}
 	
 	
@@ -158,7 +162,7 @@ public class binnaryTree {
 		
 		System.out.println(hight(shivam));
 	 System.out.println("number of the leaf node");
-	 System.out.println(numberNode(shivam));
+	 System.out.println(NumberLeafNode(shivam));
 		
 		
 		
