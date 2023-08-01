@@ -70,6 +70,35 @@ public class binnaryTree {
 		
 	}
 	
+	// now creating the two function 
+	// hight of the binnary tree 
+	// number of the leif node 
+	
+	// creating the hight 
+	public static int hight(BinnaryTreeNode<Integer>root) {
+		
+		// frist creating the base condtion 
+		if (root == null ) {
+			return 0 ; 
+		}
+		
+		// mow calling the both node right check which is the bigger 
+		
+		int LeftNode = hight(root.leftNode) ; 
+		// now calling the right node 
+		int RightNode = hight(root.RightNode) ; 
+		
+		// now chek which one is the big 
+		
+		if (LeftNode > RightNode) {
+			return LeftNode+1 ; 
+		}else {
+			return RightNode+1 ; 
+		}
+	}
+	
+	
+	
 	
 	
 	
