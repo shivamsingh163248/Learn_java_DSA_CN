@@ -2,6 +2,7 @@ package BinaryTree;
 
 import java.util.Scanner;
 
+import bannary_tree.BinnaryTreeNode;
 import stack_using_linklist.nullPointer;
 
 public class BinaryTreeFunction {
@@ -84,5 +85,32 @@ public class BinaryTreeFunction {
 		PrintBinaryTree(root.RightNode);
 		
 	}
+	
+	
+	// now creating the function of the size of the node 
+	
+	public int deftNode(BinaryTreeNode<Integer>root) {
+		// creating the base condtion 
+		if (root == null) {
+			return 0 ; 
+		}
+		
+		int left = deftNode(root.LeftNode) ; 
+		int right = deftNode(root.RightNode) ; 
+		
+		// now size 
+		if (left > right) {
+		   return left +1  ; 	
+		}else {
+			return right+1 ; 
+		}
+		
+		
+		
+	}
+	
+	
+	// again creatig the total number of the node 
+	
 
 }
