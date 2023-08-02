@@ -124,6 +124,28 @@ public class binnaryTree {
 		
 	}
 	
+	// creating the function for the finding the deft of the tree 
+	
+	public static void defthNode(BinnaryTreeNode<Integer>root , int k ) {
+		
+		// now creating the base condition 
+		if (root == null ) {
+			return ; 
+		}
+		
+		
+		// now again creating the function 
+		if (k == 0 ) {
+			System.out.println(root.data);
+			return  ; 
+		}
+		
+		// now calling the function 
+		defthNode(root.leftNode, k-1);
+		defthNode(root.RightNode, k-1);
+		
+	}
+	
 	
 	
 	
