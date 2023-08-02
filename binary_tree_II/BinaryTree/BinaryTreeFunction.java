@@ -112,5 +112,46 @@ public class BinaryTreeFunction {
 	
 	// again creatig the total number of the node 
 	
+	public int totalNode(BinaryTreeNode<Integer>root) {
+		// creating the base condition 
+		if (root == null) {
+			return 0 ; 
+		}
+		
+		
+		// now calling the both of the node 
+		int leftnode = totalNode(root.LeftNode) ; 
+		int rightnode = totalNode(root.RightNode) ; 
+		
+		return 1 + leftnode+rightnode ; 
+		
+	}
+	
+	// creating the function printing the leaf node 
+	
+	public int  totalLeafNode(BinaryTreeNode<Integer>root) {
+		
+		// creating the base condition 
+		if (root == null ) {
+			return 0 ; 
+		}
+		
+		// creating the condtition 
+		if (root.LeftNode == null && root.RightNode == null) {
+			return 1 ; 
+		}
+		
+		// now calling the function 
+		int left = totalLeafNode(root.LeftNode) ; 
+		int right = totalLeafNode(root.RightNode) ; 
+		
+		// now return the fucntion 
+		return left+right ; 
+		
+	}
+	
+	
+	// 
+	
 
 }
