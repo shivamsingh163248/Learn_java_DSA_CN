@@ -2,8 +2,10 @@ package BinaryTree;
 
 import java.util.Scanner;
 
-import bannary_tree.BinnaryTreeNode;
-import stack_using_linklist.nullPointer;
+
+
+
+
 
 public class BinaryTreeFunction {
 	
@@ -151,7 +153,31 @@ public class BinaryTreeFunction {
 	}
 	
 	
-	// 
+	// creating thr function of the at deft k node 
+	
+	public void printATk(BinaryTreeNode<Integer>root , int k) {
+		
+		
+		// creating the base condition 
+		if (root == null) {
+			return  ; 
+		}
+		
+		if (k == 0 ) {
+			System.out.println(root.data);
+			return  ; 
+		}
+		
+		
+		// calling the root left and right 
+		printATk(root.LeftNode, k-1);
+		printATk(root.RightNode, k-1);
+		
+		
+		
+			}
+	
+	
 	
 
 }
