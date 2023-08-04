@@ -29,8 +29,49 @@ public class balanceTree {
 	
 	// creating the function og thebalanceing 
 
+	
+	public static boolean isBalncedTree(BinaryTreeNode<Integer>root ) {
+		
+		// fist creating the base condition 
+		if (root == null ) {
+			return true ; 
+		}
+		
+		// now calling the left root hight and right hight 
+		int lefthight = HightBinaryTree(root.LeftNode) ; 
+		int RightHight = HightBinaryTree(root.RightNode) ; 
+		
+		if (Math.abs(lefthight-RightHight)> 1) { // math.asb use of the creating the absulting value 
+			// ex if after - you value become -1  then it is creating the 1 
+			return false ; 
+		}
+		
+		
+		// now 
+		
+		// now calling the both 
+		boolean isleft = isBalncedTree(root.LeftNode) ; 
+		boolean isRight = isBalncedTree(root.LeftNode) ; 
+		
+		// now  
+		return  isleft && isRight ; 
+	}
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
+	 // creating the refrence of the root node \
+		
+		// creating the binnary tree function object 
+		BinaryTreeFunction shivam = new BinaryTreeFunction() ; 
+		
+		BinaryTreeNode<Integer>root = shivam.TakeInput(true, 0, false) ; 
+		
+		// check balance or not 
+		System.out.println(isBalncedTree(root));
+		
 
 	}
 
