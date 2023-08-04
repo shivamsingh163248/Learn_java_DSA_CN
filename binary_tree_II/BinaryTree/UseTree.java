@@ -26,6 +26,13 @@ public class UseTree {
 		Scanner  input = new Scanner(System.in) ; 
 		int s = input.nextInt() ;
 		shivam.printATk(rootnode, s);
+		
+		
+		// creating the another refeance 
+		BinaryTreeNode<Integer>removeaLeafnode = shivam.RemoveLefeNode(rootnode);
+		// now printg the node 
+		System.out.println("remove leaf node ");
+		shivam.PrintBinaryTree(removeaLeafnode);
 	
 
 	}
