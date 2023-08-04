@@ -179,5 +179,33 @@ public class BinaryTreeFunction {
 	
 	
 	
+	// creating the function remove the leaf node  
+	
+	public BinaryTreeNode<Integer> RemoveLefeNode (BinaryTreeNode<Integer>root){
+		
+		// creating the base condition 
+		if (root == null) {
+			return null ; 
+		}
+		// now creating the condtion for the left and right 
+		if (root.LeftNode == null && root.RightNode == null) {
+			// now return the null 
+			return null ; 
+		}
+		
+		// now calling the both left and right root and left node '
+		root.LeftNode = RemoveLefeNode(root.LeftNode) ; 
+		root.RightNode = RemoveLefeNode(root.RightNode) ; 
+		
+		
+		// now return the node 
+		return root ; 
+		
+		
+		
+	}
+	
+	
+	
 
 }
