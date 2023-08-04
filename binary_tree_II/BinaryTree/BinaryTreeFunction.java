@@ -1,5 +1,7 @@
 package BinaryTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 
@@ -202,6 +204,27 @@ public class BinaryTreeFunction {
 		return root ; 
 		
 		
+		
+	}
+	
+	// now creating the function lavel wise inputtree 
+	
+	public static BinaryTreeNode<Integer> InputLavelWise(){
+		
+		Scanner input = new Scanner(System.in) ; 
+		// for the user display 
+		System.out.println("enter the root");
+		int rootdata = input.nextInt();
+		
+		// creating the condtion 
+		if (rootdata == -1 ) {
+			return null ; 
+		}
+		
+		// now crreating the refrence of the node of the tree 
+		BinaryTreeNode<Integer>root = new BinaryTreeNode<Integer>(rootdata) ; 
+		// now creating the queue using the collection 
+		Queue<BinaryTreeNode<Integer>>pendigChilderen = new  LinkedList<BinaryTreeNode<Integer>>();
 		
 	}
 	
