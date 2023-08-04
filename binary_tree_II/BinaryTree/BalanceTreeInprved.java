@@ -49,6 +49,17 @@ public class BalanceTreeInprved {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		// creating the obejct of the function of the binary tree 
+		BinaryTreeFunction shivam = new BinaryTreeFunction();
+		
+		// creating the refrence of the root node 
+		BinaryTreeNode<Integer>root = shivam.TakeInput(true, 0, false);
+		
+		// calling the function of the 
+		System.out.println(isBalncedBatter(root).isBalanced);
+		// creaing the refrence of the 
+	BalancedTreeReturn itisha  = isBalncedBatter(root) ; 
+	System.out.println(itisha.isBalanced);
 
 	}
 
