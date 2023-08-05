@@ -1,8 +1,11 @@
-package dyacmacllyTakingInput;
 
+
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 import BinaryTree.BalancedTreeReturn;
+import BinaryTree.BinaryTreeNode;
 
 public class BinaryTree {
 	
@@ -150,8 +153,40 @@ public class BinaryTree {
 		int rootdata  = input.nextInt();		
 		// now creating the condtion 
 		if (rootdata == -1) {
-			// creating the 
+			// creating the display 
+			// creating the object 
+			return null ; 
+			// now creating the queue 
+			
 		}
+		BinaryTreeNode<Integer>root = new BinaryTreeNode<Integer>(rootdata) ; 
+		Queue<BinaryTreeNode<Integer>> pendingchildnode =  new LinkedList<BinaryTreeNode<Integer>>();
+		
+		// now add data 
+	      pendingchildnode.add(root) ; 
+		
+		// now creating the condtion  name = new ();
+		// now creating loop 
+		while (!pendingchildnode.isEmpty()) {
+			// creating the refrence 
+			BinaryTreeNode< Integer > front  = pendingchildnode.poll() ; 
+			// now creating for the left node 
+			System.out.println("enter the left node "+root.data);
+			int leftnodedata = input.nextInt();
+			// now creaing the condtion 
+			
+			if (leftnode != -1) {
+				// now creating the new node for the store left 
+				BinaryTreeNode<Integer>leftnode = new BinaryTreeNode<Integer>(leftnodedata);
+				// now creating the linking 
+				front.LeftNode = leftnode ; 
+				// now add in the pending child 
+				pendingchildnode.add(leftnode) ; 
+			}
+			
+			// now creating the condtion for the right node 
+		}
+		
 		
 		
 	}
