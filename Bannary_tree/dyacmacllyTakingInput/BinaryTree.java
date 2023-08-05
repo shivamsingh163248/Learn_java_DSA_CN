@@ -2,6 +2,8 @@ package dyacmacllyTakingInput;
 
 import java.util.Scanner;
 
+import BinaryTree.BalancedTreeReturn;
+
 public class BinaryTree {
 	
 	// lets creating the input function 
@@ -135,6 +137,25 @@ public class BinaryTree {
 		
 		
 	}
+	
+	// NOW CREATING TEH FUCNTION OF THE INPUT LEAVEL WISE 
+	//
+	
+	public static BinnaryTreeNode<Integer>inputLavelwise(){
+		
+		// creating the scanner function 
+		Scanner input = new Scanner(System.in) ; 
+		// display for the user 
+		System.out.println("enter the root ");
+		int rootdata  = input.nextInt();		
+		// now creating the condtion 
+		if (rootdata == -1) {
+			// creating the 
+		}
+		
+		
+	}
+	
 	
 	
 	
