@@ -1,3 +1,4 @@
+package dyacmacllyTakingInput;
 
 
 import java.util.LinkedList;
@@ -164,6 +165,7 @@ public class BinaryTree {
 		
 		// now add data 
 	      pendingchildnode.add(root) ; 
+
 		
 		// now creating the condtion  name = new ();
 		// now creating loop 

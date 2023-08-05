@@ -271,6 +271,63 @@ public class BinaryTreeFunction {
 	}
 	
 	
+	// creating the function for the lavel wise uup
+	
+	// creating the function for the lavel wise printing 
+	public static void printLevelWise(BinaryTreeNode<Integer> root) {
+		//Your code goes here
+		// creating the base condition 
+		if (root == null) {
+			return ; 
+		}
+
+     // creating the while loop 
+	 // creating the queue 
+	 Queue<BinaryTreeNode<Integer>> pendingnode = new LinkedList<BinaryTreeNode<Integer>>();
+	 // pulll 
+	 pendingnode.add(root) ; 
+
+	 // now creating the while loop 
+	 while (!pendingnode.isEmpty()) {
+
+		 // creating the frefence 
+		 BinaryTreeNode<Integer> front = pendingnode.poll() ; 
+		 
+		 System.out.print(front.data+":");
+		 
+
+		 if (front.LeftNode != null ) {
+
+			 System.out.print("L:"+front.LeftNode .data+"," );
+			 // adding 
+			 pendingnode.add(front.LeftNode) ; 
+			 
+		 }else{
+			  System.out.print("L:-1,");
+		 }
+
+
+       	 if (front.RightNode != null ) {
+
+			 System.out.print("R:"+front.RightNode.data );
+			 // adding 
+			 pendingnode.add(front.RightNode) ; 
+			 
+		 }else{
+			  System.out.print("R:-1");
+		 }
+		 System.out.println();
+
+
+
+
+
+	 }
+
+
+	}
+	
+	
 	
 
 }
