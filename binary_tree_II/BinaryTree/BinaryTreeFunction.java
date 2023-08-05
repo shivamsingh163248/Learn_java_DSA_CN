@@ -225,6 +225,48 @@ public class BinaryTreeFunction {
 		BinaryTreeNode<Integer>root = new BinaryTreeNode<Integer>(rootdata) ; 
 		// now creating the queue using the collection 
 		Queue<BinaryTreeNode<Integer>>pendigChilderen = new  LinkedList<BinaryTreeNode<Integer>>();
+		// now adding the object of the refrence of the node 
+		pendigChilderen.add(root);
+		
+		// now creating the while loop for again again time to take input 
+		while (!pendigChilderen.isEmpty()) {
+			// taeking the input for theleft of the linklist 
+			// creating the object for the front 
+			BinaryTreeNode<Integer>front = pendigChilderen.poll() ; 
+			// now user creating the for the display 
+			System.out.println("enter the left node "+front.data);
+			// taking the input 
+			int leftnodedata = input.nextInt() ; 
+			
+			// checking the condition input is the -1 or not 
+			if (leftnodedata != -1) {
+				// now creating the left node for the storing the deta of the laft node 
+				BinaryTreeNode<Integer>leftnode = new BinaryTreeNode<Integer>(leftnodedata) ; 
+				// now creating the linking 
+				front.LeftNode = leftnode ; 
+				// now add the node refrence int the queu 
+				pendigChilderen.add(leftnode);
+			}
+			
+			// now right condition for the same for the right 
+			// creating the pritn function for the user display 
+			System.out.println("enter the right node data "+front.data);
+			// take input from the user 
+			int rightdata = input.nextInt() ; 
+			
+			// now creating the if condtion if user enter the -1 the not store any value 
+			if (rightdata != -1 ) {
+				// now creating the object for the right node 
+				BinaryTreeNode<Integer>RIghtnode = new BinaryTreeNode<Integer>(rightdata) ; 
+				// now linkin process 
+				front.RightNode = RIghtnode ; 
+				// now this node add in the queue 
+				pendigChilderen.add(RIghtnode) ; 
+			}
+			
+		}
+		
+		return root ; 
 		
 	}
 	
