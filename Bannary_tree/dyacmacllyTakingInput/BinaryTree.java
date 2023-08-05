@@ -144,7 +144,7 @@ public class BinaryTree {
 	// NOW CREATING TEH FUCNTION OF THE INPUT LEAVEL WISE 
 	//
 	
-	public static BinnaryTreeNode<Integer>inputLavelwise(){
+	public static BinaryTreeNode<Integer>inputLavelwise(){
 		
 		// creating the scanner function 
 		Scanner input = new Scanner(System.in) ; 
@@ -175,7 +175,7 @@ public class BinaryTree {
 			int leftnodedata = input.nextInt();
 			// now creaing the condtion 
 			
-			if (leftnode != -1) {
+			if (leftnodedata != -1) {
 				// now creating the new node for the store left 
 				BinaryTreeNode<Integer>leftnode = new BinaryTreeNode<Integer>(leftnodedata);
 				// now creating the linking 
@@ -185,9 +185,19 @@ public class BinaryTree {
 			}
 			
 			// now creating the condtion for the right node 
+			
+			System.out.println("enter the right node "+front.data);
+			int rightnodedata = input.nextInt() ; 
+			// now creating the condtion 
+			if (rightnodedata != -1) {
+				// now creating the new node for the right node 
+				BinaryTreeNode<Integer>rightnode = new BinaryTreeNode<Integer>(rightnodedata) ; 
+				front.RightNode = rightnode ; 
+				pendingchildnode.add(rightnode) ; 
+			}
 		}
 		
-		
+		return root ;
 		
 	}
 	
