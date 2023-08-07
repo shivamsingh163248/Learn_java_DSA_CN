@@ -3,6 +3,8 @@ package find_maximun_minum_using_pair;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import BinaryTree.BinaryTreeFunction;
+
 public class FindMaxMin {
 	
 	// creating the class of the pair 
@@ -119,6 +121,18 @@ public class FindMaxMin {
 	
 	
 	public static void main(String[] args) {
+		
+		// creating the function obejct 
+		
+		BinaryTreeFunction binaryfunction = new BinaryTreeFunction() ; 
+		
+		
+		// now creating the refrence 
+		BinaryTreeNode<Integer>shivam = binaryfunction.TakeInput(true, 0, false) ; 
+		
+		
+		// check for the printing 
+		LavelWisePrinting(shivam);
 		
 	}
 
