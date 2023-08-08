@@ -1,6 +1,6 @@
 package java_oops;
 
-    class student {
+   public  class student {
 
 	// creating the variable of the number 
 	private int roll_number ; 
