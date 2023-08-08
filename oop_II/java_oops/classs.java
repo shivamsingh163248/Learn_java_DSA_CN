@@ -118,10 +118,10 @@ public class classs extends  student {
 // if any method override and you creating the same singaneture method then its given the error 
 	
 	
-//	public void print_student() {
+//	public static void print_student() {
 //		System.out.println("this is the my mae is shivam singh ");
 //	}
-	
+//	
 	
 	
 	
