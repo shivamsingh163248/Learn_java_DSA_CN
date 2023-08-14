@@ -26,6 +26,7 @@ public class classs extends  student {
 	
 // creating constructor for 
 	
+	
 
 	
 	
@@ -106,6 +107,22 @@ public class classs extends  student {
 	// now creating the father function 
 	
 	//-------------------------------------------------------------------
+	
+	
+	
+	// now creating the function 
+	
+	
+	// experiment *********************************************************************
+	
+// if any method override and you creating the same singaneture method then its given the error 
+	
+	
+//	public static void print_student() {
+//		System.out.println("this is the my mae is shivam singh ");
+//	}
+//	
+	
 	
 	
 	public String getFather_name() {

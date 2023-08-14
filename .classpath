@@ -30,5 +30,6 @@
 	<classpathentry kind="src" path="stack"/>
 	<classpathentry kind="src" path="queus"/>
 	<classpathentry kind="src" path="Bannary_tree"/>
+	<classpathentry kind="src" path="binary_tree_II"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

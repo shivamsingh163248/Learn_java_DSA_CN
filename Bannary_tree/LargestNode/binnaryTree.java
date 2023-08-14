@@ -70,6 +70,82 @@ public class binnaryTree {
 		
 	}
 	
+	// now creating the two function 
+	// hight of the binnary tree 
+	// number of the leif node 
+	
+	// creating the hight 
+	public static int hight(BinnaryTreeNode<Integer>root) {
+		
+		// frist creating the base condtion 
+		if (root == null ) {
+			return 0 ; 
+		}
+		
+		// mow calling the both node right check which is the bigger 
+		
+		int LeftNode = hight(root.leftNode) ; 
+		// now calling the right node 
+		int RightNode = hight(root.RightNode) ; 
+		
+		// now chek which one is the big 
+		
+		if (LeftNode > RightNode) {
+			return LeftNode+1 ; 
+		}else {
+			return RightNode+1 ; 
+		}
+	}
+	
+	 // creating the second fucntion 
+	public static int NumberLeafNode(BinnaryTreeNode<Integer>root) {
+		
+		// now creating the base condtion 
+		if (root == null ) {
+			return 0 ; 
+		}
+		
+		// now creating the condtion 
+		
+		if (root.leftNode == null && root.RightNode == null) {
+			return 1 ; 
+		}
+		
+		// now calling the both 
+		
+		
+		
+		// now return the function 
+	//	return numberNode(root.leftNode)+ numberNode(root.RightNode) ; 
+		int left = NumberLeafNode(root.leftNode) ; 
+		int right = NumberLeafNode(root.RightNode) ; 
+		return left+right ; 
+		
+		
+	}
+	
+	// creating the function for the finding the deft of the tree 
+	
+	public static void defthNode(BinnaryTreeNode<Integer>root , int k ) {
+		
+		// now creating the base condition 
+		if (root == null ) {
+			return ; 
+		}
+		
+		
+		// now again creating the function 
+		if (k == 0 ) {
+			System.out.println(root.data);
+			return  ; 
+		}
+		
+		// now calling the function 
+		defthNode(root.leftNode, k-1);
+		defthNode(root.RightNode, k-1);
+		
+	}
+	
 	
 	
 	
@@ -101,6 +177,14 @@ public class binnaryTree {
 		
 		largestNode(shivam) ; 
 		System.out.println(largestNode(shivam) );
+		
+		
+		// calling the two function for the finding the number 
+		System.out.println("hight of the binnary treee");
+		
+		System.out.println(hight(shivam));
+	 System.out.println("number of the leaf node");
+	 System.out.println(NumberLeafNode(shivam));
 		
 		
 		
