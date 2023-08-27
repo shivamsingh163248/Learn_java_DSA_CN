@@ -111,6 +111,21 @@ public class fuctionbinarytree {
 	
 	
 	// again creating the next function that is the total umber of the node
-	
+	public int total_node (BinnarySearchTreeNode<Integer>root_node) {
+		
+		// check for the frist node if the blank then print return o 
+		if (root_node == null) {
+			return 0 ; 
+		}
+		
+		// calling the function for the left and right 
+		
+		int left = total_node(root_node.leftnode) ; 
+		int right = total_node(root_node.rightnode) ; 
+		
+		// now creating the return function 
+		return left+right+1 ; 
+		
+	}
 
 }
