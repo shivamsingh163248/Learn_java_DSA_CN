@@ -76,7 +76,7 @@ public class fuctionbinarytree {
 			System.out.println(" R : " +root.rightnode.data);
 		}
 		
-		System.out.print();
+		System.out.println();
 		
 		
 		// AGAIN CALLING THE FUNCTION 
@@ -84,5 +84,33 @@ public class fuctionbinarytree {
 		Bst_pritnt(root.rightnode);
 		
 	}
+	
+	// creating the function of the deft of the node 
+	
+	public int defth_of_tree(BinnarySearchTreeNode<Integer>rootnode) {
+		
+		// now writing the base function 
+		if (rootnode == null) {
+			return 0 ; 
+		}
+			// calling the left and right node 
+			int left = defth_of_tree(rootnode.leftnode);
+			int right = defth_of_tree(rootnode.rightnode) ; 
+			
+			// now check the condtion 
+			if (left > right) {
+				return left+1 ; 
+			}else {
+				return right+1 ; 
+			}
+			
+			
+			
+		
+	}
+	
+	
+	// again creating the next function that is the total umber of the node
+	
 
 }
