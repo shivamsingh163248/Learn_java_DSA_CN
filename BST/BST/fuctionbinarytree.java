@@ -127,5 +127,36 @@ public class fuctionbinarytree {
 		return left+right+1 ; 
 		
 	}
+	
+	// creating the function total leaf node 
+	
+	// creating the function for the counting the total node  
+	
+	public int number_leafnode (BinnarySearchTreeNode<Integer>root_node) {
+		 
+		// now creating the base condition 
+		
+		
+		if (root_node == null) {
+			return 0 ; 
+		}
+		
+		// creating the condition for the left condition and the right condition are the null then 
+		// then we are the calling the left node 
+		if (root_node.leftnode == null && root_node.rightnode == null) {
+			return 1 ; 
+		}
+		
+		// now calling for the left and right for the node 
+		int left = number_leafnode(root_node.leftnode) ; 
+		int right = number_leafnode(root_node.rightnode) ; 
+		
+		// now using the return function 
+		return left+right ; 
+		
+	}
+	
+	
+	
 
 }
