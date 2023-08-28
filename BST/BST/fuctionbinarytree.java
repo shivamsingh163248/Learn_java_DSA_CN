@@ -111,6 +111,76 @@ public class fuctionbinarytree {
 	
 	
 	// again creating the next function that is the total umber of the node
+	public int total_node (BinnarySearchTreeNode<Integer>root_node) {
+		
+		// check for the frist node if the blank then print return o 
+		if (root_node == null) {
+			return 0 ; 
+		}
+		
+		// calling the function for the left and right 
+		
+		int left = total_node(root_node.leftnode) ; 
+		int right = total_node(root_node.rightnode) ; 
+		
+		// now creating the return function 
+		return left+right+1 ; 
+		
+	}
+	
+	// creating the function total leaf node 
+	
+	// creating the function for the counting the total node  
+	
+	public int number_leafnode (BinnarySearchTreeNode<Integer>root_node) {
+		 
+		// now creating the base condition 
+		
+		
+		if (root_node == null) {
+			return 0 ; 
+		}
+		
+		// creating the condition for the left condition and the right condition are the null then 
+		// then we are the calling the left node 
+		if (root_node.leftnode == null && root_node.rightnode == null) {
+			return 1 ; 
+		}
+		
+		// now calling for the left and right for the node 
+		int left = number_leafnode(root_node.leftnode) ; 
+		int right = number_leafnode(root_node.rightnode) ; 
+		
+		// now using the return function 
+		return left+right ; 
+		
+	}
+	
+	// now creating the function of the remove leaf node 
+	
+	// creating the functuon name is is the remove leaf node 
+	public BinnarySearchTreeNode<Integer> removeleaf(BinnarySearchTreeNode<Integer>root){
+		
+		// creating the base condition 
+		if (root == null) {
+			return null ; 
+		}
+		
+		
+		// creating the condtion for the leaf node 
+		if (root.leftnode == null && root.rightnode == null) {
+			return null ; 
+		}
+		 
+		// creating the creating the refrence 
+		
+		root.leftnode = removeleaf(root.leftnode) ; 
+		root.rightnode = removeleaf(root.rightnode) ; 
+		
+		// now return node 
+		return root ; 
+		
+	}
 	
 
 }
