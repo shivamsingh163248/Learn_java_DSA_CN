@@ -156,7 +156,31 @@ public class fuctionbinarytree {
 		
 	}
 	
+	// now creating the function of the remove leaf node 
 	
+	// creating the functuon name is is the remove leaf node 
+	public BinnarySearchTreeNode<Integer> removeleaf(BinnarySearchTreeNode<Integer>root){
+		
+		// creating the base condition 
+		if (root == null) {
+			return null ; 
+		}
+		
+		
+		// creating the condtion for the leaf node 
+		if (root.leftnode == null && root.rightnode == null) {
+			return null ; 
+		}
+		 
+		// creating the creating the refrence 
+		
+		root.leftnode = removeleaf(root.leftnode) ; 
+		root.rightnode = removeleaf(root.rightnode) ; 
+		
+		// now return node 
+		return root ; 
+		
+	}
 	
 
 }
