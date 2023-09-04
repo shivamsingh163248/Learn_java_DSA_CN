@@ -27,7 +27,7 @@ public class searchelemrntinBST {
 		
 		
 		// now creating the condition if the user input -1 then 
-		if (root == -1) {
+		if (rootData == -1) {
 			return null ; 
 		}
 		
@@ -49,22 +49,54 @@ public class searchelemrntinBST {
 		BinnarySearchTreeNode<Integer>front = pendingelement.poll();
 		// mow take the input from the 
 		System.out.println("enter the left node : "+front.data);
-		int leftnode = input.nextInt() ; 
+		int leftnodedata = input.nextInt() ; 
 		
 		
 		// now check the condtion og the lft node id the empty or not 
 		
-		if (leftnode != -1 ) {
+		if (leftnodedata != -1 ) {
 			
 			// now pushing the element of the node 
 			// now creating the new node 
+			BinnarySearchTreeNode<Integer>leftnode = new BinnarySearchTreeNode<Integer>(leftnodedata);
 			
+			// now creating 
+			front.leftnode = leftnode ; 
+			// now add the adress of the node in the queue 
+		   pendingelement.add(leftnode) ; 	
+		}
+		
+		// now enter the right node in the node for the enter the value 
+		System.out.println("enter the right node "+front.data);
+		// now take input from the user 
+		 int rightnodedata = input.nextInt() ; 
+		 
+		 // now check the the condtion of the node it is the -1 or not 
+		 if (rightnodedata != -1 ) {
+			
+			 // now creating the rigt node for the store the value 
+			 BinnarySearchTreeNode<Integer>rigtnode = new BinnarySearchTreeNode<Integer>(rightnodedata) ; 
+			 
+			 // now creating the linking the process in the link list 
+			 front.rightnode  = rigtnode ; 
+			 // this node also add in the pending element 
+			 pendingelement.add(rigtnode);
 		}
 		
 		
 		
 	}
+	
+	return node_root ; 
 		
 	}
+	
+	// now creating the Bst search function 
+	
+	
+	public boolean seachElementBST = 
+			
+			
+			
 
 }
