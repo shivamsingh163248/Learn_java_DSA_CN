@@ -2,6 +2,20 @@ import java.util.Scanner;
 
 public class stringcheck {
 	
+	
+	
+	// creatung the print function for the 
+	
+	public static void print(String[]input) {
+		
+		// now creating the print function 
+		for (int i = 0; i < input.length; i++) {
+		// now printing the all the string 
+			System.out.println(input[i]);
+		}
+		
+	}
+	
 	// creating the main function 
 	public static void main(String[] args) {
 		
@@ -11,32 +25,36 @@ public class stringcheck {
 		// enter the input the time of the take the input 
 		System.out.println("enter the number");
 		int number = input.nextInt(); 
-		
-		// creating the loop for the taking the input 
-		
-		// creating the string array for the taking thei nput 
+		System.out.println();
 		String[]takeinput = new String[number] ; 
 		
+		// now i want the print the array size 
+		System.out.println(takeinput.length);
 		
-		
-		for (int i = 0; i < number; i++) {
+		for (int i = 0; i < 4; i++) {
 			
-	 String value = input.nextLine() ; 
+			System.out.print("enter the user string : ");
+			
+	        String value = input.nextLine() ; 
 	 
 	 // now creating the algorithum 
 	 // now enter the string in the aray 
-	 takeinput[i] = value ; 	
+	       takeinput[i] = value ; 	
 			
 		}
 		
 		// now printing the string 
 		
 		
+		// now calling the function for the output
+		
+		print(takeinput);
 		
 		
-		// simple input given and check the string lenght 
-		String test = input.nextLine() ; 
-		System.out.println(test.length());
+		
+		
+		
+		
 		
 	}
 
