@@ -12,7 +12,10 @@ public class stringcheck {
 		// creating the scanner function 
 		Scanner input = new Scanner(System.in) ; 
 		int size = input.nextInt()  ; 
+		input.nextLine();  // this is the using the 
+	
 		String[]inputarray = new String[size] ;
+		System.out.println("you enter the "+size);
 		
 		// now creating the loop for the taking the input 
 		for (int i = 0; i < inputarray.length; i++) {
@@ -20,7 +23,9 @@ public class stringcheck {
 			// now creating the statement for the user display 
 			System.out.println("enter the string");
 			// creating the scanner for the taking input from the user
-			String str = input.nextLine() ; 
+			
+			String str = input.nextLine(); 
+			
 			// store value int the array 
 			inputarray[i] = str ; 
 			
