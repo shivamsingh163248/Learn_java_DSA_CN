@@ -2,60 +2,61 @@ import java.util.Scanner;
 
 public class stringcheck {
 	
+	// creatug the statuc function for the accessing the main method 
 	
-	
-	// creatung the print function for the 
-	
-	public static void print(String[]input) {
+	public static String[] takeinput() {
 		
-		// now creating the print function 
+		
+		// taking the input from the user 
+		System.out.println("enter the number theat you want to display :");
+		// creating the scanner function 
+		Scanner input = new Scanner(System.in) ; 
+		int size = input.nextInt()  ; 
+		String[]inputarray = new String[size] ;
+		
+		// now creating the loop for the taking the input 
+		for (int i = 0; i < inputarray.length; i++) {
+			
+			// now creating the statement for the user display 
+			System.out.println("enter the string");
+			// creating the scanner for the taking input from the user
+			String str = input.nextLine() ; 
+			// store value int the array 
+			inputarray[i] = str ; 
+			
+			// now  return  the function 
+			
+			
+		}
+		return inputarray ; 
+		
+	}
+	
+	// creating the print fucntion for the printng the value 
+	public static void pritnarray (String[]input) {
+		
+		// creating the for loop for the printng the arary 
 		for (int i = 0; i < input.length; i++) {
-		// now printing the all the string 
 			System.out.println(input[i]);
 		}
 		
+		
+		
 	}
 	
-	// creating the main function 
+	
+	// now creating the main function 
+	
 	public static void main(String[] args) {
 		
-		// this is the main function 
-		// creating the scanner function 
-		Scanner input = new Scanner(System.in) ; 
-		// enter the input the time of the take the input 
-		System.out.println("enter the number");
-		int number = input.nextInt(); 
-		System.out.println();
-		String[]takeinput = new String[number] ; 
+		// calling the function for the taking the input 
+		String[]take = takeinput() ; 
 		
-		// now i want the print the array size 
-		System.out.println(takeinput.length);
-		
-		for (int i = 0; i < 4; i++) {
-			
-			System.out.print("enter the user string : ");
-			
-	        String value = input.nextLine() ; 
-	 
-	 // now creating the algorithum 
-	 // now enter the string in the aray 
-	       takeinput[i] = value ; 	
-			
-		}
-		
-		// now printing the string 
-		
-		
-		// now calling the function for the output
-		
-		print(takeinput);
-		
-		
-		
-		
+		// now the print the array 
+		pritnarray(take);
 		
 		
 		
 	}
-
+	
 }
