@@ -50,6 +50,8 @@ public class stringcheck {
 	}
 	
 	
+	
+	
 	// now creating the main function 
 	
 	public static void main(String[] args) {
@@ -60,6 +62,8 @@ public class stringcheck {
 		// now the print the array 
 		pritnarray(take);
 		
+		
+		// now creating the 
 		
 		
 	}
