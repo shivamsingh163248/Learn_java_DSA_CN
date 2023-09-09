@@ -27,6 +27,8 @@ public class loop1 {
 		// now we are the simple output 
 		int $a = 10 ;
 		System.out.println($a);
+		
+		String takeinput = input.nextLine()
 	}
 
 }
