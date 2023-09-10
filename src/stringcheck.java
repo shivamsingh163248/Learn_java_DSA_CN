@@ -50,6 +50,19 @@ public class stringcheck {
 	}
 	
 	
+	// creating the algorithum string matching or ot 
+	public static void  stringmatching(String[]input) {
+		
+		// using the shorting algoritum 
+		// using the friquency 
+		
+		int[]friquecny  ; 
+		
+		friquecny = new int[200] ; 
+		
+	}
+	
+	
 	
 	
 	// now creating the main function 
@@ -61,6 +74,10 @@ public class stringcheck {
 		
 		// now the print the array 
 		pritnarray(take);
+		
+		
+		
+		
 		
 		
 		// now creating the 
