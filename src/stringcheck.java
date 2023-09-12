@@ -63,6 +63,17 @@ public class stringcheck {
 	}
 	
 	
+	// creating the simple string matching function all te string contain in the function or not 
+	public static void stringmatching(String name1 , String name2) {
+		
+		if (name1.matches(name2)) {
+			// check the matching 
+			System.out.println("now string are the matching ");
+		}
+		
+	}
+	
+	
 	
 	
 	// now creating the main function 
@@ -77,6 +88,8 @@ public class stringcheck {
 		
 		
 		
+		// creatung the array 
+	
 		
 		
 		
