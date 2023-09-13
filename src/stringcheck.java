@@ -73,6 +73,13 @@ public class stringcheck {
 		
 	}
 	
+	// creating the new function for the string printing at the world 
+	public static void printstringeachwrld(String name) {
+		
+		// creating the for loop 
+		
+	}
+	
 	
 	
 	
