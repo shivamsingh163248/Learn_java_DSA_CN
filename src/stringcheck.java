@@ -77,7 +77,9 @@ public class stringcheck {
 	public static void printstringeachwrld(String name) {
 		
 		// creating the for loop 
-		
+		for (int i = 0; i < name.length(); i++) {
+			System.out.println(name.charAt(i));
+		}
 	}
 	
 	
