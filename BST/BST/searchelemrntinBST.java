@@ -96,8 +96,37 @@ public class searchelemrntinBST {
 	
 	public boolean seachElementBST (BinnarySearchTreeNode<Integer>root , int k ) {
 		
+		// creating the base condition 
+		if (root == null) {
+			return false ; 
+		}
 		
-		return true  ; 
+		// creating the condition where match the data from the input 
+		
+		if (root.data == k) {
+			return true ; 
+		}
+		
+		// creating the condtion for the left and right node because this is the binary search tree 
+		if (root.data < k) {
+			// now calling the the left node because data are the big so calling the the left node 
+			// using the property of the bst 
+			// calling the left node for the seaching the element 
+			 return seachElementBST(root.rightnode, k);
+		}
+		
+		// again using the reverse node  
+	
+			// calling the left side node for the left node are the shorter then  root data \
+			 return seachElementBST(root.leftnode, k) ; 
+			
+		
+		
+		
+		
+		
+		
+		
 	}
 			
 			
