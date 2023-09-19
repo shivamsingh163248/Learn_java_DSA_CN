@@ -94,7 +94,11 @@ public class searchelemrntinBST {
 	// now creating the Bst search function 
 	
 	
-	public boolean seachElementBST = 
+	public boolean seachElementBST (BinnarySearchTreeNode<Integer>root , int k ) {
+		
+		
+		return true  ; 
+	}
 			
 			
 			
