@@ -50,6 +50,41 @@ public class stringcheck {
 	}
 	
 	
+	// creating the algorithum string matching or ot 
+	public static void  stringmatching(String[]input) {
+		
+		// using the shorting algoritum 
+		// using the friquency 
+		
+		int[]friquecny  ; 
+		
+		friquecny = new int[200] ; 
+		
+	}
+	
+	
+	// creating the simple string matching function all te string contain in the function or not 
+	public static void stringmatching(String name1 , String name2) {
+		
+		if (name1.matches(name2)) {
+			// check the matching 
+			System.out.println("now string are the matching ");
+		}
+		
+	}
+	
+	// creating the new function for the string printing at the world 
+	public static void printstringeachwrld(String name) {
+		
+		// creating the for loop 
+		for (int i = 0; i < name.length(); i++) {
+			System.out.println(name.charAt(i));
+		}
+	}
+	
+	
+	
+	
 	// now creating the main function 
 	
 	public static void main(String[] args) {
@@ -60,6 +95,14 @@ public class stringcheck {
 		// now the print the array 
 		pritnarray(take);
 		
+		
+		
+		// creatung the array 
+	
+		
+		
+		
+		// now creating the 
 		
 		
 	}
