@@ -22,6 +22,16 @@ public class bst_simple_search {
 		
 		allfunction.Bst_pritnt(rootnode);
 		
+		// calling the function for the level wise input 
+		
+		// fist creating the object 
+		
+		searchelemrntinBST test = new searchelemrntinBST() ; 
+		
+		// taking the function of the level wise input 
+		BinnarySearchTreeNode<Integer>input = test.takeinput_levelwise() ; 
+		//
+		
 
 	}
 
