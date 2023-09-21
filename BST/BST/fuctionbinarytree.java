@@ -182,5 +182,12 @@ public class fuctionbinarytree {
 		
 	}
 	
+	// CREATING THE FUNCTION PRINT BST IN THE RENGE 
+	
+	public static void pritnBSTINrencge(BinnarySearchTreeNode<integer>root , int k1 , int k2) {
+		
+		
+	}
+	
 
 }
