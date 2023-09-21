@@ -182,5 +182,32 @@ public class fuctionbinarytree {
 		
 	}
 	
+	// CREATING THE FUNCTION PRINT BST IN THE RENGE 
+	
+	public static void pritnBSTINrencge(BinnarySearchTreeNode<Integer>root , int k1 , int k2) {
+		
+		// now creating the base function 
+		if (root == null ) {
+			return  ; 
+		}
+		
+		// now creating the condition for 
+		if (root.data < k1) {
+			pritnBSTINrencge(root.leftnode, k1, k2);
+			
+		}else if (root.data > k2) {
+			pritnBSTINrencge(root.rightnode, k1, k2);
+		}else {
+			// now print the simple 
+			System.out.println(root.data + " ");
+			// calling the both side after the testing and descreding the both side 
+			pritnBSTINrencge(root.leftnode, k1, k2);
+			pritnBSTINrencge(root.rightnode, k1, k2);
+			
+		}
+		
+		
+	}
+	
 
 }
