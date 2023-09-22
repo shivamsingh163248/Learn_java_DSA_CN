@@ -33,6 +33,10 @@ public class bst_simple_search {
 		// creating the print function for the using the different object 
 		allfunction.Bst_pritnt(input);
 		
+		
+		
+		
+		
 
 	}
 
