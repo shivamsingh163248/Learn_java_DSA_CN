@@ -16,6 +16,23 @@ public class input_print_checkbst_function {
 		// now creating the display 
 		System.out.println("enter root element ");
 		int rootelement = input.nextInt() ; 
+		
+		
+		
+	// creating the condtion 
+		if (rootelement != -1 ) {
+			BinnaryTreeNode<Integer>root = new BinnaryTreeNode<Integer>(rootelement)  ; 
+			
+			// now creating the linklist using the stack 
+			
+			
+		}
+		
+		// creating the root element 
+		
+		
+		// creating the stack using 
+		
 	}
 
 }
