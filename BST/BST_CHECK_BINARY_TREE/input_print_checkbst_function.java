@@ -50,8 +50,19 @@ public class input_print_checkbst_function {
 				// creating the condition for the left node 
 				if (leftElement != -1) {
 					// if left element not into -1 the then this condtition run 
+					// creating the NODE TAKING THE INPUT 
+					BinnaryTreeNode<Integer>leftNode = new BinnaryTreeNode<Integer>(leftElement) ; 
+					 
+					
+					// now creating the connection 
+					front.leftnode = leftNode ; 
+					
+					// now adding the in the queue 
+					pendingElement.add(leftNode) ;
 					
 				}
+				
+				//
 				
 				
 				
