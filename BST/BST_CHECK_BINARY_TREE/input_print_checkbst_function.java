@@ -22,7 +22,10 @@ public class input_print_checkbst_function {
 		
 		
 	// creating the condtion 
-		if (rootelement != -1 ) {
+		if (rootelement == -1 ) {
+			
+			return null ; 
+		}
 			BinnaryTreeNode<Integer>root = new BinnaryTreeNode<Integer>(rootelement)  ; 
 			
 			// now creating the linklist using the stack 
@@ -32,6 +35,8 @@ public class input_print_checkbst_function {
 			
 			// after the add object in the queue so add the element 
 			pendingElement.add(root) ; 
+			
+		
 			
 			
 			// now creating the loop for the taking the element again and again 
@@ -62,18 +67,35 @@ public class input_print_checkbst_function {
 					
 				}
 				
-				//
+				// creating the user disply for the right node 
+				System.out.println("enter the right node"+front.data);
+				// now taking the input 
+				int rightnodeData = input.nextInt() ; 
+				
+				// now check the element it is the -1 or not 
+				if (rightnodeData != -1) {
+					// creating the nod for the right node 
+					BinnaryTreeNode<Integer>rightnode = new BinnaryTreeNode<Integer>(rightnodeData) ; 
+					
+					// now creating the conndection 
+					front.rightnode = rightnode ; 
+					// and the add 
+					pendingElement.add(rightnode) ; 
+					
+				}
 				
 				
 				
 			}
 			
+			return root ; 
 			
 			
-		}
-		
-		
-		
 	}
+	
+	
+	
+	// creating the new function for the printing element 
+	
 
 }
