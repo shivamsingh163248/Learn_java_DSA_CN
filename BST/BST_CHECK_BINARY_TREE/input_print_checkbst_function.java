@@ -1,5 +1,7 @@
 package BST_CHECK_BINARY_TREE;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class input_print_checkbst_function {
@@ -25,13 +27,41 @@ public class input_print_checkbst_function {
 			
 			// now creating the linklist using the stack 
 			
+			// creating the queu for the the taking the input each element in the queue
+			Queue<BinnaryTreeNode<Integer>> pendingElement = new LinkedList<BinnaryTreeNode<Integer>>() ;
+			
+			// after the add object in the queue so add the element 
+			pendingElement.add(root) ; 
+			
+			
+			// now creating the loop for the taking the element again and again 
+			
+			// creating the while loop 
+			while (!pendingElement.isEmpty()) {
+				
+				// creating the poll element 
+				// creating the object of the node 
+				BinnaryTreeNode<Integer>front = pendingElement.poll() ; 
+				// taking the user input for the left element 
+				System.out.println("enter the left element "+front.data);
+				// using the scanner function for taking the input from the user 
+				int leftElement = input.nextInt() ; 
+				
+				// creating the condition for the left node 
+				if (leftElement != -1) {
+					// if left element not into -1 the then this condtition run 
+					
+				}
+				
+				
+				
+			}
+			
+			
 			
 		}
 		
-		// creating the root element 
 		
-		
-		// creating the stack using 
 		
 	}
 
