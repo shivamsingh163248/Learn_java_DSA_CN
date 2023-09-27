@@ -1,5 +1,6 @@
 package BST_CHECK_BINARY_TREE;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -96,6 +97,22 @@ public class input_print_checkbst_function {
 	
 	
 	// creating the new function for the printing element 
+	public void printBST(BinnaryTreeNode<Integer>root) {
+		
+		// now creating the base condition 
+		if (root == null) {
+			return ; 
+		}
+		
+		// printing the root left and right node 
+		//printing root node and left and wirint node 
+		System.out.println("root node"+root.data);
+		
+		if (root.leftnode != null) {
+			System.out.println("left"+);
+		}
+		
+	}
 	
 
 }
