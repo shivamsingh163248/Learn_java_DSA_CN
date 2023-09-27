@@ -109,8 +109,23 @@ public class input_print_checkbst_function {
 		System.out.println("root node"+root.data);
 		
 		if (root.leftnode != null) {
-			System.out.println("left"+);
+			System.out.println("left :"+root.leftnode.data);
 		}
+		if (root.rightnode != null) {
+			System.out.println("right :"+root.rightnode.data);
+			
+			
+		}
+		
+		System.out.println();
+		
+		
+		// now calling the left side and right side of the node 
+		printBST(root.leftnode);
+		printBST(root.rightnode);
+		
+		
+		
 		
 	}
 	
