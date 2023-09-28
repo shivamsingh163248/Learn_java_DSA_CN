@@ -144,7 +144,41 @@ public class input_print_checkbst_function {
 		
 	}
 	
+	// again creating the minimum function for the node 
+	private int minmumm(BinnaryTreeNode<Integer>root) {
+		
+		// now creating the base condtion 
+		if ( root == null ) {
+			return Integer.MAX_VALUE ; 
+		}
+		
+		// now creating the return 
+		
+		return Math.min(root.data, Math.min(minmumm(root.leftnode), minmumm(root.rightnode))) ; 
+		
+		
+	}
 	
+	// now this is the function for the creating the check the binary tree is the bst
+	
+	public boolean checkBnaryTreeIsBst(BinnaryTreeNode<Integer>root) {
+		
+		// now creating the base condition 
+		if (root == null) {
+			return true ; 
+		}
+		
+		// now calling the bothe maximum and mininum 
+		// stor value in the form of the integer 
+		int max = maximum(root.leftnode) ; 
+		int min = minmumm(root.rightnode) ; 
+		
+		// now check the condition from the root node 
+		if (root.data <=  max || root.data > min ) {
+			return false ; 
+		}
+		
+	}
 	
 	
 
