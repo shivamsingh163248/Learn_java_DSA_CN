@@ -174,7 +174,7 @@ public class input_print_checkbst_function {
 		int min = minmumm(root.rightnode) ; 
 		
 		// now check the condition from the root node 
-		System.out.println("maxLeftnode : "+max + "  minRightode : "+ min );
+		System.out.println("max : "+max+"  min : "+ min );
 		
 		if (root.data <=  max || root.data > min ) {
 			return false ; 
