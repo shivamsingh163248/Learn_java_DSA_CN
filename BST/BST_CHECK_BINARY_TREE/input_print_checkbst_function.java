@@ -129,5 +129,23 @@ public class input_print_checkbst_function {
 		
 	}
 	
+	// now creating the function for the checking the binary search is the bst 
+	// creating the function for the maximum node 
+	private int maximum(BinnaryTreeNode<Integer>root) {
+		
+		// also hear are the using the recursion 
+		// creating the base condition 
+		if (root == null) {
+			return Integer.MIN_VALUE ; 
+		}
+		
+		return Math.max(root.data, Math.max(maximum(root.leftnode), maximum(root.rightnode)));
+		
+		
+	}
+	
+	
+	
+	
 
 }
