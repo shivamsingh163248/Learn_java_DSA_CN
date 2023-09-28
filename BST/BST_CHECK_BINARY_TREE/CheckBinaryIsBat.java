@@ -16,6 +16,10 @@ public class CheckBinaryIsBat {
 		// now creating the printing function 
 		function.printBST(inputRootNode);
 		
+		// check bst is the binnary 
+		// calling the function of the check binary is the bst 
+		System.out.println(); 
+		System.out.println(function.checkBnaryTreeIsBst(inputRootNode));
 
 	}
 

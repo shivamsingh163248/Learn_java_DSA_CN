@@ -138,7 +138,7 @@ public class input_print_checkbst_function {
 		if (root == null) {
 			return Integer.MIN_VALUE ; 
 		}
-		
+		System.out.println("checking root data for the max "+root.data);
 		return Math.max(root.data, Math.max(maximum(root.leftnode), maximum(root.rightnode)));
 		
 		
@@ -174,12 +174,26 @@ public class input_print_checkbst_function {
 		int min = minmumm(root.rightnode) ; 
 		
 		// now check the condition from the root node 
+		System.out.println("maxLeftnode : "+max + "  minRightode : "+ min );
+		
 		if (root.data <=  max || root.data > min ) {
 			return false ; 
 		}
 		
+		// now calling the both side left and right 
+		
+		
+		boolean leftsidenode =  checkBnaryTreeIsBst(root.leftnode);
+		boolean rightsideNode =  checkBnaryTreeIsBst(root.rightnode) ; 
+		
+		
+		// if the both are the true the printing the true 
+		
+		  return  ( leftsidenode && rightsideNode);
+			
+		}
 	}
 	
 	
 
-}
+
