@@ -1,5 +1,7 @@
 package CreatingBstUsingShortedArray;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class function_BST {
@@ -21,6 +23,23 @@ public class function_BST {
 		}
 		
 		// now store the data in the node 
+		
+		binaryTreeNode<Integer>root  = new binaryTreeNode<Integer>(rootNodeDeta);
+		//after the creating the node 
+		// creating the queue using the linklist 
+		Queue<binaryTreeNode<Integer>>pendingElement = new LinkedList<binaryTreeNode<Integer>>();
+		// now adding the deta in the queue 
+		 pendingElement.add(root) ; 
+		 
+		 
+		 // now creating the loop 
+		 while (!pendingElement.isEmpty()) {
+			 
+			 // now creating the refreance of the one node 
+			 
+			
+		}
+		 
 		
 	}
 
