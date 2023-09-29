@@ -12,6 +12,15 @@ public class function_BST {
 		Scanner input = new Scanner(System.in) ; 
 		// creating the statement for the user dispalay
 		System.out.println("enter root");
+		// taking the input form the 
+		int rootNodeDeta = input.nextInt();
+		
+		// now check the this is the input -1 
+		if (rootNodeDeta == -1) {
+			return null ; 
+		}
+		
+		// now store the data in the node 
 		
 	}
 
