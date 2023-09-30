@@ -108,7 +108,23 @@ public class function_BST {
 	
 	// now creating the function for the creating bst using the shorted array 
 	
-	public binaryTreeNode<Integer>BSTusingShortedArray(){
+	// CREATING ARRAY INPUT 
+	public int[] takinputArry() {
+		
+		// creating array 
+		System.out.println("enter the size of the array ");
+		Scanner input = new Scanner(System.in) ; 
+		int size = input.nextInt();
+		
+		// creating the for loop for the taking the input 
+		
+		
+	}
+	
+	public binaryTreeNode<Integer>BSTusingShortedArray(int[]arr , int n ){
+		
+		
+		
 		
 	}
 	
