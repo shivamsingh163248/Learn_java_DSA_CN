@@ -155,6 +155,8 @@ public class function_BST {
 	// creating the private fucntion  for the supporting the below function 
 	private binaryTreeNode<Integer>BSTusingArry(int[]arr , int si , int ei){
 		
+		System.out.println("staritng   "+ si +" ending : "+ ei );
+		
 		// creating the base condition 
 		if (si>ei) {
 			return null ;
@@ -165,9 +167,17 @@ public class function_BST {
 		
 		int mid = (si+ei)/2 ; 
 		
+		// this is for the testing purpose 
+		System.out.println(" mid  "+ mid + "   mid arry :"+arr[mid]);
+		
 		binaryTreeNode<Integer>root = new binaryTreeNode<Integer>(arr[mid]) ; 
 		
 		// now calling the left and right side of the node 
+		
+		// now printing the for the testing gow actually return  
+		
+		
+		
 		
 		root.LeftNode = BSTusingArry(arr, si, mid-1) ; 
 		root.RightNode = BSTusingArry(arr, mid+1, ei) ; 
