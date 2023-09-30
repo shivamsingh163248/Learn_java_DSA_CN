@@ -36,6 +36,28 @@ public class function_BST {
 		 while (!pendingElement.isEmpty()) {
 			 
 			 // now creating the refreance of the one node 
+			 binaryTreeNode<Integer>rootNode = pendingElement.poll();
+			 // after the polling creating the left node and the write node 
+			 System.out.println("enter left "+rootNode.data);
+			 int LeftNodeData = input.nextInt();
+			 
+			 // now check the left node is the -1 or not 
+			 if (LeftNodeData != -1) {
+				
+				 // creating the refreance of the node object and store the left node value 
+				 binaryTreeNode<Integer>leftNode = new binaryTreeNode<Integer>(LeftNodeData) ; 
+				 // now adding the and linking process 
+				 rootNode.LeftNode = leftNode ; 
+				 // now adding  the element in queues 
+				 pendingElement.add(leftNode) ; 
+			}
+			 
+			 // now display the user display for the right node 
+			 System.out.println("enter Right");
+			 // taking the input form the user 
+			 int RightNode = input.nextInt();
+			 
+			 // now creating the condition 
 			 
 			
 		}
