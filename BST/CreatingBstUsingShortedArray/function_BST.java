@@ -55,14 +55,26 @@ public class function_BST {
 			 // now display the user display for the right node 
 			 System.out.println("enter Right");
 			 // taking the input form the user 
-			 int RightNode = input.nextInt();
+			 int RightNodeData = input.nextInt();
 			 
 			 // now creating the condition 
-			 
+			  if (RightNodeData != -1) {
+				// now crating the refrence of the node for the adding the right node 
+				  binaryTreeNode<Integer>RightNode = new binaryTreeNode<Integer>(RightNodeData) ; 
+				  
+				  // now creating the connection 
+				  rootNode.RightNode = RightNode ; 
+				  // adding in the pending element 
+				  pendingElement.add(RightNode) ; 
+			}
 			
 		}
 		 
-		
+		// now writing the return element 
+		 return root ; 
 	}
+	
+	
+	// now creating the printing fucntion 
 
 }
