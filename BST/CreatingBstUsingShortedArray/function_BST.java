@@ -53,7 +53,7 @@ public class function_BST {
 			}
 			 
 			 // now display the user display for the right node 
-			 System.out.println("enter Right");
+			 System.out.println("enter Right: "+rootNode.data);
 			 // taking the input form the user 
 			 int RightNodeData = input.nextInt();
 			 
@@ -76,5 +76,37 @@ public class function_BST {
 	
 	
 	// now creating the printing fucntion 
+	public void printBST(binaryTreeNode<Integer>root ) {
+		
+	 // fristly crating the base condtion 
+		if (root == null) {
+			return  ; 
+		}
+		
+		// printing the root 
+		System.out.println("root: "+root.data);
+		// now printing the left elemtnt of the root 
+		if (root.LeftNode != null ) {
+			// now pritnig the root left deta 
+			System.out.println("left : "+root.LeftNode.data);
+			
+		}
+		// again creating for the right node 
+		if (root.RightNode != null ) {
+			System.out.println("right : "+root.RightNode.data);
+		}
+		
+		// creating for the space 
+		System.out.println();
+		
+		// now calling the left side and write side node 
+		printBST(root.LeftNode);
+		printBST(root.RightNode);
+		
+	}
+	
+	
+	// now creating the function for the creating bst using the shorted array 
+	
 
 }
