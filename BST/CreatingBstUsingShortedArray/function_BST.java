@@ -121,15 +121,34 @@ public class function_BST {
 		// creating the for loop for the taking the input 
 	
 		for (int i = 0; i < inputarry.length; i++) {
-			 
+			 System.out.println("enter the index : "+i);
 			int taking_value = input.nextInt() ; 
-			taking_value = inputarry[i] ; 
+			 inputarry[i] = taking_value ; 
 			
 		}
 		
 		return inputarry ; 
 		
 	}
+	
+	// creating the printing function of the array 
+   public void printArray(int[]arr) {
+	   
+	   // simple creating the for loop for the printnig the array 
+	   for (int i = 0; i < arr.length; i++) {
+		System.out.print(arr[i]+" ");
+	}
+	   
+	   // creating the for each loop 
+//	   for (int i : arr) {
+//		System.out.println(arr[i]+" ");
+//	}
+	   
+	   
+   }
+	
+	
+	
 	
 	
 	
@@ -146,12 +165,12 @@ public class function_BST {
 		
 		int mid = (si+ei)/2 ; 
 		
-		binaryTreeNode<Integer>root = new binaryTreeNode<Integer>(mid) ; 
+		binaryTreeNode<Integer>root = new binaryTreeNode<Integer>(arr[mid]) ; 
 		
 		// now calling the left and right side of the node 
 		
 		root.LeftNode = BSTusingArry(arr, si, mid-1) ; 
-		root.LeftNode = BSTusingArry(arr, mid+1, ei) ; 
+		root.RightNode = BSTusingArry(arr, mid+1, ei) ; 
 		
 		return root ; 
 		
@@ -160,7 +179,7 @@ public class function_BST {
 	public binaryTreeNode<Integer>BSTusingShortedArray(int[]arr , int n ){
 		
 		// calling the above function 
-		return BSTusingArry(arr, 0, n) ; 
+		return BSTusingArry(arr, 0, n-1) ; 
 		
 		
 	}
