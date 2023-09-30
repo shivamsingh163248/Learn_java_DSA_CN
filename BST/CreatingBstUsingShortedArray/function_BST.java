@@ -108,5 +108,9 @@ public class function_BST {
 	
 	// now creating the function for the creating bst using the shorted array 
 	
+	public binaryTreeNode<Integer>BSTusingShortedArray(){
+		
+	}
+	
 
 }
