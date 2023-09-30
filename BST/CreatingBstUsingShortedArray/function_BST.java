@@ -115,15 +115,52 @@ public class function_BST {
 		System.out.println("enter the size of the array ");
 		Scanner input = new Scanner(System.in) ; 
 		int size = input.nextInt();
+		// creating the array 
+		int[]inputarry = new int[size] ; 
 		
 		// creating the for loop for the taking the input 
+	
+		for (int i = 0; i < inputarry.length; i++) {
+			 
+			int taking_value = input.nextInt() ; 
+			taking_value = inputarry[i] ; 
+			
+		}
 		
+		return inputarry ; 
+		
+	}
+	
+	
+	
+	// creating the private fucntion  for the supporting the below function 
+	private binaryTreeNode<Integer>BSTusingArry(int[]arr , int si , int ei){
+		
+		// creating the base condition 
+		if (si>ei) {
+			return null ;
+		}
+		
+		// creating the root node for the entering the value 
+		// creating the mid value 
+		
+		int mid = (si+ei)/2 ; 
+		
+		binaryTreeNode<Integer>root = new binaryTreeNode<Integer>(mid) ; 
+		
+		// now calling the left and right side of the node 
+		
+		root.LeftNode = BSTusingArry(arr, si, mid-1) ; 
+		root.LeftNode = BSTusingArry(arr, mid+1, ei) ; 
+		
+		return root ; 
 		
 	}
 	
 	public binaryTreeNode<Integer>BSTusingShortedArray(int[]arr , int n ){
 		
-		
+		// calling the above function 
+		return BSTusingArry(arr, 0, n) ; 
 		
 		
 	}
