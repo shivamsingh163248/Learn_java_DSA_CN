@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+import learn_link_list.link;
+
 
 
 public class BSTLLfUNCTION   {
@@ -167,7 +169,14 @@ public binaryTreeNode<Integer> takeinput_LevelWise(){
 	}
 	
 	
+	public  LinkListNode<Integer> constructLinkedList(binaryTreeNode<Integer> root) {
 
+	     // calling the above function 
+		PairLinklist ans = BSTtoLinklistHelper(root) ; 
+		return ans.head ; 
+
+	     
+		}
 	
 	
 	
