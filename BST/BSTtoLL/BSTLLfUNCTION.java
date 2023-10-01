@@ -133,16 +133,35 @@ public binaryTreeNode<Integer> takeinput_LevelWise(){
 		// again creating the right tree refreance of the object 
 		 PairLinklist rightTree = BSTtoLinklistHelper(root.RightNode) ; 
 		 
+		 // creating the new object 
+		 PairLinklist output = new PairLinklist() ; 
+		 
 		 
 		 // now creating the condtion 
 		 
 		 if (leftTree.head != null) {
 			 
-			 leftTree.head = nodeLinkList ; 
+			 output.head = leftTree.head ;
+			 leftTree.tail.next  = nodeLinkList ; 
 			
+		}else {
+			
+			output.head = nodeLinkList ; 
 		}
+		 
+		 // now again creatig right 
+		 nodeLinkList.next = rightTree.head ; 
+		 
+		 // again creating the condition 
+		 if (rightTree.head == null) {
+			
+			 output.tail = nodeLinkList ; 
+		}else {
+			output.tail = rightTree.tail ; 
+		}
+		 
 		
-		
+		return output ; 
 		
 		
 	}
