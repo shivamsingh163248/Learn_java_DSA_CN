@@ -105,6 +105,48 @@ public binaryTreeNode<Integer> takeinput_LevelWise(){
 		
 	}
 	
+	// now creating the fucntion of the bst to link list 
+	
+	
+	// now creating the function of the bst to link list that is the return the object 
+	public PairLinklist BSTtoLinklistHelper(binaryTreeNode<Integer>root) {
+		
+		
+		// now creating the base condition for the return 
+		if (root == null) {
+			
+			PairLinklist output = new PairLinklist() ; 
+			output.head = null ; 
+			output.tail = null ; 
+			return output ; 
+			
+		}
+		
+		// now calling the same function 
+		// creating the refrence 
+		PairLinklist leftTree = BSTtoLinklistHelper(root.LeftNode) ; 
+		
+		// now creating the new node of the linklist for the  soring the data and linking with 
+		
+		LinkListNode<Integer>nodeLinkList = new LinkListNode<Integer>(root.data) ; 
+		
+		// again creating the right tree refreance of the object 
+		 PairLinklist rightTree = BSTtoLinklistHelper(root.RightNode) ; 
+		 
+		 
+		 // now creating the condtion 
+		 
+		 if (leftTree.head != null) {
+			 
+			 leftTree.head = nodeLinkList ; 
+			
+		}
+		
+		
+		
+		
+	}
+	
 	
 
 	
