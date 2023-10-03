@@ -90,10 +90,35 @@ public class PathOfBst {
 		 
 		 // now creating the loop for the taking input contineusely 
 		 // using the condtition pending element is not empety 
-		 if (!pendingElement.isEmpty()) {
+		 while (!pendingElement.isEmpty()) {
 			
 			 // now creating the refrence of the node storing the pending element 
 			 
+			 BinaryTreeNode<Integer>rootnode = pendingElement.poll();
+			 // now taking the input for the left side of the tree 
+			 // creating the node for the left  side 
+			 System.out.println("Left : "+rootnode.data);
+			 // now creating the scanner function 
+			 int leftData = input.nextInt();
+			
+			 
+			 // now check the condtion
+			 if (leftData != -1) {
+				
+				 // now creating the node and the adding the deta 
+				 BinaryTreeNode<Integer>leftNode = new BinaryTreeNode<Integer>(leftData) ; 
+				 // now linking thre deta 
+				 rootNode.leftNode = leftNode ; 
+				 // mow adding in the queue that is the pending element 
+				 pendingElement.add(leftNode) ; 
+			}
+			 
+			 // now user disppaly for the right node
+			 System.out.println("rightnode : "+rootnode.data);
+			 // now taking the input 
+			 int rightnode = input.nextInt();
+			 
+			 // now creating the  condition 
 			 
 			 
 		}
