@@ -1,6 +1,11 @@
 package PATH_BST;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+import BSTtoLL.binaryTreeNode;
 
 public class PathOfBst {
 	
@@ -49,5 +54,50 @@ public class PathOfBst {
 	
 	
 	// now creating the print of the array lsit 
+	public void printArrylist(ArrayList<Integer>arrya) {
+		
+		// creating the for each loop for the printing of the every element 
+		for (Integer integer : arrya) {
+			System.out.print(integer);
+		}
+	}
+	
+	
+	
+	// now creating function for the taling input form the user of the binnary tree 
+	
+	// creating the access modifire 
+	public BinaryTreeNode<Integer> TakingInputBST(){
+		
+		// now creating the user display for the root node 
+		System.out.println("enter the root : ");
+		// now creating the scanner function 
+		Scanner input = new Scanner(System.in) ; 
+		// now input object user to taking input from the user 
+		int rootdata = input.nextInt() ; 
+		
+		// now check what is actually input by the user 
+		if (rootdata ==  -1) {
+			return null ; 
+		}
+		
+		// now creating the object of the node for the storing the value of the root data in the form of the node 
+		 BinaryTreeNode<Integer>rootNode = new BinaryTreeNode<Integer>(rootdata) ; 
+		 // now creating the queu for for the input level wise 
+		 Queue<BinaryTreeNode<Integer>>pendingElement  = new LinkedList<BinaryTreeNode<Integer>>();
+		 // now adding the root node in the pending element 
+		 pendingElement.add(rootNode) ; 
+		 
+		 // now creating the loop for the taking input contineusely 
+		 // using the condtition pending element is not empety 
+		 if (!pendingElement.isEmpty()) {
+			
+			 // now creating the refrence of the node storing the pending element 
+			 
+			 
+			 
+		}
+		 
+	}
 
 }
