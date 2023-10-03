@@ -108,7 +108,7 @@ public class PathOfBst {
 				 // now creating the node and the adding the deta 
 				 BinaryTreeNode<Integer>leftNode = new BinaryTreeNode<Integer>(leftData) ; 
 				 // now linking thre deta 
-				 rootNode.leftNode = leftNode ; 
+				 rootnode.leftNode = leftNode ; 
 				 // mow adding in the queue that is the pending element 
 				 pendingElement.add(leftNode) ; 
 			}
@@ -116,13 +116,24 @@ public class PathOfBst {
 			 // now user disppaly for the right node
 			 System.out.println("rightnode : "+rootnode.data);
 			 // now taking the input 
-			 int rightnode = input.nextInt();
+			 int rightnodedata = input.nextInt();
 			 
 			 // now creating the  condition 
-			 
+			 if (rightnodedata != -1) {
+				
+				 // now adding the data in the right node 
+				 BinaryTreeNode<Integer>rightnode = new BinaryTreeNode<Integer>(rightnodedata) ; 
+				 
+				 // now creating the linking the process 
+				 rootnode.rightNode = rightnode ; 
+				 // now adding in the pending queue 
+				 pendingElement.add(rightnode) ; 
+			}
 			 
 		}
 		 
+		 // now return the 
+		 return rootNode ; 
 	}
 
 }
