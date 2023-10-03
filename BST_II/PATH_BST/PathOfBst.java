@@ -28,8 +28,26 @@ public class PathOfBst {
 		
 		// now calling the left side 
 		ArrayList<Integer>leftsideTree = BstPath(root.leftNode, x) ; 
-		
+		if (leftsideTree != null) {
+			// now add the element in the leftside of the array list 
+			leftsideTree.add(root.data); 
+			return leftsideTree ; 
+		}
 		 
+		
+		// now again calling the left side 
+		ArrayList<Integer>RightsideTree = BstPath(root.rightNode, x) ; 
+		if (RightsideTree != null) {
+			// now adding the 
+			RightsideTree.add(root.data) ;
+			return RightsideTree ; 
+		}
+		
+		return null ; 
+		
 	}
+	
+	
+	// now creating the print of the array lsit 
 
 }
