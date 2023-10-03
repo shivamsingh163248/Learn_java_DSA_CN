@@ -135,5 +135,19 @@ public class PathOfBst {
 		 // now return the 
 		 return rootNode ; 
 	}
+	
+	
+	// now creating the different function for the printing the array list 
+	
+	public void printArrylist1(ArrayList<Integer>arraylist) {
+		
+		
+		// now printing the elelemt 
+		for (Integer integer : arraylist) {
+			System.out.println(integer);
+		}
+		
+		
+	}
 
 }
