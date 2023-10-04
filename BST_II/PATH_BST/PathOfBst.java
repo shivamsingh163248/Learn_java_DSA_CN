@@ -144,7 +144,7 @@ public class PathOfBst {
 		
 		// now printing the elelemt 
 		for (Integer integer : arraylist) {
-			System.out.println(integer);
+			System.out.println(integer+" ");
 		}
 		
 		
