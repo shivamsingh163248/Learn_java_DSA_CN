@@ -1,14 +1,16 @@
-package CreatingBstUsingShortedArray;
+package BSTtoLL;
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class function_BST {
-	//creating the input function level wise input 
-	// creating the function for the printing 
-	
-	public binaryTreeNode<Integer> takeinput_LevelWise(){
+import learn_link_list.link;
+
+
+
+public class BSTLLfUNCTION   {
+
+public binaryTreeNode<Integer> takeinput_LevelWise(){
 		
 		//creating the scanner object 
 		Scanner input = new Scanner(System.in) ; 
@@ -105,94 +107,77 @@ public class function_BST {
 		
 	}
 	
+	// now creating the fucntion of the bst to link list 
 	
-	// now creating the function for the creating bst using the shorted array 
 	
-	// CREATING ARRAY INPUT 
-	public int[] takinputArry() {
+	// now creating the function of the bst to link list that is the return the object 
+	public PairLinklist BSTtoLinklistHelper(binaryTreeNode<Integer>root) {
 		
-		// creating array 
-		System.out.println("enter the size of the array ");
-		Scanner input = new Scanner(System.in) ; 
-		int size = input.nextInt();
-		// creating the array 
-		int[]inputarry = new int[size] ; 
 		
-		// creating the for loop for the taking the input 
-	
-		for (int i = 0; i < inputarry.length; i++) {
-			 System.out.println("enter the index : "+i);
-			int taking_value = input.nextInt() ; 
-			 inputarry[i] = taking_value ; 
+		// now creating the base condition for the return 
+		if (root == null) {
+			
+			PairLinklist output = new PairLinklist() ; 
+			output.head = null ; 
+			output.tail = null ; 
+			return output ; 
 			
 		}
 		
-		return inputarry ; 
+		// now calling the same function 
+		// creating the refrence 
+		PairLinklist leftTree = BSTtoLinklistHelper(root.LeftNode) ; 
 		
-	}
-	
-	// creating the printing function of the array 
-   public void printArray(int[]arr) {
-	   
-	   // simple creating the for loop for the printnig the array 
-	   for (int i = 0; i < arr.length; i++) {
-		System.out.print(arr[i]+" ");
-	}
-	   
-	   // creating the for each loop 
-//	   for (int i : arr) {
-//		System.out.println(arr[i]+" ");
-//	}
-	   
-	   
-   }
-	
-	
-	
-	
-	
-	
-	// creating the private fucntion  for the supporting the below function 
-	private binaryTreeNode<Integer>BSTusingArry(int[]arr , int si , int ei){
+		// now creating the new node of the linklist for the  soring the data and linking with 
 		
-		System.out.println("staritng   "+ si +" ending : "+ ei );
+		LinkListNode<Integer>nodeLinkList = new LinkListNode<Integer>(root.data) ; 
 		
-		// creating the base condition 
-		if (si>ei) {
-			return null ;
+		// again creating the right tree refreance of the object 
+		 PairLinklist rightTree = BSTtoLinklistHelper(root.RightNode) ; 
+		 
+		 // creating the new object 
+		 PairLinklist output = new PairLinklist() ; 
+		 
+		 
+		 // now creating the condtion 
+		 
+		 if (leftTree.head != null) {
+			 
+			 output.head = leftTree.head ;
+			 leftTree.tail.next  = nodeLinkList ; 
+			
+		}else {
+			
+			output.head = nodeLinkList ; 
 		}
+		 
+		 // now again creatig right 
+		 nodeLinkList.next = rightTree.head ; 
+		 
+		 // again creating the condition 
+		 if (rightTree.head == null) {
+			
+			 output.tail = nodeLinkList ; 
+		}else {
+			output.tail = rightTree.tail ; 
+		}
+		 
 		
-		// creating the root node for the entering the value 
-		// creating the mid value 
-		
-		int mid = (si+ei)/2 ; 
-		
-		// this is for the testing purpose 
-		System.out.println(" mid  "+ mid + "   mid arry :"+arr[mid]);
-		
-		binaryTreeNode<Integer>root = new binaryTreeNode<Integer>(arr[mid]) ; 
-		
-		// now calling the left and right side of the node 
-		
-		// now printing the for the testing gow actually return  
-		
-		
-		
-		
-		root.LeftNode = BSTusingArry(arr, si, mid-1) ; 
-		root.RightNode = BSTusingArry(arr, mid+1, ei) ; 
-		
-		return root ; 
-		
-	}
-	
-	public binaryTreeNode<Integer>BSTusingShortedArray(int[]arr , int n ){
-		
-		// calling the above function 
-		return BSTusingArry(arr, 0, n-1) ; 
+		return output ; 
 		
 		
 	}
 	
+	
+	public  LinkListNode<Integer> constructLinkedList(binaryTreeNode<Integer> root) {
 
+	     // calling the above function 
+		PairLinklist ans = BSTtoLinklistHelper(root) ; 
+		return ans.head ; 
+
+	     
+		}
+	
+	
+	
 }
