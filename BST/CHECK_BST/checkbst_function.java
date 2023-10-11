@@ -1,5 +1,9 @@
 package CHECK_BST;
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
 import PATH_BST.BinaryTreeNode;
 
 public class checkbst_function {
@@ -75,5 +79,77 @@ public class checkbst_function {
 		
 		return Math.max(root.data, Math.max(left,right ));
 	}
+	
+	
+	// now taking the input level wise 
+public BinnaryTreeNode<Integer> TakingInputBST(){
+		
+		// now creating the user display for the root node 
+		System.out.println("enter the root : ");
+		// now creating the scanner function 
+		Scanner input = new Scanner(System.in) ; 
+		// now input object user to taking input from the user 
+		int rootdata = input.nextInt() ; 
+		
+		// now check what is actually input by the user 
+		if (rootdata ==  -1) {
+			return null ; 
+		}
+		
+		// now creating the object of the node for the storing the value of the root data in the form of the node 
+		 BinnaryTreeNode<Integer>rootNode = new BinnaryTreeNode<Integer>(rootdata) ; 
+		 // now creating the queu for for the input level wise 
+		 Queue<BinnaryTreeNode<Integer>>pendingElement  = new LinkedList<BinnaryTreeNode<Integer>>();
+		 // now adding the root node in the pending element 
+		 pendingElement.add(rootNode) ; 
+		 
+		 // now creating the loop for the taking input contineusely 
+		 // using the condtition pending element is not empety 
+		 while (!pendingElement.isEmpty()) {
+			
+			 // now creating the refrence of the node storing the pending element 
+			 
+			 BinnaryTreeNode<Integer>rootnode = pendingElement.poll();
+			 // now taking the input for the left side of the tree 
+			 // creating the node for the left  side 
+			 System.out.println("Left : "+rootnode.data);
+			 // now creating the scanner function 
+			 int leftData = input.nextInt();
+			
+			 
+			 // now check the condtion
+			 if (leftData != -1) {
+				
+				 // now creating the node and the adding the deta 
+				 BinnaryTreeNode<Integer>leftNode = new BinnaryTreeNode<Integer>(leftData) ; 
+				 // now linking thre deta 
+				 rootnode.left = leftNode ; 
+				 // mow adding in the queue that is the pending element 
+				 pendingElement.add(leftNode) ; 
+			}
+			 
+			 // now user disppaly for the right node
+			 System.out.println("rightnode : "+rootnode.data);
+			 // now taking the input 
+			 int rightnodedata = input.nextInt();
+			 
+			 // now creating the  condition 
+			 if (rightnodedata != -1) {
+				
+				 // now adding the data in the right node 
+				 BinnaryTreeNode<Integer>rightnode = new BinnaryTreeNode<Integer>(rightnodedata) ; 
+				 
+				 // now creating the linking the process 
+				 rootnode.right = rightnode ; 
+				 // now adding in the pending queue 
+				 pendingElement.add(rightnode) ; 
+			}
+			 
+		}
+		 
+		 // now return the 
+		 return rootNode ; 
+	}
+	
 
 }
