@@ -6,7 +6,7 @@ public class BinnaryTreeNode <T>{ // creating the generic
 	
 	T data ; 
 	BinnaryTreeNode<T> left ; 
-	BinaryTreeNode<T> right ; 
+	BinnaryTreeNode<T> right ; 
 	
 	// now crating the constrocter 
 	
