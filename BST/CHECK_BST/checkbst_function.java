@@ -42,9 +42,17 @@ public class checkbst_function {
 		
 	}
 
-	private int minimum(BinnaryTreeNode<Integer> right) {
-		// TODO Auto-generated method stub
-		return 0;
+	private int minimum(BinnaryTreeNode<Integer>root) {
+		// creating the base condition 
+		if (root == null) {
+			return Integer.MAX_VALUE ;
+		}
+		
+		int left = minimum(root.left) ; 
+		int right = minimum(root.right);
+		
+		
+		return Math.min(root.data, Math.min(left, right));
 	}
 
 	
@@ -52,9 +60,20 @@ public class checkbst_function {
 	private int maximum(BinnaryTreeNode<Integer>root) {
 		
 		// now calling the left side and right side 
+		// now creating the base condition 
+		if (root == null) {
+			return Integer.MIN_VALUE ; 
+		}
+		
+		// now calling the left side and the right side 
+	int left = 	maximum(root.left) ; 
+    int right = maximum(root.right) ; 
+		
+		// now return the maximum 
 		
 		
-		return 0;
+		
+		return Math.max(root.data, Math.max(left,right ));
 	}
 
 }
