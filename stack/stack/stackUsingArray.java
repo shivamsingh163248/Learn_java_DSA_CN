@@ -32,7 +32,7 @@ public class stackUsingArray {
 //		}else {
 //			return false ; 
 //		}
-		  
+//		  
 		  // creating the simple return 
 		  return topIndex == -1 ; 
 	  }
