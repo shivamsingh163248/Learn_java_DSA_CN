@@ -150,6 +150,57 @@ public BinnaryTreeNode<Integer> TakingInputBST(){
 		 // now return the 
 		 return rootNode ; 
 	}
+
+// now creating the another function check bst or not using the bst class 
+
+/// now creating the function name 
+public isBstRetuen isBstcheck(BinnaryTreeNode<Integer>root) {
+	
+	// now creating the base condition 
+	if (root == null ) {
+		// creating the object of the isbast return 
+		isBstRetuen object = new isBstRetuen(Integer.MAX_VALUE, Integer.MIN_VALUE, true) ;
+		// now return the object 
+		return object ; 
+	}
+	
+	// NOW calling the left side and the right side 
+	isBstRetuen left = isBstcheck(root.left) ; 
+    isBstRetuen right = isBstcheck(root.right) ; 
+    
+    // now finding the min value 
+    
+    int minvalue = Math.min(root.data, Math.min(left.min, right.min)) ; 
+    int maxvalve = Math.max(root.data, Math.max(left.max, right.max)) ; 
+    
+    // now creating the chek the value 
+    boolean isbstis = true ; 
+    // now check the condition 
+    if (left.max > root.data) {
+		isbstis = false  ; 
+	}
+    if (right.min < root.data) {
+		isbstis = false ; 
+	}
+    
+    // now creating the condition of true and flase 
+    if (!left.isBst) {
+		isbstis = false ; 
+	}
+    if (!right.isBst) {
+		isbstis = false ; 
+	}
+    
+    // now calling the both side 
+    
+    isBstRetuen ans = new isBstRetuen(minvalue, maxvalve, isbstis);
+    return ans ; 
+     
+	
+	
+	
+	
+}
 	
 
 }
