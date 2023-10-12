@@ -174,6 +174,8 @@ public isBstRetuen isBstcheck(BinnaryTreeNode<Integer>root) {
     int maxvalve = Math.max(root.data, Math.max(left.max, right.max)) ; 
     
     // now creating the chek the value 
+    
+    System.out.println("root data "+root.data+" left min : "+left.min+"right min :"+right.min+" left max :"+left.max+" right max : "+right.max);
     boolean isbstis = true ; 
     // now check the condition 
     if (left.max > root.data) {
