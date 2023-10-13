@@ -49,10 +49,16 @@ public class BST_CLASS {
 	} 
 	
 	// now now creating the helper function 
-	public void insertHelper(BinaryTreeNode<Integer>root , int x ) {
+	private BinaryTreeNode<Integer> insertHelper(BinaryTreeNode<Integer>root , int x ) {
 		
-		// now root become head 
-		root = new BinaryTreeNode<Integer>(x) ; 
+		// creating the base condition 
+		// two concept are working if bigger the root the attach with the right side and other wise 
+		// attech with left side 
+		if (root == null ) {
+			// creating the new node object 
+			BinaryTreeNode<Integer>newNode = new BinaryTreeNode<Integer>(x) ; 
+		}
+		
 	}
 	
 	// now creating the print function 
@@ -89,6 +95,9 @@ public class BST_CLASS {
 		print(root.right);
 		
 	}
+	
+	
+	// now creating the function 
 	
 	
 
