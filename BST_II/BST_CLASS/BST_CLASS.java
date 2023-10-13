@@ -46,6 +46,8 @@ public class BST_CLASS {
 		
 		// now creating the helper function 
 		root = insertHelper(root, x) ; 
+		// now increasing the size 
+		size++ ; 
 		
 	} 
 	
@@ -72,14 +74,16 @@ public class BST_CLASS {
 		
 	}
 	
+	
+	
 	// now creating the print function 
 	public void print() {
 		
-		
+		printHelpers(root);
 	}
 	
 	// creating the helper function 
-	private void print(BinaryTreeNode<Integer>root) {
+	private void printHelpers(BinaryTreeNode<Integer>root) {
 		
 		// now creating the base condition 
 		if (root == null ) {
@@ -102,13 +106,22 @@ public class BST_CLASS {
 		System.out.println(); 
 		
 		// now calling the lef side and the right side 
-		print(root.left);
-		print(root.right);
+		printHelpers(root.left);
+		printHelpers(root.right);
 		
 	}
 	
 	
-	// now creating the function 
+	// now creating the delete function for the deleting the value 
+	public boolean deletedata(int x) {
+		
+	}
+	
+	// creating the helper function of the delete data 
+	private static  object deletedataHelper(BinaryTreeNode<Integer>root , int x) {
+		
+		
+	}
 	
 	
 
