@@ -45,6 +45,7 @@ public class BST_CLASS {
 	public void insert(int x ) {
 		
 		// now creating the helper function 
+		root = insertHelper(root, x) ; 
 		
 	} 
 	
@@ -57,7 +58,17 @@ public class BST_CLASS {
 		if (root == null ) {
 			// creating the new node object 
 			BinaryTreeNode<Integer>newNode = new BinaryTreeNode<Integer>(x) ; 
+			return newNode ; 
 		}
+		
+		// now creating the condition of the calling the left and right side and linking 
+		if (x >= root.data) {
+			// now calling the right side 
+			root.right = insertHelper(root.right, x) ; 
+		}else {
+			root.left = insertHelper(root.left , x);
+		}
+		return root ; 
 		
 	}
 	
