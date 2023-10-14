@@ -167,6 +167,11 @@ public class BST_CLASS {
 		}
 		   
 		   // if the both children are the present 
+		   int min =  mimum_forDeletion(root.right);
+		   root.data = min ; 
+		   bst_delete_return outputright = deletedataHelper(root.right, min) ; 
+		   root.right = outputright.root ; 
+		   return new bst_delete_return(root, true)
 		   
 		
 	}
