@@ -4,9 +4,9 @@ import CHECK_BST.BinnaryTreeNode;
 
 public class bst_delete_return {
 	
-	private BinaryTreeNode<Integer>root ; 
+	 BinaryTreeNode<Integer>root ; 
 	// creating the deleted  variable 
-	private boolean deleted ; 
+	 boolean deleted ; 
 	
 	// creating the constrocter 
 	public bst_delete_return(BinaryTreeNode<Integer>root , boolean deleted) {

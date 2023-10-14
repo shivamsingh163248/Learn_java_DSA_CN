@@ -114,12 +114,37 @@ public class BST_CLASS {
 	
 	// now creating the delete function for the deleting the value 
 	public boolean deletedata(int x) {
+		bst_delete_return object = deletedataHelper(root, x) ; 
+		root = object.root ; 
+		if (object.deleted) {
+			size-- ; 
+		}
+		return  object.deleted ; 
+		
 		
 	}
 	
 	// creating the helper function of the delete data 
-	private static  object deletedataHelper(BinaryTreeNode<Integer>root , int x) {
+	private static  bst_delete_return deletedataHelper(BinaryTreeNode<Integer>root , int x) {
 		
+		 if (root == null ) {
+			return new bst_delete_return(null, false);
+		}
+		 
+		   if (root.data > x ) {
+			
+			 bst_delete_return newrootLeft = deletedataHelper(root.left, x);
+			 root.left = newrootLeft.root ;
+			 newrootLeft.root = root ;  
+			 return newrootLeft ; 
+		}
+		   
+		   if (root.data < x ) {
+			bst_delete_return newrootRight = deletedataHelper(root.right, x);
+			root.right = newrootRight.root ; 
+			newrootRight.root = root ; 
+			return newrootRight ; 
+		}
 		
 	}
 	
