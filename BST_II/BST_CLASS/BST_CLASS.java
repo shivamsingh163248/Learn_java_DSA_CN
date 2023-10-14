@@ -131,6 +131,16 @@ public class BST_CLASS {
 			return new bst_delete_return(null, false);
 		}
 		 
+		 
+		 
+		 
+		 if (root.data < x ) {
+				bst_delete_return newrootRight = deletedataHelper(root.right, x);
+				root.right = newrootRight.root ; 
+				newrootRight.root = root ; 
+				return newrootRight ; 
+			}
+		 
 		   if (root.data > x ) {
 			
 			 bst_delete_return newrootLeft = deletedataHelper(root.left, x);
@@ -139,11 +149,14 @@ public class BST_CLASS {
 			 return newrootLeft ; 
 		}
 		   
-		   if (root.data < x ) {
-			bst_delete_return newrootRight = deletedataHelper(root.right, x);
-			root.right = newrootRight.root ; 
-			newrootRight.root = root ; 
-			return newrootRight ; 
+		   
+		   // now creating for the zero chiledren 
+		   if (root.left == null && root.right == null ) {
+			return new bst_delete_return(null, true) ; 
+		}
+		   // if left childeren present 
+		   if (root.left != null && root.right == null) {
+			return new bst_delete_return(root.left, true) ; 
 		}
 		
 	}
