@@ -1,5 +1,7 @@
 package BST_CLASS;
 
+import BST_CHECK_BINARY_TREE.input_print_checkbst_function;
+
 public class BST_CLASS {
 	
 	// crating the two private member 
@@ -158,6 +160,32 @@ public class BST_CLASS {
 		   if (root.left != null && root.right == null) {
 			return new bst_delete_return(root.left, true) ; 
 		}
+		   
+		   // if the right childeren present 
+		   if (root.right != null && root.left == null) {
+			return new bst_delete_return(root.right, true) ; 
+		}
+		   
+		   // if the both children are the present 
+		   
+		
+	}
+	
+	
+	// crating  the minimum function 
+	private static int  mimum_forDeletion(BinaryTreeNode<Integer>root) {
+		
+		if (root == null) {
+			return Integer.MAX_VALUE ; 
+		}
+		
+		// now calling left and right side 
+		int leftmin = mimum_forDeletion(root.left);
+		int rightmin = mimum_forDeletion(root.right) ; 
+		
+		// now return the function of the three node 
+		return Math.min(root.data, Math.min(leftmin, rightmin)) ; 
+		
 		
 	}
 	
