@@ -171,7 +171,7 @@ public class BST_CLASS {
 		   root.data = min ; 
 		   bst_delete_return outputright = deletedataHelper(root.right, min) ; 
 		   root.right = outputright.root ; 
-		   return new bst_delete_return(root, true)
+		   return new bst_delete_return(root, true);
 		   
 		
 	}
