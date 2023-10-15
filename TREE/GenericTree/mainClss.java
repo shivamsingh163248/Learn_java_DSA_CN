@@ -17,7 +17,7 @@ public class mainClss {
 		root.childeren.add(node1);
 		root.childeren.add(node2);
 		root.childeren.add(node3);
-		root.childeren.add(node4);
+		node1.childeren.add(node4);
 		
 		// now connection in node i 
 		node1.childeren.add(node5) ; 
@@ -29,6 +29,9 @@ public class mainClss {
 //		System.out.println("check aonther");
 //		System.out.println(node.childeren);
 		
+		// now creating the object of the function 
+		TreeFunction function = new TreeFunction() ; 
+		function.printTree(root);
 		
 //		
 	}
