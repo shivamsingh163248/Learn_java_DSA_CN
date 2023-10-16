@@ -12,7 +12,10 @@ public class TreeFunction {
 		}
 		
 		// now printing the data 
-		System.out.print(root.data+" ");
+		System.out.print(root.data+" : ");
+		for (int i = 0; i < root.childeren.size(); i++) {
+			System.out.print(root.childeren.get(i).data+" ");
+		}
 		System.out.println();
 		// now creating the loop 
 		for (int i = 0; i < root.childeren.size(); i++) {
