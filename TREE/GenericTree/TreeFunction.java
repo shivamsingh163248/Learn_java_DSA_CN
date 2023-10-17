@@ -24,4 +24,19 @@ public class TreeFunction {
 			printTree(node);
 		}
 	}
+	
+	// creating the function counting the node of the tree 
+	// now return the integer 
+	public int TotalTreeNode(TreeNode<Integer>root) {
+		
+		int count = 1 ; 
+		
+		// now creating the loop 
+		for (int i = 0; i < root.childeren.size(); i++) {
+			int childcount = TotalTreeNode(root.childeren.get(i));
+			count += childcount ; 
+		}
+		return count ; 
+		
+	}
 }
