@@ -6,11 +6,11 @@ public class mainClss {
 	public static void main(String[] args) {
 		
 		TreeNode<Integer>root = new TreeNode<Integer>(5) ; 
-		TreeNode<Integer>node1 = new TreeNode<Integer>(53) ; 
-		TreeNode<Integer>node2 = new TreeNode<Integer>(55) ; 
-		TreeNode<Integer>node3 = new TreeNode<Integer>(35) ; 
-		TreeNode<Integer>node4 = new TreeNode<Integer>(85) ; 
-		TreeNode<Integer>node5 = new TreeNode<Integer>(45) ; 
+		TreeNode<Integer>node1 = new TreeNode<Integer>(2) ; 
+		TreeNode<Integer>node2 = new TreeNode<Integer>(3) ; 
+		TreeNode<Integer>node3 = new TreeNode<Integer>(10) ; 
+		TreeNode<Integer>node4 = new TreeNode<Integer>(15) ; 
+		TreeNode<Integer>node5 = new TreeNode<Integer>(25) ; 
 		
 		
 		// now creating the linking process 
@@ -33,6 +33,12 @@ public class mainClss {
 		TreeFunction function = new TreeFunction() ; 
 		function.printTree(root);
 		
+		
+		// now test the  total number function 
+		int total = function.TotalTreeNode(root) ; 
+		System.out.println("total number node : "+total);
+		
+		System.out.println(function.SumTotalTreeNode(root));
 //		
 	}
 
