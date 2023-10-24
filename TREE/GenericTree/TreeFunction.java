@@ -75,6 +75,7 @@ public class TreeFunction {
 		 TreeNode<Integer>root = new TreeNode<Integer>(root.data) ; 
 		 // now creating the queue 
 		 Queue<TreeNode<Integer>>pendingNode = new LinkedList<TreeNode<Integer>>() ; 
+		 pendingNode.add(root) ; 
 		 
 		 // now creating the loop and adding the children node in the queue 
 		 
@@ -94,6 +95,15 @@ public class TreeFunction {
 				 int childNodeData = input.nextInt();
 				 // now creting the node 
 				 TreeNode<Integer>childnode = new TreeNode<Integer>(childNodeData) ; 
+			// now adding in the row 
+				 pendingNode.add(childnode);
+				 // now creating the connection 
+				  
+				 
+				  
+				    
+				 
+				 
 			}
 		}
 		 
