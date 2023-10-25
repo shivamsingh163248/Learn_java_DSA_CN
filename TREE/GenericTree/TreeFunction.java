@@ -59,7 +59,7 @@ public class TreeFunction {
 	
 	// creating the function takining the input levelwise 
 	
-	public TreeNode<Integer>root TaingInputLevelWiseTree(){
+	public TreeNode<Integer> TaingInputLevelWiseTree(){
 		
 		// now creating the scanner function  
 		Scanner input = new Scanner(System.in) ; 
@@ -72,7 +72,7 @@ public class TreeFunction {
 		}
 		 
 		 // now creating the root node
-		 TreeNode<Integer>root = new TreeNode<Integer>(root.data) ; 
+		 TreeNode<Integer>root = new TreeNode<Integer>(rootData) ; 
 		 // now creating the queue 
 		 Queue<TreeNode<Integer>>pendingNode = new LinkedList<TreeNode<Integer>>() ; 
 		 pendingNode.add(root) ; 
@@ -98,14 +98,20 @@ public class TreeFunction {
 			// now adding in the row 
 				 pendingNode.add(childnode);
 				 // now creating the connection 
-				  
+				 front.childeren =  childnode;
+				 
 				 
 				  
 				    
 				 
 				 
 			}
+			 
+			 
 		}
+		 
+		 return root ; 
+		 
 		 
 	}
 }
