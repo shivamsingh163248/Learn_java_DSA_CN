@@ -98,7 +98,7 @@ public class TreeFunction {
 			// now adding in the row 
 				 pendingNode.add(childnode);
 				 // now creating the connection 
-				 front.childeren =  childnode;
+				 front.childeren.add(childnode);
 				 
 				 
 				  
