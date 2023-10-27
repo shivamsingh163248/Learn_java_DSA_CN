@@ -205,5 +205,25 @@ public class TreeFunction {
 		 return hight ; 
 	}
 	
+	// creating the function Post order Trevnsionl 
+	public void postOrderPrintTree(TreeNode<Integer>root) {
+		
+		// creating the base condition 
+		if (root == null) {
+			return  ; 
+		}
+		
+		// now creating the loop for the acesing the all the  element 
+		for (int i = 0; i < root.childeren.size(); i++) {
+			// now calling the same function for the recursion 
+			postOrderPrintTree(root.childeren.get(i));
+		}
+		
+		System.out.print(root.data+" ");
+		
+		
+		
+		}
+	
 	
 }
