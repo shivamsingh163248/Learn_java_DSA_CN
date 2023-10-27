@@ -1,5 +1,6 @@
 package GenericTree;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -113,5 +114,48 @@ public class TreeFunction {
 		 return root ; 
 		 
 		 
+	}
+	
+	// creatung the function for the levele wise print 
+	// creating the level wise function 
+	public void printLevelwise(TreeNode<Integer>root) {
+		
+		// now creating the base condition 
+		if (root == null) {
+			return ; 
+		}
+		
+		// now creating  the queue using the link list for the adding the number in queue 
+		Queue<TreeNode<Integer>> node =  new LinkedList<>();
+		// now addding the root 
+		node.add(root);
+		node.add(null) ; 
+		
+		// now creating the looop for the printing the levele wise printing 
+		while (!node.isEmpty()) {
+			
+			// now creating the loop for the adding deta in the row 
+			TreeNode<Integer>frontNode = node.poll() ; 
+			// creating the condition node poll null or not 
+			     if (frontNode != null) {
+				
+			    	 // now printing the data 
+			    	 System.out.print(frontNode.data+" ");
+			    	 // now adding whole node of this root node using the for loop 
+			    	 for (int i = 0; i < frontNode.childeren.size(); i++) {
+					// now adding data 
+			    		 node.add(frontNode.childeren.get(i)) ; 
+			    		 
+					}
+				}else {
+					System.out.println();
+					if (!node.isEmpty()) {
+						node.add(null) ; 
+					}
+					
+				}
+		}
+		
+		
 	}
 }
