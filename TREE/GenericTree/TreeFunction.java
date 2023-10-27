@@ -179,4 +179,31 @@ public class TreeFunction {
 		return temp ; 
 	}
 	
+	// now creating the function for the finding the hight
+	
+	public int HightGenricTree(TreeNode<Integer>root) {
+		
+		
+		// creating  the condition if the root is the nulll 
+		if (root == null ) {
+			return 0 ; 
+		}
+		
+		int hight = 1 ; 
+		
+		// now creating the loop for the recursision of all the node 
+		 for (int i = 0; i < root.childeren.size(); i++) {
+			
+			  int total   = 1 +  HightGenricTree(root.childeren.get(i)) ; 
+			  
+			  if (total > hight) {
+				hight = total ; 
+			}
+			 
+		}
+		 
+		 return hight ; 
+	}
+	
+	
 }
