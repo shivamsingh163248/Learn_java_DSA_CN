@@ -50,6 +50,8 @@ public class mainClss {
 //		
 		TreeNode<Integer>LevelWiseNode = test.TaingInputLevelWiseTree();
 		test.printTree(LevelWiseNode);
+		// printing the level wisee 
+		test.printLevelwise(LevelWiseNode);
 		
 	}
 

@@ -49,7 +49,7 @@ public class TreeFunction {
 	public int SumTotalTreeNode(TreeNode<Integer>root) {
 		
 		// creating the for loop 
-		int total = root.data ; 
+		int total = root.data ;  
 		for (int i = 0; i < root.childeren.size(); i++) {
 		//	int number = root.childeren.get(i).data ;  
 			int number = SumTotalTreeNode(root.childeren.get(i)) ; 
@@ -158,4 +158,25 @@ public class TreeFunction {
 		
 		
 	}
+	
+	
+	// number of the greater node creating the function 
+	
+	public int NoGreateNode(TreeNode<Integer>root , int data) {
+		
+		// now creating the base 
+		int temp = 0 ; 
+		// checking the condition 
+		if (root.data > data) {
+			temp++ ; 
+		}
+		// now creating the loop for the calling the every node 
+		for (int i = 0; i < root.childeren.size(); i++) {
+			int total = NoGreateNode(root.childeren.get(i), data) ; 
+			temp += total ; 
+		}
+		
+		return temp ; 
+	}
+	
 }
