@@ -9,7 +9,7 @@ public class classs  extends school{
 	
 	// now creating the print function 
 	public void print() {
-		System.out.println("this is the school class ");
+		System.out.println("this is the class ");
 	}
 	
 }
