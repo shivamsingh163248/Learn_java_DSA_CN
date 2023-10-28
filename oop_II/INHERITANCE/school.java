@@ -11,11 +11,11 @@ public class school {
 	
 	
 	// creating the default counstrocter 
-//	public school() {
-//		System.out.println("this is the default counstoctur ");
-//		System.err.println("my name is the shivam singh ");
-//	}
-//	
+	public school() {
+		System.out.println("this is the default counstoctur ");
+		System.err.println("my name is the shivam singh ");
+	}
+	
 	
 	
 	

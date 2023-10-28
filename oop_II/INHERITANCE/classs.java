@@ -26,9 +26,9 @@ public class classs  extends school{
 	}
 
 
-//	public classs() {
-//		super();
-//		System.out.println("this is the super class ");
-//	}
+	public classs() {
+		super();
+		System.out.println("this is the super class ");
+	}
 	
 }
