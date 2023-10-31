@@ -9,6 +9,10 @@ public class TreeNode <T>{
    
    public TreeNode(T data) {
 
+	   // now creating the set the data in the parameter 
+	   this.Data = data ; 
+	   // now creating the arraylist 
+	   children = new ArrayList<>() ; 
 }
    
    
