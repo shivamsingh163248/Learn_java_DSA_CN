@@ -47,6 +47,21 @@ public class functionTree {
 		}
 		
 		// now calling the all the children of all the root all the node 
+		for (int i = 0; i < root.children.size(); i++) {
+			
+			// now return the node
+			TreeNode<Integer>nextNodeChild = nextLaregerElement(root.children.get(i), n) ; 
+			// now creating the codition 
+			if (nextNodeChild != null) {
+				
+				if (nextNode == null || nextNodeChild.Data < nextNode.Data ) {
+					
+					nextNode = nextNodeChild ; 
+				}
+			}
+			
+		}
+		return nextNode ; 
 		
 		
 	}
