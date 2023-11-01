@@ -27,6 +27,28 @@ public class functionTree {
 		return count ; 
 		
 		
+	}  
+	
+	// creating the next larger element program 
+	public TreeNode<Integer> nextLaregerElement(TreeNode<Integer>root , int n ){
+		
+		// n is the number find the next larger element 
+		// creating the base condition 
+		if (root == null) {
+			return null ; 
+		}
+		
+		// now creating the refrence of the object 
+		TreeNode<Integer>nextNode = null ; 
+		
+		if (root.Data > n) {
+			// now update the refrence 
+			nextNode = root ; 
+		}
+		
+		// now calling the all the children of all the root all the node 
+		
+		
 	}
 
 }
