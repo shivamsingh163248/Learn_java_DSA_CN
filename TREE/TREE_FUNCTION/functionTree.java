@@ -1,5 +1,7 @@
 package TREE_FUNCTION;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class functionTree {
@@ -23,7 +25,19 @@ public class functionTree {
 		// now creating the node for the creating the object of the node 
 		TreeNode<Integer>rootNode = new TreeNode<Integer>(rootData) ; 
 		// creating the  queue using the linklist 
-		 
+		Queue<TreeNode<Integer>>pendingNode = new LinkedList<TreeNode<Integer>>() ; 
+		// now adding the root node in the pending node 
+		pendingNode.add(rootNode) ; 
+		
+		// now creating the while loop when queue in null 
+		
+		while (!pendingNode.isEmpty()) {
+			
+			// now creating the another refrence  of the node 
+			// for the polling of the node 
+			
+			
+		} 
 		
 		
 		
