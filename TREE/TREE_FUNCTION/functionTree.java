@@ -35,9 +35,33 @@ public class functionTree {
 			
 			// now creating the another refrence  of the node 
 			// for the polling of the node 
+			TreeNode<Integer>CurrentNode = pendingNode.poll() ; 
+			// now creating the size of child of the root node 
+			System.out.println("enter the size of child node of root node "+CurrentNode.Data) ; 
+			int sizeChildNode = input.nextInt();
+			
+			// now creating the loop 
+			for (int i = 0; i < sizeChildNode; i++) {
+				
+				// now  creating the add in the child node 
+				// now creating the new node 
+				System.out.println("enter node "+i);
+				int childData = input.nextInt();
+				
+				// creating the  child node 
+				TreeNode<Integer>childNode = new TreeNode<Integer>(childData) ; 
+				// now adding the data in the pending node 
+				pendingNode.add(childNode) ; 
+				// now adding the data in the root children 
+				CurrentNode.children.add(childNode) ; 
+			}
+			
+			
 			
 			
 		} 
+		
+		return rootNode ; 
 		
 		
 		
