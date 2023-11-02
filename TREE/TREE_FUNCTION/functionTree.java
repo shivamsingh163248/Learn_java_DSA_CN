@@ -1,8 +1,34 @@
 package TREE_FUNCTION;
 
+import java.util.Scanner;
+
 public class functionTree {
 	
 	// creating the input and output function 
+	
+	// creating the level wise user input function 
+	public TreeNode<Integer> LevelWiseInput(){
+		
+		// creating the root node 
+		// creating the scanner function for the taking input from the user 
+		Scanner input = new Scanner(System.in) ; 
+		// now user display for the enter the node 
+		System.out.print("enter the root node : ");
+		int rootData = input.nextInt();
+		
+		if (rootData == -1) {
+			return null ; 
+		}
+		
+		// now creating the node for the creating the object of the node 
+		TreeNode<Integer>rootNode = new TreeNode<Integer>(rootData) ; 
+		// creating the  queue using the linklist 
+		 
+		
+		
+		
+		
+	}
 	
 	// creating the function for the finding the leaf node in tree 
 	// they are the return the integer 
