@@ -20,10 +20,64 @@ public class HasMapUsingBST_Function {
 		root = insert(root , key , value) ; 
 	}
 
-	private TreeNode<Integer> insert(TreeNode<Integer> root2, int key, int value) {
-		// TODO Auto-generated method stub
-		return null;
+	private TreeNode<Integer> insert(TreeNode<Integer> root, int key, int value) {
+		
+		// now creating the base condition 
+		if (root == null) {
+			return new TreeNode<Integer>(key, value) ; 
+		}
+		
+		// now calling the left side and right side according to condition 
+		
+		if (root.key > key) {
+			// now calling the left side 
+		root.left = 	insert(root.left, key, value) ; 
+		} else if(root.key < key){
+			// now calling the right side of the node 
+			root.Right  = insert(root.Right, key, value);
+			
+		}else {
+			// if both condition not match it means key and same 
+			root.value = value ; 
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		return root;
 	} 
+	
+	
+	
+	
+	
+	// now creating the another function for searching that function name is the get 
+	public int get(int key) {
+		
+		// creating the tarnry operator 
+		TreeNode<Integer>node = searching(root, key) ; 
+        return (node != null)? node.value : -1 ; 
+	}
+
+	private TreeNode<Integer> searching(TreeNode<Integer> root, int key) {
+		
+		// creating the base condition 
+		if (root == null || root.key == key) {
+			return root ; 
+		}
+		
+		// now calling the left side and right side 
+		if (root.key > key ) {
+			return searching(root.left, key);
+		}
+		return searching(root.Right, key) ; 
+		
+		
+	}
 	
 	
 	
