@@ -28,6 +28,11 @@ public class Mainfunction {
 		// now remove the data 
 		
 		function.put(6, 34);
+		System.out.println(function.get(6));
+		
+		// now we are the remove 4 index 
+		function.remove(4);
+		System.out.println(function.get(4));
 		
 	}
 	
