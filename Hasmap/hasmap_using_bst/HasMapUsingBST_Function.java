@@ -80,6 +80,19 @@ public class HasMapUsingBST_Function {
 	}
 	
 	
+	// now creating the function 
+	public void  remove(int key) {
+		// calling the function delete 
+		root = delete(root , key) ; 
+	}
+
+	private TreeNode<Integer> delete(TreeNode<Integer> root, int key) {
+		
+		
+		
+		return null;
+	}
+
 	
 	
 
