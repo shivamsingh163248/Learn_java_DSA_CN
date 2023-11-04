@@ -88,9 +88,51 @@ public class HasMapUsingBST_Function {
 
 	private TreeNode<Integer> delete(TreeNode<Integer> root, int key) {
 		
+		if (root == null ) {
+			return  null ; 
+		}
+		
+		// now checking the condition of the key value for the matching for the deleting 
+		if (root.key > key) {
+			// now calling the function of the left side 
+			root.left = delete(root.left, key) ; 
+		}else if (root.key < key) {
+			// now calling the right side 
+			  root.Right = delete(root.Right, key) ; 
+		}else {
+			
+			
+		// write the condition for the single node 
+			if (root.left == null) {
+				return root.Right ; 
+			}else if (root.Right == null) {
+				return root.left ; 
+			}
+			
+			root.key = minValue(root.Right) ; 
+			
+			root.Right = delete(root.Right, root.key);
+			
+			
+		}
+		
+		return root;
+	}
+
+	private Integer minValue(TreeNode<Integer> root) {
+		
+		int minValue = root.key ; 
+		
+		// now creating the while loop 
+		while (root.left != null) {
+		 minValue = root.left.key ; 
+		 root = root.left ;
+		}
+		
+		return minValue ; 
 		
 		
-		return null;
+		
 	}
 
 	
