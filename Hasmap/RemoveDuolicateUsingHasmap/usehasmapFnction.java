@@ -1,7 +1,6 @@
 package RemoveDuolicateUsingHasmap;
 
-import java.security.PublicKey;
-import java.sql.SQLIntegrityConstraintViolationException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -19,11 +18,12 @@ public class usehasmapFnction {
          // now creating the while loop for the 
          int[]arry = new int[size] ; 
          int i = 0 ; 
-         while (i < size) {
+         while (i < arry.length) {
 			// now taking the input whole arry 
-        	 System.out.println("enter the index"+i);
+        	 System.out.println("enter the index:"+i);
         	 int value = input.nextInt();
         	 arry[i] =  value ; 
+        	 i++ ; 
         	 
         
         	 
@@ -57,6 +57,11 @@ public class usehasmapFnction {
         	
         	return number ;
         }
+        
+        
+        
+        
+        
 		
 	}
 
