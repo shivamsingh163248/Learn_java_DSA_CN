@@ -21,6 +21,14 @@ public class Mainfunction {
 		
 		// now is the key are the contain the print the some thing 
 		
+		// now printing the thing  
+		 // cretating the print function for the using the get 
+		
+		System.out.println(student.get(2));
+		// now using the remove function for the rtemove any key 
+		student.remove(2) ; 
+		// now we are the testing the 
+		
 		
 	}
 
