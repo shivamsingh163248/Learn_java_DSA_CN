@@ -54,6 +54,7 @@ public class usehasmapFnction {
         		number.add(arry[i]) ; 
 				
 			}
+        	 
         	
         	return number ;
         }

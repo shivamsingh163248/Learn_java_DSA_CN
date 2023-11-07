@@ -51,7 +51,7 @@ public class Mainfunction {
 		
 		student.put(4, "mahesh") ; 
 		student.put(5, "suresh") ;
-		student.put(6, "dhirendra") ;
+		student.put(34, "dhirendra kumar") ;
 		student.put(7, "gaurav") ; 
 		
 		// now finding the size 
@@ -63,7 +63,8 @@ public class Mainfunction {
 		
 		// now printing the using the for each loop 
 		for (Integer i : keyvalue) {
-			System.out.println(student.get(i));
+			System.out.println(student.get(i)+" "+i);
+			
 		}
 		
 	
