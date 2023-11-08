@@ -1,6 +1,8 @@
 package RemoveDuolicateUsingHasmap;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainClassFunction {
 	
@@ -20,7 +22,24 @@ public class MainClassFunction {
 		
 	}
 	
-	System.out.println(func.removedublicate("agfkgfekkll"));
+	HashMap<String, Integer> map = new HashMap<>();
+	 
+    // Add elements using put method
+    map.put("vishal", 10);
+    map.put("sachin", 30);
+    map.put("vaibhav", 20);
+
+    // Iterate the map using
+    // for-each loop
+    
+    // this is the importend value 
+    
+    
+    for (Map.Entry<String, Integer> e : map.entrySet())
+        System.out.println("Key: " + e.getKey()
+                           + " Value: " + e.getValue());
+    
+    
 	
 	
 	}
