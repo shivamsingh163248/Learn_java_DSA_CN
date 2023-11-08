@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import learn_recursion_II.string_replacement;
+
 public class usehasmapFnction {
 	
 	// creating the hasmap function
@@ -60,10 +62,43 @@ public class usehasmapFnction {
         }
         
         
+        // crating the function remove string 
+        public String  removedublicate(String str) {
+        	
+        	// creating the hasmap obejct 
+        	HashMap< Integer , String>number = new HashMap<>() ; 
+        	// now add the stirng deta in the has map 
+        	for (int i = 0; i < str.length(); i++) {
+        		
+        		if (number.containsValue(String.valueOf(str.charAt(i)))) {
+					continue ; 
+				}
+        		
+				number.put(i , String.valueOf(str.charAt(i))) ; 
+			}
+        	
+        	
+        	// now printing the charecter 
+        	
+        	
+        	// cretaing the for loop 
+        	String value = ""  ; 
+        	for (int i = 0; i < number.size(); i++) {
+				value += number.get(i) ;
+				System.out.println(number.get(i));
+			}
+        	
+        	return  value ; 
+        	
+        }
+        	
+        
+        
+        
         
         
         
 		
-	}
+}
 
 

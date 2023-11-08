@@ -20,6 +20,9 @@ public class MainClassFunction {
 		
 	}
 	
+	System.out.println(func.removedublicate("agfkgfekkll"));
+	
+	
 	}
 
 }

@@ -49,7 +49,7 @@ public class Mainfunction {
 		}
 		
 		
-		student.put(4, "mahesh") ; 
+		student.put(-4, "mahesh") ; 
 		student.put(5, "suresh") ;
 		student.put(34, "dhirendra kumar") ;
 		student.put(7, "gaurav") ; 
