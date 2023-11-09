@@ -40,6 +40,20 @@ public class MainClassFunction {
                            + " Value: " + e.getValue());
     
     
+    
+    // calculating the hascode 
+    String a = "abcde" ; 
+    String b = "bcdf" ; 
+    String c = "pqr" ; 
+    String d = "abei"; 
+    
+    // now printing the has code 
+    System.out.println(a.hashCode());
+    System.out.println(b.hashCode());
+    System.out.println(c.hashCode());
+    System.out.println(d.hashCode());
+    
+    
 	
 	
 	}
