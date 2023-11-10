@@ -54,6 +54,10 @@ public class MainClassFunction {
     System.out.println(d.hashCode());
     
     
+    // creating the method of the getordefalut method in the hasmap 
+    
+    
+    
 	
 	
 	}
