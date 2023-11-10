@@ -23,4 +23,21 @@ public class map<T ,V>{
 			bucket.add(null) ; 
 		}
 	}
+	 
+	 
+	 //  creating the insert function 
+	 public  void insret(T key  , V value) {
+		 
+		 // fist getting the bucket index 
+		 int bucketIndex = getbucketIndex(key) ;
+		 
+		 
+	 }
+
+
+	private int getbucketIndex(T key) {
+		
+		return 0;
+	}
+	 
 }
