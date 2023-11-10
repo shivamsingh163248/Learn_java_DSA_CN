@@ -104,5 +104,37 @@ public class map<T ,V>{
 	}
 	
 	// now creating the function of the size 
+	public V removekey(T key) {
+		
+	// fist finding the index 
+		int bucketIndex = getbucketIndex(key) ; 
+		mapnode<T, V>head = bucket.get(bucketIndex) ; 
+		// now creating the priveus 
+		mapnode<T, V>privious = null ; 
+		
+		// now check the head or null or not if not null then check key are not present at fist 
+		// now travensing all the node 
+		while (head != null) {
+			
+			if (head.key.equals(key)) {
+				  
+				if (privious != null) {
+					// now rprivious linking the head next 
+					privious.next = head.next ; 
+				}else {
+					// it means node are the present at the frist of the link list 
+					bucket.set(bucketIndex, head.next) ; 
+				}
+				
+				// now privious should be head 
+				privious = head ; 
+				head = head.next ; 
+				
+			}
+			return null ; 
+			
+		}
+		
+	}
 	
 }
