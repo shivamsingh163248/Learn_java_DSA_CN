@@ -37,7 +37,13 @@ public class map<T ,V>{
 
 	private int getbucketIndex(T key) {
 		
-		return 0;
+		// key are changing to hasmap and then creating the module for the return 
+		int index = key.hashCode(); 
+		int finalIndex = index%numbacket ; 
+		return finalIndex ; 
+		
+		
+	
 	}
 	 
 }
