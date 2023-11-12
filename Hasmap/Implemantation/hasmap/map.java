@@ -60,8 +60,25 @@ public class map<T ,V>{
 		 // now count for the finding the number of element in the link list 
 		 count++ ; 
 		 
+		 // creating the finding the lode factor 
+		 // formula of the lode factor 
+		 // number of the hastable divide 
+		 double lode_factor = (1.0*count)/numbacket ; 
+		 // creating the if condition 
+		 if (lode_factor > 0.7) {
+			// calling the rehasing function 
+			 rehas() ; 
+		}
+		 
 		 
 	 }
+
+
+	private void rehas() {
+		// creating the arry list for the rebashing 
+		
+		
+	}
 
 
 	private int getbucketIndex(T key) {
@@ -127,13 +144,15 @@ public class map<T ,V>{
 				}
 				
 				// now privious should be head 
-				privious = head ; 
-				head = head.next ; 
+				count-- ; 
+				return head.value ; 
 				
 			}
-			return null ; 
+			privious = head ; 
+			head = head.next ; 
 			
 		}
+		return null ; 
 		
 	}
 	
