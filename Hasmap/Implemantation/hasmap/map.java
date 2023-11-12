@@ -76,7 +76,15 @@ public class map<T ,V>{
 
 	private void rehas() {
 		// creating the arry list for the rebashing 
+		// bucket copy address in the temp 
+		ArrayList<mapnode<T, V>>temp  = bucket ; 
+		bucket = new ArrayList<>() ; 
+		// now creating all the element in the bucket 
+		// creating the for loop for the elenment
 		
+		for (int i = 0; i < array.length; i++) {
+			
+		}
 		
 	}
 
