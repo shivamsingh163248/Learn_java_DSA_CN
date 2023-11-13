@@ -82,8 +82,22 @@ public class map<T ,V>{
 		// now creating all the element in the bucket 
 		// creating the for loop for the elenment
 		
-		for (int i = 0; i < array.length; i++) {
+		for (int i = 0; i < 2*numbacket; i++) {
+			bucket.add(null) ; 
+		}
+		count = 0 ; 
+		numbacket = numbacket*2 ; 
+		for (int i = 0; i < temp.size(); i++) {
 			
+			
+		mapnode<T, V>head = temp.get(i) ; 
+		// crating the condition if not null 
+		 while (head != null) {
+			T key = head.key ; 
+			V value = head.value ; 
+			insret(key, value);
+			head = head.next ; 
+		}
 		}
 		
 	}
