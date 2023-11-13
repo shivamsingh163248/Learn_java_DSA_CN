@@ -21,6 +21,6 @@ public class class_school implements school {
 	}
 	
 	// now checking the implement 
-	
+	// this is the implement 
 
 }
