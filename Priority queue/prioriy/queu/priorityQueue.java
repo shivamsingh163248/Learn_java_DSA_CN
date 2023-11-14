@@ -18,6 +18,24 @@ public class priorityQueue <T> {
 	
 	// fist creating the function of the insert 
 	public void insert(T value ,int priority ) {
+		Element<T>e = new Element<>(value, priority);
+		// now adding the object in add 
+		heap.add(e) ; 
+		
+		// now creating the condition according the priorty 
+		int childIndex =  heap.size()-1 ; 
+		int parentindex = (childIndex-1)/2 ; 
+		
+		
+		// now switching the child and prenet node according to the priority 
+		
+		Element<T>temp = heap.get(childIndex);  // HEAR THE GATE OBJECT  
+		// NOW CHILD emelemt in the parent node 
+		heap.set(childIndex, heap.get(parentindex));
+		// now at the parent index set the value  of the child value 
+		heap.set(parentindex, temp) ; 
+		
+		// now changing the index 
 		
 		
 	}
@@ -33,6 +51,9 @@ public class priorityQueue <T> {
 	}
 	
 	public T removemin() {
+		
+		// creating the obejct of the element 
+		
 	 
 	}
 	
