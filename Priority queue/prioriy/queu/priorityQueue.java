@@ -22,12 +22,18 @@ public class priorityQueue <T> {
 		
 	}
 	// creating the get min function
-	public T getmin() {
-		// 
+	public T getmin() throws NoAanyElemrntInList {
+		// it means the fist element of the array list are the requerd if the array list is the null 
+		// then creating the exception 
+		if (isEmpty()) {
+			throw new NoAanyElemrntInList() ; 
+		}
+		
+		return heap.get(0).value;
 	}
 	
 	public T removemin() {
-		
+	 
 	}
 	
 	// creating the function is empty
