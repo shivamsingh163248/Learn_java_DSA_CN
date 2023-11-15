@@ -28,6 +28,13 @@ public class priorityQueue <T> {
 		
 		
 		// now switching the child and prenet node according to the priority 
+		while (childIndex > 0 ) {
+			
+		
+		
+		if ( heap.get(childIndex).prioriy < heap.get(parentindex).prioriy ) {
+			
+		
 		
 		Element<T>temp = heap.get(childIndex);  // HEAR THE GATE OBJECT  
 		// NOW CHILD emelemt in the parent node 
@@ -35,7 +42,16 @@ public class priorityQueue <T> {
 		// now at the parent index set the value  of the child value 
 		heap.set(parentindex, temp) ; 
 		
-		// now changing the index 
+		// now changing the index z
+		childIndex = parentindex ; 
+		parentindex = (childIndex-1)/2 ; 
+		
+		
+		}else {
+			return ; 
+		}
+		}
+		
 		
 		
 	}
