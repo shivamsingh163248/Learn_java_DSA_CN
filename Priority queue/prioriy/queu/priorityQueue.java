@@ -66,10 +66,34 @@ public class priorityQueue <T> {
 		return heap.get(0).value;
 	}
 	
-	public T removemin() {
+	public T removemin() throws NoAanyElemrntInList {
 		
-		// creating the obejct of the element 
+		// return type is the value of the min 
+		// this is the remove function in which we are the removing the fist index of the array list
+		 if (heap.isEmpty()) {
+			// now return the exception 
+			 throw new NoAanyElemrntInList() ; 
+		}
 		
+		 // is this is the not the empty then remove the frist element value 
+		 Element<T> temp = heap.get(0) ; 
+		 // now removing the value 
+		 T tempvalue = temp.value ; 
+		 // now set the value of the last index of the value at the zero index 
+		 heap.set(0, heap.get(heap.size()-1)) ; 
+		 
+		 // after the update last element of the heap 
+		 // now removeing the last object of the heap that are store in the form of the object 
+		 heap.remove(heap.size()-1) ; 
+		 int parentindex = 0 ; 
+		 int leftchildIndex = 2*parentindex+1 ; 
+	     int RightchildIndex = 2*parentindex+1 ; 
+	     
+	     int minindex = parentindex ; 
+	     // creating the condition in three node which one is the mean 
+	     if (condition) {
+			
+		}
 	 
 	}
 	
