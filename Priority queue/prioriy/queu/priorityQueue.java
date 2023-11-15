@@ -1,5 +1,6 @@
 package prioriy.queu;
 
+import java.text.BreakIterator;
 import java.util.ArrayList;
 
 public class priorityQueue <T> {
@@ -78,7 +79,7 @@ public class priorityQueue <T> {
 		 // is this is the not the empty then remove the frist element value 
 		 Element<T> temp = heap.get(0) ; 
 		 // now removing the value 
-		 T tempvalue = temp.value ; 
+		 T ans = temp.value ; 
 		 // now set the value of the last index of the value at the zero index 
 		 heap.set(0, heap.get(heap.size()-1)) ; 
 		 
@@ -89,11 +90,43 @@ public class priorityQueue <T> {
 		 int leftchildIndex = 2*parentindex+1 ; 
 	     int RightchildIndex = 2*parentindex+1 ; 
 	     
+	     
+	     // creating the loop 
+	     
+	   while (leftchildIndex < heap.size()) {
+		
+	
+	     
+	     
 	     int minindex = parentindex ; 
 	     // creating the condition in three node which one is the mean 
-	     if (condition) {
-			
+	     if (heap.get(leftchildIndex).prioriy < heap.get(RightchildIndex).prioriy) {
+			// in this condtion the more priority of the left side then the min is left
+	    	 minindex = leftchildIndex ; 
 		}
+	     // mow creating the find the minmun 
+	     if (heap.get(leftchildIndex).prioriy > heap.get(RightchildIndex).prioriy) {
+			minindex = RightchildIndex ; 
+		}
+	     
+	     if (minindex == parentindex) {
+			break ; 
+		}
+	     
+	     // sow shifting the element 
+	     Element<T>temps = heap.get(minindex) ; 
+	     // now set the value 
+	     heap.set(minindex, heap.get(parentindex));
+	     // now changing the parent index 
+	     heap.set(parentindex, temps) ; 
+	     
+	     // now changing the index of the left child and the right child 
+	     leftchildIndex = 2*parentindex +1 ; 
+	     RightchildIndex  = 2*parentindex+2 ; 
+	   }
+	   
+	   
+	   return ans ; 
 	 
 	}
 	
