@@ -9,8 +9,8 @@ public class heapTestFunction {
 		priorityQueue<String>ticket = new priorityQueue<>(); 
 		ticket.insert("shivam", 25);
 		ticket.insert("sunil", 5);
-		ticket.insert("itisha", 26);
-		ticket.insert("dhirendra", 21);
+		ticket.insert("itisha", 95);
+		ticket.insert("dhirendra", 35);
 		ticket.insert("gaurav", 2);
 		
 		// now printing the element 
@@ -36,6 +36,7 @@ public class heapTestFunction {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		
 		
 		

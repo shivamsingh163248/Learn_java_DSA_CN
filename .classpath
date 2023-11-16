@@ -36,5 +36,6 @@
 	<classpathentry kind="src" path="TREE"/>
 	<classpathentry kind="src" path="Hasmap"/>
 	<classpathentry kind="src" path="Priority queue"/>
+	<classpathentry kind="src" path="PriorityQueue II"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
