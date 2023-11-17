@@ -42,6 +42,12 @@ public class heapshort {
 		
 	}
 	
+	// creating the remove function for the removing the min 
+	
+	
+	
+	
+	
 	
 
 }
