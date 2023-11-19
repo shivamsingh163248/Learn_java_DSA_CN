@@ -44,7 +44,11 @@ public class heapshort {
 	
 	// creating the remove function for the removing the min 
 	
-	
+	public int removemin(int[]arr , int heap) {
+		
+		// array frist is the min element 
+		
+	}
 	
 	
 	
