@@ -83,13 +83,33 @@ public class heapshort {
 			// if the minimum is the equal to the parent it means no changed found 
 			if (minmumIndex != parentindex) {
 				// now sweping is prefoem 
+				int temp = arr[parentindex] ; 
+				arr[parentindex] = arr[minmumIndex] ; 
+				arr[minmumIndex] = temp ; 
 				
+				// now chenae the parent index 
+				parentindex = minmumIndex ; 
+				// again the value of the changed of the 
+				 leftchildIndex = 2*parentindex + 1 ; 
+				 rightchildIndex = 2*parentindex + 2 ; 
+				
+				
+			}else {
+				break ; 
 			}
 			
+			
 		}
+		return minValue ; 
 		
 		
 	}
+	
+	
+	
+	
+	
+	
 	
 	
 	
