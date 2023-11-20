@@ -44,9 +44,50 @@ public class heapshort {
 	
 	// creating the remove function for the removing the min 
 	
-	public int removemin(int[]arr , int heap) {
+	public int removemin(int[]arr , int heapsize) {
 		
 		// array frist is the min element 
+		int minValue = arr[0] ; 
+		//now printing the element 
+		System.out.println(minValue);
+		// now storing the last index at the frist arry 
+		arr[0] = arr[heapsize-1] ; 
+		// now reusing the and remove last element of the heap after the copy 
+		heapsize-- ;
+		
+		// now creating the parent index 
+		int parentindex = 0 ; 
+		int leftchildIndex = 2*parentindex + 1 ; 
+		int rightchildIndex = 2*parentindex + 2 ; 
+		
+		
+		//now checking the and creating the heapyfiy process 
+		
+		while (leftchildIndex < heapsize) {
+			
+			// creating the minmum element 
+			int minmumIndex = parentindex ; 
+			// now finding the minmum in three node 
+			if (arr[minmumIndex] > arr[leftchildIndex]) {
+				//now update the minmum index 
+				minmumIndex = leftchildIndex ; 
+				
+			}
+			// now compare between right child index the root index 
+			if (rightchildIndex < heapsize && arr[rightchildIndex] < arr[minmumIndex] ) {
+				// now update the value 
+				minmumIndex = rightchildIndex ; 
+			}
+			
+			// after the finding the minimum element sweping the perform 
+			// if the minimum is the equal to the parent it means no changed found 
+			if (minmumIndex != parentindex) {
+				// now sweping is prefoem 
+				
+			}
+			
+		}
+		
 		
 	}
 	
