@@ -38,6 +38,12 @@ public class inbuld_PQ {
 		System.out.println(shorting.peek());
 		System.out.println(shorting.poll());
 		System.out.println(shorting.peek());
+		
+		
+		// now printing the shoritng 
+		while (!shorting.isEmpty()) {
+			System.out.println(shorting.poll());
+		}
 				
 		
 	}
