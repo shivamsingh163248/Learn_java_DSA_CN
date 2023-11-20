@@ -5,12 +5,29 @@ public class heapshort {
 	 
 	// creating the default constocter 
 	public heapshort() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public  void heapshortimplmenatation(int arr[] ) {
+		// creating the loop all the element insurted in the heap 
+		for (int i = 0; i < arr.length; i++) {
+			insurt(arr, i);
+		}
+		
+		// now calling the remove function 
+		// and restrectured the arry function 
+		
+		for (int i = 0; i < arr.length; i++) {
+			arr[arr.length-1-i] = removemin(arr, arr.length-i);
+		}
+		
 		
 	}
 	
 	// creating the function for the insurt function array in heap 
 	
-	public void insurt(int[]arry , int i) { // i is the child index 
+	private void insurt(int[]arry , int i) { // i is the child index 
 		
 		// now child node 
 		int childnode = i ; 
@@ -23,7 +40,7 @@ public class heapshort {
 			
 		
 		
-		if (arry[childnode] >arry[prenetindex]) {
+		if (arry[childnode] < arry[prenetindex]) {
 			
 			// now switch the element 
 			int temp = arry[childnode];
@@ -44,12 +61,12 @@ public class heapshort {
 	
 	// creating the remove function for the removing the min 
 	
-	public int removemin(int[]arr , int heapsize) {
+	private int removemin(int[]arr , int heapsize) {
 		
 		// array frist is the min element 
 		int minValue = arr[0] ; 
 		//now printing the element 
-		System.out.println(minValue);
+		// System.out.println(minValue);
 		// now storing the last index at the frist arry 
 		arr[0] = arr[heapsize-1] ; 
 		// now reusing the and remove last element of the heap after the copy 
