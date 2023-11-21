@@ -11,6 +11,11 @@ public class triesNode {
 	// now creating the constructor for the adding the data and the insilizer
 	public triesNode(char data ) {
 		// now set the data 
+		this.data = data ; 
+		// istremina is the default is the false 
+		isTerminal = false ; 
+		// now inislization the array 
+		childrean = new triesNode[26] ; 
 		
 	}
 
