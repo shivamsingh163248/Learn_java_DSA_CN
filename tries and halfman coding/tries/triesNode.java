@@ -6,7 +6,7 @@ public class triesNode {
 	char data ; 
 	boolean isTerminal ; 
 	// now creating the array of this class 
-	triesNode childrean[] ;
+	triesNode childrean[]  = new triesNode[26];
 	
 	// now creating the constructor for the adding the data and the insilizer
 	public triesNode(char data ) {
@@ -15,7 +15,7 @@ public class triesNode {
 		// istremina is the default is the false 
 		isTerminal = false ; 
 		// now inislization the array 
-		childrean = new triesNode[26] ; 
+		
 		
 	}
 

@@ -11,6 +11,7 @@ public class triesImplimentFunction {
 	public triesImplimentFunction() {
 		// creating the object with the 
 		root = new triesNode('\0') ;
+		// root.data = ' ' ; 
 	}
 	
 	// now creating the different function 
@@ -33,7 +34,8 @@ public class triesImplimentFunction {
 		}
 		
 		// find the child index 
-		int childindex = world.charAt(0)- 'A' ; 
+		int childindex = world.charAt(0)- 'a' ; 
+		// System.out.println(childindex);
 		// after the finding the child index insurint the element 
 		// if element are abalbe 
 		
@@ -73,7 +75,7 @@ public class triesImplimentFunction {
 		
 		// now checking the function 
 		// frist finding the index of the char so finding char index 
-		int childindex = world.charAt(0) -'A' ; 
+		int childindex = world.charAt(0) -'a' ; 
 		// storing the childindex address in the another reference 
 		
 		triesNode child  = root.childrean[childindex] ; 
@@ -109,7 +111,7 @@ public class triesImplimentFunction {
 		}
 		
 		// fist finding the index of the world 
-		int childIndex = world.charAt(0)-'A' ; 
+		int childIndex = world.charAt(0)-'a' ; 
 		// now finding the address of the of the node in the arry  
 		triesNode child = root.childrean[childIndex] ; 
 		if (child == null) {
