@@ -47,6 +47,8 @@ public class triesImplimentFunction {
 			child = new triesNode(world.charAt(0)) ; 
 			root.childrean[childindex] = child ; 
 			// hear is the connection 
+			root.childcount++ ; 
+			// System.out.println(root.childcount);
 		}
 		
 		
@@ -119,5 +121,11 @@ public class triesImplimentFunction {
 		}
 		// now calling the same function for the insurting the char
 		remoeHelper(child, world.substring(1));
+		
+		// again creating the condtion 
+		if (!child.isTerminal && child.childcount == 0 ) {
+			root.childrean[childIndex] = null ; 
+			root.childcount-- ;
+		}
 	}
 }
