@@ -52,5 +52,47 @@ public class triesfunction {
 	addhelper(child, world.substring(1));
 		
 	}
+	
+	
+	
+	// now creating the search function 
+	public boolean search(String world) {
+		
+		// now creating the search function 
+		// creating the helper function  for the batter approch for the creating the private function 
+		boolean result = searchHelper(root,world);
+			return result ; 
+		
+		}
 
-}
+	private boolean searchHelper(TriesNode root, String world) {
+		
+		if (world.length() == 0 ) {
+			return root.isTerminal ; 
+		}
+		
+		// now fist finding the element 
+		
+		int childindex = world.charAt(0) - 'a' ; 
+		// now finding the object that are the present in the index ; 
+		TriesNode child = root.children[childindex] ; 
+		
+		// check the child is null or not 
+		if (child == null) {
+			return false ; 
+		}
+		
+		// calling the function 
+		
+		return searchHelper(child, world.substring(1));
+	}
+	
+	
+	// now creating the remove function and creating the helper function 
+	
+	
+	
+	}
+
+
+
