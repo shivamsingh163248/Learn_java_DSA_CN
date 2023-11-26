@@ -132,9 +132,39 @@ public class triesfunction {
 	}
 	
 	// creating the count function 
-	public int countworld(String world) {
+	public int countworld() {
 		
 		// creating the helper function 
+		return countworldhelper(root) ; 
+	}
+
+	private int countworldhelper(TriesNode root) {
+		
+		int count = 0 ; 
+		
+		// creating the base function 
+		if (root.isTerminal) {
+			count++ ; 
+		}
+		
+		// now creating the condition 
+		// creating the loop for the 26 element and find which one have the 
+		for (int i = 0; i < 26; i++) {
+			
+			TriesNode child = root.children[i] ; 
+			
+			// if child os the not null then creating  the condtion 
+			if (child != null) {
+				// calling the same function again 
+				count += countworldhelper(child);
+			}
+			
+		}
+		
+		
+		
+		
+		return count;
 	}
 	
 	
