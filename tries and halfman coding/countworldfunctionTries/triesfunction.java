@@ -89,6 +89,22 @@ public class triesfunction {
 	
 	
 	// now creating the remove function and creating the helper function 
+	public void remove(String world) {
+		
+		// creating the remove function 
+		removehelper(root , world) ; 
+	}
+
+	private void removehelper(TriesNode root, String world) {
+		// TODO Auto-generated method stub
+		// now hear the creating the remove function 
+		// creating the base function 
+		if (world.length() == 0 ) {
+			root.isTerminal = false ; 
+			return ; 
+		}
+		
+	}
 	
 	
 	
