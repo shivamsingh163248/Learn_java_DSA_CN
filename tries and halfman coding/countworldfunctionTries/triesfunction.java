@@ -1,5 +1,7 @@
 package countworldfunctionTries;
 
+import learn_recursion_II.string_replacement;
+
 public class triesfunction {
 	
 	// creating the root 
@@ -104,6 +106,35 @@ public class triesfunction {
 			return ; 
 		}
 		
+		// finding the index 
+		int childindex = world.charAt(0) - 'a' ; 
+		// now finding the object  that are the present in the index 
+		TriesNode child = root.children[childindex] ; 
+		// checking the object are the present or not 
+		if (child == null) {
+			return  ; 
+		}
+		
+		// now calling the same function  for the root become child 
+		// System.out.println(world.substring(1));
+		removehelper(child, world.substring(1));
+		// when the reaching the base condition 
+		// check the root have child or not 
+		// so creating the condition 
+		if (!child.isTerminal && child.count == 0) {
+			// now creating the child index null 
+			root.children[childindex] = null ; 
+			// and now count down 
+			root.count-- ; 
+		}
+		
+		
+	}
+	
+	// creating the count function 
+	public int countworld(String world) {
+		
+		// creating the helper function 
 	}
 	
 	

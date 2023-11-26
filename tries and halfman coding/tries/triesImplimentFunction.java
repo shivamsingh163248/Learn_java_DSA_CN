@@ -120,6 +120,7 @@ public class triesImplimentFunction {
 			return ; 
 		}
 		// now calling the same function for the insurting the char
+		System.out.println(world.substring(1)); 
 		remoeHelper(child, world.substring(1));
 		
 		// again creating the condtion 
