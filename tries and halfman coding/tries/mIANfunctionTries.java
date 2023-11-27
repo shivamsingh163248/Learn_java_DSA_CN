@@ -12,7 +12,7 @@ public class mIANfunctionTries {
 		System.out.println(student.search("shivam"));
 		// System.out.println();
 		student.remove("shivamshi");
-		System.out.println(student.search("shivamshi"));
+		System.out.println(student.search("vam"));
 		System.out.println(student.search("shivam"));
 
 	}
