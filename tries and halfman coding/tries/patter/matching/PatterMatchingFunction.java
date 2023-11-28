@@ -21,7 +21,7 @@ public class PatterMatchingFunction {
 	
 	private void addHelper(TriesNode root, String world) {
 		
-		// creating the base codition 
+		// creating the base condition 
 		if (world.length() == 0 ) {
 			root.isTerminal = true ; 
 			return ; 
@@ -70,7 +70,7 @@ public class PatterMatchingFunction {
 	
 	// creating the search function 
 	public boolean search(String world) {
-		// creating the helpr function 
+		// creating the help function 
 	return 	searhHelper(root , world) ; 
 	}
 	
