@@ -96,7 +96,36 @@ public   String reversings(String world) {
 
   public boolean pelindrone(ArrayList<String>set ) {
 	  
+	   // creating the loop for the finding the string 
+	  for (int i = 0; i < set.size(); i++) {
+		
+		  String indexworld = set.get(i) ; 
+		  
+		  // now reversing the string 
+		  String reverisngString = reversings(indexworld) ; 
+		  
+		  // now adding the world in the tries and for each substring 
+		  for (int j = 0; j < reverisngString.length(); j++) {
+			
+			  add(reverisngString);
+		}
+		  
+		  
+		  // now searching the string set 
+		
+		  
+		  
+		  
+		  
+	}
 	  
+	  for (int j = 0; j < set.size(); j++) {
+			if (search(set.get(j))) {
+				return true ; 
+			}
+		}
+	  
+	  return false ; 
 	  
   }
   
