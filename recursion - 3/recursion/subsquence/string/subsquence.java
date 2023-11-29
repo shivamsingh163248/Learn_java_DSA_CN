@@ -12,7 +12,7 @@ public class subsquence {
 		return userInput ; 
 	}
 	
-	public String[] subsquence(String world) {
+	public String[] subsquences(String world) {
 		
 		// creating the base condition
 		
@@ -25,8 +25,23 @@ public class subsquence {
 		}
 		
 		// now calling the main function 
+		String[]sub = subsquences(world.substring(1)) ;
+		// System.out.println(sub.length);
 		
+		// creating the copying of the return array of the double length 
+		String[]result =  new String[sub.length*2] ; 
+		// now copying the element 
+		for (int i = 0; i < sub.length; i++) {
+			result[i] = sub[i] ; 
+		}
 		
+		// now creating the loop for the adding the substring in the array 
+		for (int i = 0; i < sub.length; i++) {
+			result[sub.length + i] = world.charAt(0) + sub[i] ; 
+			System.out.println(world.charAt(0) +" + "+ sub[i]);
+		}
+		
+		return result ; 
 		
 	}
 
