@@ -27,6 +27,12 @@ public class pelidroneMatchingMainFuntion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		// now creating the main function 
+		// creating the object 
+		palindromeMatchingFunction check = new palindromeMatchingFunction();
+		ArrayList<String>input = takeinput();
+		System.out.println(check.pelindrone(input));
 
 	}
 
