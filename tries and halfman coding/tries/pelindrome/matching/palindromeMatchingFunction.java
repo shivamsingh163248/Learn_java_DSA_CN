@@ -1,6 +1,6 @@
 package tries.pelindrome.matching;
 
-
+import java.util.ArrayList;
 
 public class palindromeMatchingFunction {
 	
@@ -76,17 +76,29 @@ private boolean searchHelper(TriesNode root, String world) {
 }
  
 // // creating the string reversing function 
-public String reversing(String world) {
+public   String reversings(String world) {
 	
 	// crating the new string 
-	String a =" " ;
-	
-	for (int i = world.length(); i >= 0  ; i--) {
-		 a += world.charAt(i);
+	if (world.length() == 0 ) {
+		String a = "" ; 
+		return a ; 
 	}
 	
-	return a ; 
+	// calling the same functuin 
+	
+	String result = reversings(world.substring(1)) ; 
+	            result += world.charAt(0) ; 
+	            return result ; 
 }
+
+
+// creating the method pelindrone checking 
+
+  public boolean pelindrone(ArrayList<String>set ) {
+	  
+	  
+	  
+  }
   
 
 }

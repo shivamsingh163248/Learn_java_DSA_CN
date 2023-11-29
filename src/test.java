@@ -27,7 +27,7 @@ public static  String reversings(String world) {
 		
 		// calling the same functuin 
 		
-		String result = reversing(world.substring(1)) ; 
+		String result = reversings(world.substring(1)) ; 
 		            result += world.charAt(0) ; 
 		            return result ; 
 	}
