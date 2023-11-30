@@ -41,6 +41,7 @@ public static  String reversings(String world) {
 		System.out.println(reversing("shivam"));
 		System.out.println(reversings("itisha"));
 		System.out.println(" "+c);
+		System.out.println('c'+"d");
 		
 }
 
