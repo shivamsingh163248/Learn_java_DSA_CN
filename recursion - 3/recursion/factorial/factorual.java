@@ -40,6 +40,29 @@ public class factorual {
 	// creating the function of the min array 
 	
 	public int minarray(int[]input , int startIndex) {
+	
+		// creaitng the base function 
+		if (input.length-1 == startIndex) {
+			return Integer.MIN_VALUE ; 
+		}
+		
+		// now calling the same function 
+		
+		int n = minarray(input, startIndex++);
+		
+		// check the fist value and the returning value 
+		int temp = 0 ; 
+		
+		if (n  >  input[startIndex]) {
+			
+			temp = input[startIndex] ; 
+			
+		}else {
+			temp = n ; 
+		}
+		
+		return temp ; 
+		
 		
 	}
 	
