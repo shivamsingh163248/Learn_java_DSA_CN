@@ -17,11 +17,15 @@ public class mainfunctionKeypad {
 		System.out.println("enter the input");
 		int n = input.nextInt();
 		
-		char[]res = check.helper(n);
-		
-		// now using the for each loop 
-		for (char c : res) {
+		String[]res = check.keypad(n);
+//		
+//		// now using the for each loop 
+		for (String c : res) {
 			System.out.println(c);
+		
+		
+		
+		
 		}
 
 	}

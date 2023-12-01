@@ -87,7 +87,8 @@ public class keypadProblem {
 
 		default:
 			
-			result = new String[0]; 
+			result = new String[1];
+			result[0]="";
 			break;
 		 
 			
@@ -106,7 +107,8 @@ public class keypadProblem {
 		if (n == 0) {
 			
 			// creating the string 
-			String[]result = new String[0];
+			String[]result = new String[1];
+			result[0] = "";
 			return result ; 
 			
 		}
