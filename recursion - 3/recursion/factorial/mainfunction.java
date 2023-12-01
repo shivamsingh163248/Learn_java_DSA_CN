@@ -2,6 +2,8 @@ package recursion.factorial;
 
 import java.util.Scanner;
 
+import recursion.subsquence.string.subsquence;
+
 public class mainfunction {
 
 	public static void main(String[] args) {
@@ -27,6 +29,10 @@ public class mainfunction {
 		}
 		
 		System.out.println(check.minarray(arr, 5));
+		
+		
+		
+	
 
 	}
 

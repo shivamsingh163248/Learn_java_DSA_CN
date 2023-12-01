@@ -27,6 +27,9 @@ public class mainfunctionKeypad {
 		
 		
 		}
+		
+		subsquence sub = new subsquence();
+		sub.printKeypad(234);
 
 	}
 
