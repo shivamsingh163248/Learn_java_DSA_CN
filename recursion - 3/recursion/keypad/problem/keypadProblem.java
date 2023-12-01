@@ -113,6 +113,22 @@ public class keypadProblem {
 		
 		// now calling the same function 
 	String[]smallarray = 	keypad(n/10) ;
+	String[]smallworld = helper(n%10) ; 
+	// now creating the algorithum 
+	// fist creating the length 
+	String[]result = new String[smallarray.length * smallworld.length] ; 
+	int k = 0 ; 
+	// now creating the loop 
+	for (int i = 0; i < smallworld.length; i++) {
+		for (int j = 0; j < smallarray.length; j++) {
+			
+			// now adding the both of the string 
+			result[k] = smallarray[j]+smallworld[i] ; 
+			k++ ; 
+		}
+	}
+	
+	return result ; 
 	
 
 	}
