@@ -36,4 +36,11 @@ public class factorual {
 		factorial(n-1, smallfact);
 	}
 
+	
+	// creating the function of the min array 
+	
+	public int minarray(int[]input , int startIndex) {
+		
+	}
+	
 }
