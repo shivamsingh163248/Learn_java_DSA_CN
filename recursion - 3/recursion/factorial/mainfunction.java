@@ -12,6 +12,7 @@ public class mainfunction {
 		System.out.println("enter the number");
 		int n = input.nextInt();
 		System.out.println(check.facorial(n));
+		check.factorial(n, 1);
 
 	}
 
