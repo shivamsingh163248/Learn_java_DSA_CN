@@ -43,12 +43,12 @@ public class factorual {
 	
 		// creaitng the base function 
 		if (input.length-1 == startIndex) {
-			return Integer.MIN_VALUE ; 
+			return Integer.MAX_VALUE ; 
 		}
 		
 		// now calling the same function 
 		
-		int n = minarray(input, startIndex++);
+		int n = minarray(input, startIndex+1);
 		
 		// check the fist value and the returning value 
 		int temp = 0 ; 
