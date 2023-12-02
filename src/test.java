@@ -44,6 +44,37 @@ public static  String reversings(String world) {
 		System.out.println('c'+"d ");
 		System.out.println( '\u0022'+"shivam"+'\u0022');
 		
+		
+		int gau[][] = new int[5][] ;
+		
+		// creating the lenght of the array 
+		
+		 gau[0] = new int[5] ; 
+		 gau[1] = new int[3] ; 
+		 gau[2] = new int[7] ; 
+		 gau[3] = new int[8] ; 
+		 gau[4] = new int[3] ;
+		 
+		 // now printing the length 
+		 // creating the loop 
+		 for (int i = 0; i < gau.length; i++) {
+			
+//			 for (int j = 0; j < gau[i].length; j++) {
+//				
+//				 
+//				 
+//				 
+//			}
+			 
+			 System.out.println(gau[i].length);
+			 
+		}
+				 
+		 
+		
+		
+		
+		
 }
 
 }
