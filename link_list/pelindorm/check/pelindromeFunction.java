@@ -103,6 +103,27 @@ public class pelindromeFunction {
 	}
 	
 	
+	//now creating the reversing function 
+	public LinklistNode<Integer>reversing(LinklistNode<Integer>head){
+		
+		
+		
+	}
+	
+	// creating the printing function 
+	public void printing(LinklistNode<Integer>head) {
+		
+		//using the for loop printing the element 
+		LinklistNode<Integer>root = head ; 
+		// creating the while loop 
+		while (root != null) {
+			System.out.println(head.data);
+			root = root.next ;
+		}
+		
+	}
+	
+	
 	
 	
 }
