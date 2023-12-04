@@ -43,4 +43,29 @@ public class pelindromeFunction {
 	}
 	
 	
+	
+	// creating the function for the pelindrone check 
+	
+	// creating the function for the find the check the length 
+	public int linklistlength(LinklistNode<Integer>head) {
+		
+		int n = 0 ;
+		// creating the loop 
+		if (head == null) {
+			return n ; 
+		}
+		
+		
+		while (head.next != null) {
+			n++ ; 
+			head = head.next ; 
+		}
+		
+		return n ; 
+		
+	}
+	
+	
+	
+	
 }
