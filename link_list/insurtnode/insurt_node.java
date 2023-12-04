@@ -92,16 +92,56 @@ public class insurt_node {
 		return head;
 		
 	}
+	
+	
+	
+	public static boolean isPalindrome_2(node<Integer> head){
+		 
+	    if(head==null || head.next==null)return true;
+	    node mid=findmid(head);
+	    node right=reverse(mid);
+	    node left=head;
+	        while(right!=null){
+	            if(left.data!=right.data){
+	                return false;
+	            }
+	            left=left.next;
+	            right=right.next;
+	        }
+	        return true;
+	    
+	}
+
+	static node<Integer> findmid(node<Integer> head){
+		node slow=head;
+		node fast=head;
+	        while(fast!=null && fast.next!=null){
+	            slow=slow.next;
+	            fast=fast.next.next;
+	        }
+	        return slow; 
+	}
+
+	    static node<Integer> reverse(node<Integer> head){
+	    	node prev=null;
+	    	node cur=head;
+	        while(cur!=null){
+	        	node afnode=cur.next;
+	            cur.next=prev;
+	            prev=cur;
+	            cur=afnode;
+	        }
+	        head=prev;
+	        return head;
+	    }    
+	    
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// now test the function 
 		node<Integer>itisha = takeinput() ; 
-		print(itisha);
-		node<Integer>afInsurtnode =  insurt(itisha, 3, 45) ; 
-		System.out.println();
-		print(afInsurtnode);
-
+		// print(itisha);
+		System.out.println(isPalindrome_2(itisha));
 	}
 
 }
