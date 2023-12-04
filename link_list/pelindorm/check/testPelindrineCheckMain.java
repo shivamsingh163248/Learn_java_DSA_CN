@@ -6,9 +6,13 @@ public class testPelindrineCheckMain {
 		// TODO Auto-generated method stub
 		
 		// creating the obejct 
+		pelindromeFunction pelindorne = new pelindromeFunction();
 		
+		LinklistNode<Integer>head =  pelindorne.takinginput();
+		// and finding the length 
+		System.out.println(pelindorne.linklistlength(head));
 		
-		LinklistNode<Integer>head = 
+		System.out.println(pelindorne.chekpelindrome(head));
 
 	}
 

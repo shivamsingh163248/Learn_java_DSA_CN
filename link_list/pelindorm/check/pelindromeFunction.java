@@ -56,12 +56,49 @@ public class pelindromeFunction {
 		}
 		
 		
-		while (head.next != null) {
+		while (head != null) {
 			n++ ; 
 			head = head.next ; 
 		}
 		
 		return n ; 
+		
+	}
+	
+	
+	// now checking the pelindrone 
+	public boolean chekpelindrome(LinklistNode<Integer>head) {
+		
+		// frist copying the addres 
+		LinklistNode<Integer>copyNode = head ; 
+		// now finding the meddile of the node 
+		int mid = linklistlength(head) /2 ; 
+		
+		// after finding the mid 
+		// now creating the loop
+		for (int i = 0; i < mid; i++) {
+			System.out.println(head.data);
+			 head = head.next ;
+			 
+			 
+		}
+		boolean check = true ; 
+		// now checking 
+		for (int i = 0; i < mid; i++) {
+			
+			System.out.println(copyNode.data +"  "+ head.data);
+			if (copyNode.data == head.data && check == true) {
+				check = true ; 
+			}else {
+				check = false ; 
+			}
+			
+			copyNode = copyNode.next ; 
+			head = head.next ; 
+		}
+		
+		return check ; 
+		
 		
 	}
 	
