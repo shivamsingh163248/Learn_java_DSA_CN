@@ -106,7 +106,15 @@ public class pelindromeFunction {
 	//now creating the reversing function 
 	public LinklistNode<Integer>reversing(LinklistNode<Integer>head){
 		
+		// now copy the elenent 
+		LinklistNode<Integer>root = head ; 
+		// creating the two refrence node 
+		LinklistNode<Integer>nextNode = null , privuseNode = null ; 
 		
+		//now creating the loop for the 
+		while (head != null) {
+			// now looping are the starting 
+		}
 		
 	}
 	
