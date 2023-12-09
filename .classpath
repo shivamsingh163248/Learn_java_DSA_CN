@@ -39,5 +39,7 @@
 	<classpathentry kind="src" path="PriorityQueue II"/>
 	<classpathentry kind="src" path="tries and halfman coding"/>
 	<classpathentry kind="src" path="recursion - 3"/>
+	<classpathentry kind="src" path="BackTrecking"/>
+	<classpathentry kind="src" path="DP-dynamic programming"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
