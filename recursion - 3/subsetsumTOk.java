@@ -39,8 +39,17 @@ public class subsetsumTOk {
 				output[index++] = samlloputput1[i]; 
 			}
 			
+			for (int i = 0; i < smalloutput2.length; i++) {
+				output[index] = new int[smalloutput2[i].length+1] ;
+				output[index][0] = index[begainIndex] ; 
+				
+				for (int j = 0; j < smalloutput2[i].length; j++) {
+					output[index][j+1] = smalloutput2[i][j] ; 
+				}
+				index++ ; 
+			}
 			
-			
+			return output ; 
 		}
 	
 	
