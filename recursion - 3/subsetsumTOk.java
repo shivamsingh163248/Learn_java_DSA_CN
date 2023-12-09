@@ -2,58 +2,35 @@
 public class subsetsumTOk {
 
 	
-		// creating the base condition 
-	
-	// creating the function of the sum of the subset of K 
-	public int[][] sunSubset(int[]input , int k){
-		
-		// creating the helper function
-		return subsetHelper(input , k , 0) ; 
-		
-	}
-
-		private int[][] subsetHelper(int[] input, int k, int begainIndex) {
-			
-		// creating the base function
-			// if the begain index is the equall 
-			if (input.length == begainIndex) {
-				
-				if ( k == 0 ) {
-					return new int[1][0] ; 
-				}else {
-					return new int[0][0] ; 
+		public static int[][] subsetsSumKHelper(int[] input, int beginIndex, int k) {
+			if (beginIndex == input.length) {
+				if (k == 0) {
+					return new int[1][0];
+				} else {
+					return new int[0][0];
 				}
 			}
-			
-			
-			//  calling the array for the small input 
-			int[][] samlloputput1 = subsetHelper(input, k, begainIndex+1) ; 
-			int[][]smalloutput2 = subsetHelper(input, k-input[begainIndex], begainIndex+1) ; 
-			
-			int[][]output = new int[smalloutput2.length+samlloputput1.length][] ; 
-			
-			int index = 0 ; 
-			
-			// creating the loop using the for loop 
-			for (int i = 0; i < samlloputput1.length; i++) {
-				output[index++] = samlloputput1[i]; 
+			int[][] smallOutput1 = subsetsSumKHelper(input, beginIndex + 1, k);
+			int[][] smallOutput2 = subsetsSumKHelper(input, beginIndex + 1, k - input[beginIndex]);
+			int[][] output = new int[smallOutput1.length + smallOutput2.length][];
+			int index = 0;
+			for (int i = 0; i < smallOutput1.length; i++) {
+				output[index++] = smallOutput1[i];
 			}
-			
-			for (int i = 0; i < smalloutput2.length; i++) {
-				output[index] = new int[smalloutput2[i].length+1] ;
-				output[index][0] = index[begainIndex] ; 
-				
-				for (int j = 0; j < smalloutput2[i].length; j++) {
-					output[index][j+1] = smalloutput2[i][j] ; 
+			for (int i = 0; i < smallOutput2.length; i++) {
+				output[index] = new int[smallOutput2[i].length + 1];
+				output[index][0] = input[beginIndex];
+				for (int j = 0; j < smallOutput2[i].length; j++) {
+					output[index][j + 1] = smallOutput2[i][j];
 				}
-				index++ ; 
+				index++;
 			}
-			
-			return output ; 
+			return output;
 		}
-	
-	
-	
+
+		public static int[][] subsetsSumK(int input[], int k) {
+			return subsetsSumKHelper(input, 0, k);
+		}
 	}
 
 
