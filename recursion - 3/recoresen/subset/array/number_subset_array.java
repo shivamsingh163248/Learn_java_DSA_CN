@@ -31,7 +31,32 @@ public class number_subset_array {
 			int[][] output = new int[1][0];
 			return output ; 
 		}
+		int[][]smallOutput = subsetHelper(arr, startIndex+1);
+		int[][] output = new int[2*smallOutput.length][];
 		
+	int k = 0 ; 
+		// creating the looping statement 
+		for (int i = 0; i < smallOutput.length; i++) {
+			
+			output[k] = new int[smallOutput[i].length] ;
+			for (int j = 0; j < output[i].length; j++) {
+				
+				output[k][j] = smallOutput[i][j];
+			}
+			k++ ; 
+			
+		}
+		
+		// agaaic creating the for loop 
+		for (int j = 0; j < smallOutput.length; j++) {
+			output[k] = new int[smallOutput[j].length+1];
+			output[k][0] = arr[startIndex] ; 
+			for (int j2 = 0; j2 <= smallOutput[j].length ; j2++) {
+				output[k][j2] = smallOutput[j][j2-1];
+			}
+		}
+		
+		return output ; 
 	}
 	
 	
