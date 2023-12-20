@@ -7,7 +7,7 @@ public class subsetMainFunction {
 		// creating the objective 
 		number_subset_array subset = new number_subset_array();
 		int[]arr = subset.takeinput() ; 
-		int[][]array = subset.subsets(arr); 
+		int[][]array = subset.subsetHelper(arr , 0 ); 
 		// mow printing the two dimensional array
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[i].length; j++) {

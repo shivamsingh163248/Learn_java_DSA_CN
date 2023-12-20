@@ -2,7 +2,7 @@ package recoresen.subset.array;
 
 import java.util.Scanner;
 
-public class number_subset_array {
+public class number_subset_array extends LearningSelfSubsetArray {
 
 	// creating the taking the input and output given in the array formet
 	public int[] takeinput() {
@@ -88,7 +88,7 @@ public class number_subset_array {
 				k++;
 			}
 			for (int i = 0; i < smallerOutput.length; i++) {
-				output[k] = new int[smallerOutput[i].length + 1];
+				output[k] = new int[smallerOutput[i].length+1];
 				output[k][0] = input[startIndex];
 				for (int j = 1; j <= smallerOutput[i].length; j++) {
 					output[k][j] = smallerOutput[i][j - 1];
@@ -101,6 +101,14 @@ public class number_subset_array {
 		public static int[][] subsets(int input[]) {
 			return subsetsHelper(input, 0);
 		}
+		
+		
+		@Override
+		public int[][] subsetHelper(int[] arr, int startingIndex) {
+			// TODO Auto-generated method stub
+			return super.subsetHelper(arr, startingIndex);
+		}
+		
 	}
 
 
