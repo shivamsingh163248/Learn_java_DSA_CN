@@ -27,8 +27,22 @@ public class LearningSelfSubsetArray {
 			    for (int j = 0; j < smalloutput[i].length; j++) {
 					
 			    	// now coping the value 
+			    	output[k][j] = smalloutput[i][j];
 			    	
 				}
+		}
+		k++ ; 
+		
+		
+		// now implementation of the new array 
+		
+		// again creating the for loop for the implimention of the array 
+		for (int i = 0; i < output.length; i++) {
+			// creating the sub_array length 
+			output[k] = new int[smalloutput.length+1] ; 
+			// now insilized at the starting index value at the zero index 
+			
+			
 		}
 		
 	}
