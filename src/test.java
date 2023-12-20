@@ -45,15 +45,15 @@ public static  String reversings(String world) {
 		System.out.println( '\u0022'+"shivam"+'\u0022');
 		
 		
-		int gau[][] = new int[5][] ;
+		int gau[][] = new int[1][0] ;
 		
-		// creating the lenght of the array 
+		// creating the lenght of the array
+		System.out.println(gau.length);
+		System.out.println(gau[0].length);
 		
 		 gau[0] = new int[5] ; 
-		 gau[1] = new int[3] ; 
-		 gau[2] = new int[7] ; 
-		 gau[3] = new int[8] ; 
-		 gau[4] = new int[3] ;
+		 System.out.println(gau[0].length);
+	
 		 
 		 // now printing the length 
 		 // creating the loop 
