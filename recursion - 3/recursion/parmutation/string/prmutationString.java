@@ -9,14 +9,14 @@ public class prmutationString {
 		// creating the base condition 
 		if (world.length() == 0) {
 			// creating the blank string world 
-			String[]output = {" "} ; 
+			String[]output = {""} ; 
 			return output ; 
 		}
 		
 		// now calling the function 
 		String[]smalloutput = parmutation(world.substring(1)) ; 
 		// now again 
-		System.out.println(smalloutput.length);
+		System.out.println(smalloutput.length +" "+world);
 		String[]output = new String[smalloutput.length*world.length()] ;
 		// now creating the loop and the insilatization thavalue is the k 
 		int k = 0 ; 
@@ -24,7 +24,7 @@ public class prmutationString {
 		for (int i = 0; i < smalloutput.length; i++) {
 			String currentstring = smalloutput[i] ; 
 			// now gain creating the loop 
-			for (int j = 1; j <= currentstring.length(); j++) {
+			for (int j = 0; j <= currentstring.length(); j++) {
 				output[k] =  currentstring.substring(0,j)+world.charAt(0)+currentstring.substring(j) ; 
 		
 				k++ ; 
