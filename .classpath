@@ -42,5 +42,6 @@
 	<classpathentry kind="src" path="BackTrecking"/>
 	<classpathentry kind="src" path="DP-dynamic programming"/>
 	<classpathentry kind="src" path="arrays"/>
+	<classpathentry kind="src" path="IOC.Inverstion.of.controle"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
