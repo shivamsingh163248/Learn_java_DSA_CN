@@ -51,22 +51,19 @@ public static  String reversings(String world) {
 		System.out.println(gau.length);
 		System.out.println(gau[0].length);
 		
-		 gau[0] = new int[5] ; 
-		 System.out.println(gau[0].length);
-	
+//		 gau[0] = new int[5] ; 
+//		 System.out.println(gau[0].length);
+//	
 		 
 		 // now printing the length 
 		 // creating the loop 
 		 for (int i = 0; i < gau.length; i++) {
-			
-//			 for (int j = 0; j < gau[i].length; j++) {
-//				
-//				 
-//				 
-//				 
-//			}
+			for (int j = 0; j < gau[i].length; j++) {
+				System.out.println("check"+gau[i][j]);
+			}
+		}
 			 
-			 System.out.println(gau[i].length);
+			
 			 
 		}
 				 
@@ -77,4 +74,4 @@ public static  String reversings(String world) {
 		
 }
 
-}
+
