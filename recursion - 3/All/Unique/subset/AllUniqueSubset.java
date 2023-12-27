@@ -12,5 +12,13 @@ public class AllUniqueSubset {
 	
 	// creating the helper function that is the name of the generate subset 
 	
+	private static void generateSubsets(int[] input , int index , ArrayList<Integer>currentSubset , ArrayList<ArrayList<Integer>>subset) {
+
+		subset.add(new ArrayList<>(currentSubset));
+		
+		// now creating the loop 
+		
+	}
+	
 	
 	}
