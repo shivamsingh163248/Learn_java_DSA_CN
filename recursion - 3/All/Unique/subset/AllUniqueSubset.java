@@ -50,6 +50,22 @@ public class AllUniqueSubset {
 	
 	
 	// creating the print function for the sunset 
+	public void print(int[]input) {
+		
+		// now calling the function 
+		ArrayList<ArrayList<Integer>>result = getArray(input) ; 
+		
+		// now creating the loop for the printing the array list 
+		for (ArrayList<Integer> arrayList : result) {
+			
+			for (int i : arrayList) {
+				
+				System.out.println(i+" ");
+			}
+			System.out.println();
+		}
+		
+	}
 	
 	
 	
