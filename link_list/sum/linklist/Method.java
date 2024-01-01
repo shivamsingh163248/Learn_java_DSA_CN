@@ -10,13 +10,23 @@ public class Method {
 		
 		// now printing the node 
 		
-			System.out.println(node.val+" ");
-			node = node.next ; 
-			System.out.println(node.val+" ");
-			node = node.next ; 
-			System.out.println(node.val+" ");
-			node = node.next ; 
-			System.out.println(node.val+" ");
+		ListNode head  = node ; 
+		
+		while (head != null) {
+			
+			System.out.println(head.val+" ");
+			head = head.next ; 
+			
+		}
+		
+//		node = node.next ; 
+//		System.out.println(node.val+" ");
+//			node = node.next ; 
+//			System.out.println(node.val+" ");
+//			node = node.next ; 
+//			System.out.println(node.val+" ");
+//			node = node.next ; 
+//			System.out.println(node.val+" ");
 		
 		
 	}
@@ -26,17 +36,28 @@ public class Method {
 		// creating the object of the list node 
 		// creating the using recussrison 
 		
-		if (node == null) {
-			return null ; 
+		if (node.next == null) {
+			
+				ListNode output = 	new ListNode(node.val) ; 
+				output.next = null ; 
+				return output ; 
 		}
 		
 		
+		
+		
+		
+		
+		
 		ListNode output =   revesing(node.next) ; 
-			 // now creating the algorithum 
-		// creating the new 
-		ListNode samllout = new ListNode(node.val) ; 
-	      samllout.next = output ; 
-		return samllout ; 	
+		
+		ListNode small = new ListNode(node.val) ; 
+		small.next = output ; 
+		return small ; 
+		
+		
+	
+	  
 		
 		
 	}
@@ -57,11 +78,17 @@ public class Method {
 		
 		while (n != -1) {
 			
-			head = new ListNode(n) ; 
-			System.out.println("enter the number");
-			 n = input.nextInt();
-			 head.next = tail ; 
-			 tail = head ; 
+		
+
+			
+			if (head == null) {
+			 
+				 ; 
+			}else {
+				
+			}
+			
+			
 			
 		}
 		return head ; 
