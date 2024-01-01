@@ -78,15 +78,28 @@ public class Method {
 		
 		while (n != -1) {
 			
-		
-
+		  // creating the object of the list node 
+			ListNode currentNode = new ListNode(n) ; 
+			
 			
 			if (head == null) {
 			 
-				 ; 
+				head = currentNode  ; 
+				tail = currentNode ; 
+				
+				
+				
 			}else {
+				// now upgreade the vlaue 
+				tail.next = currentNode ; 
+				tail = currentNode ; 
 				
 			}
+			// now 
+			System.out.println("enter the number");
+			
+			n = input.nextInt();
+			 
 			
 			
 			
