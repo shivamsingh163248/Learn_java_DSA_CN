@@ -9,6 +9,7 @@ public class sum {
 		
 		ListNode insurt  = check.insert() ; 
 		check.print(insurt);
+		System.out.println("check");
 		ListNode re = check.revesing(insurt) ; 
 		check.print(re);
 		

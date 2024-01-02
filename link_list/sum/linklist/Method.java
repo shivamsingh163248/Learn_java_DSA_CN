@@ -31,34 +31,9 @@ public class Method {
 		
 	}
 	
-	public ListNode revesing(ListNode node) {
+	public ListNode revesing(ListNode node  , ListNode head) {
 		
-		// creating the object of the list node 
-		// creating the using recussrison 
-		
-		if (node.next == null) {
-			
-				ListNode output = 	new ListNode(node.val) ; 
-				output.next = null ; 
-				return output ; 
-		}
-		
-		
-		
-		
-		
-		
-		
-		ListNode output =   revesing(node.next) ; 
-		
-		ListNode small = new ListNode(node.val) ; 
-		small.next = output ; 
-		return small ; 
-		
-		
-	
-	  
-		
+		// creating the base condition 
 		
 	}
 	
