@@ -10,8 +10,11 @@ public class sum {
 		ListNode insurt  = check.insert() ; 
 		check.print(insurt);
 		System.out.println("check");
-		ListNode re = check.revesing(insurt) ; 
-		check.print(re);
+		ListNode re = check.reversing(insurt) ; 
+//		System.out.println(re.val);
+//		System.out.println(re.next.val);
+		
+		 check.print(re);
 		
 	}
 

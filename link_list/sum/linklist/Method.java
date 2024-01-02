@@ -33,11 +33,41 @@ public class Method {
 	
 	public ListNode revesing(ListNode node  , ListNode head) {
 		
-		// creating the base condition 
+		if (node == null) {
+			return null ; 
+		}
+		
+		// now calling the function 
+		
+		revesing(node.next, head);
+		return node ; 
 		
 	}
 	
 	// now creating the linklist 
+	
+	// creating the reversing the link list 
+	public ListNode reversing(ListNode node) {
+		
+		// creating the refrance of list node 
+		
+		ListNode head  = null; 
+		ListNode tail = null  ; 
+		
+		while (node != null) {
+			
+		head = new ListNode(node.val) ; 
+		head.next = tail ; 
+		tail = head ; 
+		
+		node = node.next ; 
+			
+						
+		}
+		return  head; 
+		
+	}
+	
 	
 	public ListNode insert() {
 		
