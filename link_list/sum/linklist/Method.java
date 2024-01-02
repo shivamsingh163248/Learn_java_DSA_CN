@@ -69,6 +69,26 @@ public class Method {
 	}
 	
 	
+	// creating the reversing function in build without creating the any object 
+	public ListNode revese(ListNode node) {
+		// creating the three node 
+		ListNode currentNode = node ; 
+		ListNode privesNode = null ; 
+		ListNode nextNode = null ; 
+		
+		// now creating the loop 
+		while (currentNode != null) {
+			
+			nextNode = currentNode.next ; 
+			currentNode.next = privesNode ; 
+			privesNode = currentNode ; 
+			currentNode = nextNode ; 
+		}
+		
+		return privesNode ; 
+	}
+	
+	
 	public ListNode insert() {
 		
 	 // taking the user input 
