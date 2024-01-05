@@ -10,7 +10,7 @@ public class sum {
 		ListNode insurt  = check.insert() ; 
 		check.print(insurt);
 		System.out.println("check");
-		ListNode re = check.revese(insurt) ; 
+		ListNode re = check.samerevese(insurt) ; 
 //		System.out.println(re.val);
 //		System.out.println(re.next.val);
 		

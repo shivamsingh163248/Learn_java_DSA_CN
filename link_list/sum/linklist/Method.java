@@ -70,7 +70,7 @@ public class Method {
 	
 	
 	// creating the reversing function in build without creating the any object 
-	public ListNode revese(ListNode node) {
+	public ListNode samerevese(ListNode node) {
 		// creating the three node 
 		ListNode currentNode = node ; 
 		ListNode privesNode = null ; 
@@ -135,13 +135,27 @@ public class Method {
 	
 	
 	  public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-	        
-	   // creating the function of the two number 
-	  // for thechecking the vaslue 
-		  // now creatng the program 
 		  
-		  // now creating the more function 
-		  // now upgrde the value of the function 
+		  // First we are reversing the node 
+		 ListNode node1 =  samerevese(l1);
+		 ListNode node2 = samerevese(l2) ; 
+		 
+		 // now creating the new node 
+		 ListNode head ;
+		 
+		 // creating the loop for the frist node 
+		 while (node1 != null && node2 != null) {
+			
+			 // we are the getting the reminder 
+		 int remainder = 
+			 
+			 
+		}
+		  
+		  
+		return l2;
+	        
+	
 		  
 	        
 	  }
