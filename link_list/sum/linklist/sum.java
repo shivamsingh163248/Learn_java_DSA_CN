@@ -7,14 +7,22 @@ public class sum {
 
 		Method check = new Method() ; 
 		
-		ListNode insurt  = check.insert() ; 
-		check.print(insurt);
-		System.out.println("check");
-		ListNode re = check.samerevese(insurt) ; 
+		ListNode insurt1  = check.insert() ; 
+		
+		ListNode insurt2 = check.insert() ;
+		System.out.println("------------------------------");
+		check.print(insurt1);
+		System.out.println("------------------------------");
+		check.print(insurt2);
+		System.out.println("--------------add result ----------------");
+		
+	//	ListNode re = check.samerevese(insurt) ; 
 //		System.out.println(re.val);
 //		System.out.println(re.next.val);
 		
-		 check.print(re);
+		ListNode add = check.addTwoNumbers(insurt1, insurt2);
+		
+		 check.print(add);
 		
 	}
 
