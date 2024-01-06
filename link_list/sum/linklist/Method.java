@@ -14,7 +14,7 @@ public class Method {
 		
 		while (head != null) {
 			
-			System.out.println(head.val+" ");
+			System.out.print(head.val+" ");
 			head = head.next ; 
 			
 		}
@@ -70,7 +70,7 @@ public class Method {
 	
 	
 	// creating the reversing function in build without creating the any object 
-	public ListNode revese(ListNode node) {
+	public ListNode samerevese(ListNode node) {
 		// creating the three node 
 		ListNode currentNode = node ; 
 		ListNode privesNode = null ; 
@@ -135,19 +135,116 @@ public class Method {
 	
 	
 	  public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+		  
+		  // First we are reversing the node 
+		 ListNode node1 =  samerevese(l1);
+		 ListNode node2 = samerevese(l2) ; 
+		 
+		 // now creating the new node 
+		 ListNode head  = null; 
+			ListNode tail = null  ; 
+			int carry = 0  ; 
+		 
+		 // creating the loop for the first node 
+		 while (node1 != null && node2 != null) {
+			
+			 // we are the getting the reminder 
+			 int a = node1.val ; 
+			 int b = node2.val ; 
+			 
+		 int remainder = (a+b+carry)%10 ;
+		 // creating the reversion problem 
+		 // creating the 
+		
+		 head = new ListNode(remainder) ; 
+		 carry = (a+b+carry)/10 ; 
+			head.next = tail ; 
+			tail = head ; 
+			
+			node1 = node1.next ; 
+			node2 = node2.next ; 
+			
+			
+			
+			 
+			 
+		}
+		 
+		 
+		 // now creating the codtion 
+		 if (node1 != null) {
+			
+			 while (node1 != null ) {
+					
+				 // we are the getting the reminder 
+				 int a = node1.val ; 
+				
+				 
+			 int remainder = (a+carry)%10 ;
+			 // creating the reversion problem 
+			 // creating the 
+			
+			 head = new ListNode(remainder) ; 
+			 carry = (a+carry)/10 ; 
+				head.next = tail ; 
+				tail = head ; 
+				
+				node1 = node1.next ; 
+				 
+				
+				
+				
+				 
+				 
+			}
+			 
+			 
+		}
+		 
+		 if (node2 != null) {
+				
+			 while (node2 != null ) {
+					
+				 // we are the getting the reminder 
+				 int b = node2.val ; 
+				
+				 
+			 int remainder = (b+carry)%10 ;
+			 // creating the reversion problem 
+			 // creating the 
+			
+			 head = new ListNode(remainder) ; 
+			 carry = (b+carry)/10 ; 
+				head.next = tail ; 
+				tail = head ; 
+				
+				
+				node2 = node2.next ; 
+				
+				
+				
+				 
+				 
+			}
+			 
+			 
+		}
+		 
+		 if (carry > 0) {
+			 head = new ListNode(carry) ;
+			 head.next = tail ; 
+				tail = head ; 
+				carry = 0 ;
+		}
+		 
+		 
+		  
+		  
+		return head;
 	        
+	
+		  
 	        
-	        
-	        int carry = 0 ; 
-
-	        while(l1 != null && l2 != null){
-	         
-                  
-	             
-	         l1 = l1.next ;
-	         l2 = l2.next ; 
-	        } 
-	         return l1 ; 
-	    }
+	  }
 
 }
