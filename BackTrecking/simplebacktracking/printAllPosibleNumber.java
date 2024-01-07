@@ -36,7 +36,7 @@ public class printAllPosibleNumber {
 	// creating the main function 
 	public static void main(String[] args) {
 		
-		int[]arr = {1,2,1} ; 
+		int[]arr = {1,2} ; 
 		printAllPosiblenumber(arr, arr.length, 0);
 	}
 
