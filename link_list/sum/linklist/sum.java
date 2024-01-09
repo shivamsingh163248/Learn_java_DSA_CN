@@ -24,6 +24,7 @@ public class sum {
 		
 		 check.print(add);
 		
+		
 	}
 
 }

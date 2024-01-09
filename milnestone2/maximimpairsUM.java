@@ -17,14 +17,17 @@ public static int maxProductDifference(int[] nums) {
         		int min = nums[i]*nums[j] ;
         		
         		// now creating the condtion 
-        		if () {
-					
+        		if (minpair > min) {
+					minpair = min ; 
+				}
+        		if (maxpair < max) {
+					maxpair = max ; 
 				}
         		
 			}
 			
 		}
-        
+        return maxpair-minpair ; 
       
         
         
