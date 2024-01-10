@@ -22,6 +22,49 @@ public class condationoprator {
 			System.out.println("y is grater the x");
 		}
 			// heare the we are the close the input that are the using by the scanner function 
+		   Scanner sc = new Scanner(System.in);
+	         
+
+	        int N = sc.nextInt();
+
+	        int evenSum = 0;
+
+	        int oddSum = 0;
+
+	        // while (N != 0) {
+
+	        //     if (N % 2 == 0) {
+
+	        //         evenSum = evenSum + N%10;
+
+	        //     } else {
+
+	        //         oddSum = oddSum + N%10;
+
+	        //     }
+
+	        //     N = N / 10;
+
+	        // }
+
+	        for (int i = N; i != 0 ; i  = i/10) {
+
+	               if (i % 2 == 0) {
+
+	                evenSum = evenSum + i%10;
+
+	            } else {
+
+	                oddSum = oddSum + i%10;
+
+	            }
+
+	          //  N = N / 10;
+	            
+	        }
+
+	        System.out.print(evenSum+" "+oddSum);
+		
     input.close();
 	}
 
