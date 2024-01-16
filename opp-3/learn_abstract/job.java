@@ -15,5 +15,10 @@ public  class job extends employ_detail {
 		return false;
 	}
 	
+	// creating the method 
+	public boolean check() {
+		return true  ; 
+	}
+	
 
 }
