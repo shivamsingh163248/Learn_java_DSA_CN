@@ -31,6 +31,7 @@ public binaryTreeNode<Integer> takeinput_LevelWise(){
 		// creating the queue using the linklist 
 		Queue<binaryTreeNode<Integer>>pendingElement = new LinkedList<binaryTreeNode<Integer>>();
 		// now adding the deta in the queue 
+		
 		 pendingElement.add(root) ; 
 		 
 		 
