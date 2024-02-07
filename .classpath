@@ -43,5 +43,6 @@
 	<classpathentry kind="src" path="DP-dynamic programming"/>
 	<classpathentry kind="src" path="arrays"/>
 	<classpathentry kind="src" path="IOC.Inverstion.of.controle"/>
+	<classpathentry kind="src" path="leetCodeProblem"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
