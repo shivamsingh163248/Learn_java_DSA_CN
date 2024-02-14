@@ -18,7 +18,7 @@ public class arrayImplimentation <T>{
 	
 	public void printing() {
 		for (T i : arr) {
-			System.out.print(1+" ");
+			System.out.print(i+" ");
 		}
 		
 		System.out.println("array number is "+val);
