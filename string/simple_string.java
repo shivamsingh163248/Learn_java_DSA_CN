@@ -3,16 +3,28 @@ import java.util.Scanner;
 public class simple_string {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-//		String i = "shivam";
-//		System.out.println(i.charAt(0));
-//		char j = i.charAt(1);
-//		// so now [rinting the both charecter and test both are right or not 
-//		System.out.println(j);
-////		String a ="abcd";
-////		String b="abcda";
-////		System.out.println(a.compareTo(b));
-//		String a="coding",b="ninjas";
+	//	 TODO Auto-generated method stub
+		String i = "shivam";
+		System.out.println(i.charAt(0));
+		char j = i.charAt(1);
+		// so now [rinting the both charecter and test both are right or not 
+		System.out.println(j);
+		String a ="abcd";
+		String b="abcda";
+		System.out.println(a.compareTo(b));
+		System.out.println(a.equals(b));
+
+		
+		
+	
+		System.out.println(a+"shi");
+		String check = new String("check") ;
+		 check = new String("chck2") ; 
+		System.out.println(check.concat(b));
+		
+		
+		
+		// String a="coding",b="ninjas";
 //		if(a.contains("ing"))
 //		{
 //		    a+=b;
@@ -37,13 +49,13 @@ public class simple_string {
 //		String str2=s.nextLine();
 //		String str3=str2+str1;
 //		System.out.println(str3);
-		
-		char shi = 'v';
-		String na = "name";
-		
-		String kgh = na+shi ; 
-		System.out.println(kgh);
-		
+//		
+//		char shi = 'v';
+//		String na = "name";
+//		
+//		String kgh = na+shi ; 
+//		System.out.println(kgh);
+//		
 
 	}
 
