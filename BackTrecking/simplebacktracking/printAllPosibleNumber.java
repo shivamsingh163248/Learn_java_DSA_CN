@@ -1,5 +1,7 @@
 package simplebacktracking;
 
+import learn_abstract.job;
+
 public class printAllPosibleNumber {
 	
 	// creating the method 
@@ -38,6 +40,8 @@ public class printAllPosibleNumber {
 		
 		int[]arr = {1,2} ; 
 		printAllPosiblenumber(arr, arr.length, 0);
+		
+	
 	}
 
 }

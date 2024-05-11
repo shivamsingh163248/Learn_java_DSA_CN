@@ -6,7 +6,7 @@ public class mainfunctionioc {
 	
     sound company = new sound();
     company.makesound("sony");
-		
+	company.makesound("bose");	
 		
 	}
 
