@@ -9,6 +9,10 @@ public class LearingTestingChar {
 	 
 		byte a = 127 ; 
 		System.out.println((byte)(a+1));
+		String shiv = null ; 
+		for (int i = 0; 0; i++) {
+			
+		}
 	}
 	
 	
