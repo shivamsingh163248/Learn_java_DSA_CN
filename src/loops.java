@@ -14,6 +14,9 @@ public class loops {
 			 }
 			 System.out.println("");
 		 }
+		 
+		 int final = 3 ; 
+		 
 
 	}
 
