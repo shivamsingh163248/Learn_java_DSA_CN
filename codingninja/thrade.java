@@ -6,7 +6,8 @@ public class thrade {
 	
 	 System.out.println("hellow");
 	 Scanner input = new Scanner(System.in) ; 
-	 println() ; 
+	 println() ;
+	 double shi = input.nextDouble() ; 
 }
 
 }
