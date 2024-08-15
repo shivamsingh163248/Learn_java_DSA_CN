@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class arrylearn {
 	
@@ -14,5 +16,12 @@ public class arrylearn {
 	System.out.println(shivam);
 	
 	}
-
+	
+	
+	// creating the map that are the using vector 
+    
+	// creating the learning the queue 
+	Queue<Integer>itishaa = new LinkedList<>() ; 
+	
+ 
 }
