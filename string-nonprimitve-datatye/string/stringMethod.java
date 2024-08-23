@@ -26,6 +26,11 @@ public class stringMethod {
 		// again using the concatenation method to connect the string 
 		System.out.println(v1.concat(v2));
 		
+		// again we are the using to equals 
+		// again using the camper method 
+		// again method using to compare method 
+		
+		
 		
 
 	}
