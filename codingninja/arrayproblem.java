@@ -12,7 +12,7 @@ public class arrayproblem {
 		for (int i = n; i > 0; i = i/10) {
 			System.out.println(i%10+" "+i);
 		}
-		
+		Math.abs(n);
 
 	}
 
