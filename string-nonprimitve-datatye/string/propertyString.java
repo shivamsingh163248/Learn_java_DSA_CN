@@ -30,6 +30,7 @@ public class propertyString {
 		}
 		
 		// now returning the ans 
+		System.out.println(ans);
 		return ans ; 
 		
 		
@@ -37,6 +38,12 @@ public class propertyString {
 	
 	// creating the method of the checking the pelindrome
 	// now updating the file 
+	
+	public static boolean checkPelindrome(String str) {
+		
+		// this the using for the 
+		
+	}
 	
 	
 	
