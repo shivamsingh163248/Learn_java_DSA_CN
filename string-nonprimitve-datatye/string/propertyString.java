@@ -2,6 +2,8 @@ package string;
 
 import java.util.Scanner;
 
+import pelindorm.check.pelindromeFunction;
+
 public class propertyString {
 	
 	// creating the method of the scanning of the striing 
@@ -20,7 +22,7 @@ public class propertyString {
 		// this are the using the reversing the string
 		String ans = "" ; 
 		// now creating the loop for the adding the char 
-		for (int i = str.length()-1; i >= 0 ; i++) {
+		for (int i = str.length()-1; i >= 0 ; i--) {
 			
 			// using the char method to finding the value that are the required 
 			ans +=  str.charAt(i) ;
@@ -41,7 +43,20 @@ public class propertyString {
 	
 	public static boolean checkPelindrome(String str) {
 		
-		// this the using for the 
+		// this function checking the pelindrome 
+		// creating the for loop 
+		
+		for (int i = 0; i < str.length(); i++) {
+			
+			// creating the condition we  solving the problem 
+			if (str.charAt(i) != str.charAt(str.length()-(i+1)) && str.length()-(i+1) >= i  ) {
+				return false  ; 
+			}
+			
+			
+			
+		}
+		return true ; 
 		
 	}
 	
@@ -51,6 +66,13 @@ public class propertyString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		// calling the method ans the using this is the static method we can directly accessed all the method 
+		String value = userInput() ; 
+		// finding the return and the pelindrone 
+		reverseString(value) ; 
+		System.out.println(checkPelindrome(value));
+		
 		
 
 	}
