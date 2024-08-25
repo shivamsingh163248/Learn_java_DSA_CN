@@ -60,6 +60,18 @@ public class propertyString {
 		
 	}
 	
+	// creating the function  to check 
+	 public static void checkingEquall() {
+		
+		 // creating the scanner to check the  
+		 int[]shi = {1,2,3} ; 
+		 int[]iti = {5,65,7} ; 
+		 
+		 // checking the condition 
+		System.out.println(shi == iti);
+	}
+	
+	
 	
 	
 	
