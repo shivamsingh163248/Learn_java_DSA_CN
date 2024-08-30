@@ -84,7 +84,8 @@ public class propertyString {
 		// finding the return and the pelindrone 
 		reverseString(value) ; 
 		System.out.println(checkPelindrome(value));
-		
+		// calling the  function and check the result 
+		checkingEquall();
 		
 
 	}
