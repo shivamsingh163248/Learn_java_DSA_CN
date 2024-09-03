@@ -30,9 +30,25 @@ public class inputArrays {
 		// now returning the values 
 		return matrix ; 
 	}
+	
+	// creating the function for the printing of the 2d arrys 
+	public static  void printArrys(int[][]arr) {
+		// this function are the using the printing the arrys 
+		// creating the loop for the printing arrys 
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[0].length; j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		// now calling the function of the  arrays and the check the for the printing 
+		int[][]value = inputArrays() ; 
+		printArrys(value);
 
 	}
 
