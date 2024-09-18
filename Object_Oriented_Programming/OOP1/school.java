@@ -19,7 +19,7 @@ public class school {
 //        System.out.println(shivam.roll_no);
 		
 		// creating the 
-		shivam.getName()
+		shivam.getName() ; 
 	}
 
 }
