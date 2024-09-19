@@ -7,7 +7,12 @@ public class identity {
 	int aadhar_card_nunber ;
 	String hight ; 
 	String father_name ; 
-	String mother_name ; 
+	String mother_name ;
+	
+	// writing  a three member for the testing 
+	private String i_name ; 
+	protected int i_roll ; 
+	public int i_hegiht ; 
 
 	protected String getName() {
 		return name;
