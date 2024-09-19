@@ -13,6 +13,8 @@ public class identity {
 	private String i_name ; 
 	protected int i_roll ; 
 	public int i_hegiht ; 
+	
+
 
 	protected String getName() {
 		return name;
