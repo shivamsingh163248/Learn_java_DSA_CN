@@ -8,6 +8,10 @@ public class room {
 		anuj.setName("anuj");
 		anuj.setAadhar_card_nunber(345445465);
 		anuj.setFather_name("anil");
+		
+		anuj.i_roll = 45445 ; 
+		anuj.i_hegiht = 56 ; 
+		
 	}
 	
 	
