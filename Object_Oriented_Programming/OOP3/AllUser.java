@@ -14,12 +14,13 @@ public class AllUser {
     	// creating the scanner function 
     	Scanner input = new Scanner(System.in) ; 
     	// creating the size o the input 
-    	int size = input.nextInt() ; 
-    	
+    	int size = input.nextInt() ; 	
     	// now creating the size of the arrys 
-    	all_User = new user[size] ;
-    	
+    	all_User = new user[size] ;	
     	// creating the loop and and the set the data 
+    	for (int i = 0; i < all_User.length; i++) {
+			all_User[i] = detail() ; 
+		}
     	
     	
 
