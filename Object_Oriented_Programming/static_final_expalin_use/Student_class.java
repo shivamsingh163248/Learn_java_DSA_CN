@@ -35,8 +35,8 @@ public class Student_class {
 	
 	// now adding the student 
 	
-	public void AddStudentDetail(){
-		allStudents.add(addStudent(StudentClass, StudentClass, StudentClass, className)) ; 
+	public void AddStudentDetail(int mathMrk, int scineceMark, int englishMark ,String studentName){
+		allStudents.add(addStudent(mathMrk, scineceMark, englishMark, studentName)) ; 
 		
 	}
 	
