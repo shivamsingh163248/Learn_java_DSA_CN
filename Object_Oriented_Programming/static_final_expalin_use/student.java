@@ -2,6 +2,8 @@ package static_final_expalin_use;
 
 public class student {
 	
+	
+
 	// writing the student property writing the basic rule of the student 
 	private String studentName ; 
 	private  int studentRollNumber ;
@@ -26,6 +28,47 @@ public student(int mathMrk, int scineceMark, int englishMark ,String studentName
 	
 }
 
+// creating the getter 
+protected String getStudentName() {
+	return studentName;
+}
+
+
+
+protected void setStudentName(String studentName) {
+	this.studentName = studentName;
+}
+
+
+
+protected int getStudentRollNumber() {
+	return studentRollNumber;
+}
+
+
+
+protected void setStudentRollNumber(int studentRollNumber) {
+	this.studentRollNumber = studentRollNumber;
+}
+
+
+
+protected static int getToalStudent() {
+	return toalStudent;
+}
+
+
+
+protected static void setToalStudent(int toalStudent) {
+	student.toalStudent = toalStudent;
+}
+
+
+
+
+
+
+   
 
 
 	
