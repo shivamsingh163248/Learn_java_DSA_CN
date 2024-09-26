@@ -1,6 +1,6 @@
 package final_opps_4;
 
-public class extendStudent extends student {
+public class extendStudent extends student  {
 
 	public extendStudent(int value) {
 		super(value);
