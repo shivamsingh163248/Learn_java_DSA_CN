@@ -33,12 +33,16 @@ public class Student_class {
 	}
 	
 	
-	// now adding the studnet 
+	// now adding the student 
 	
-	public void AddStudentDetail () {
+	public void AddStudentDetail(){
 		allStudents.add(addStudent(StudentClass, StudentClass, StudentClass, className)) ; 
+		
 	}
 	
+	
+	// creating the function 
+    
 	
 	
 	
