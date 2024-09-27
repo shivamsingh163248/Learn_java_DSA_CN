@@ -16,7 +16,7 @@ public class Student_class {
 	private int count = 0  ; // using for the 
 	
 	
-	private int StudentClass  ; 
+	private int StudentClassName  ; 
 	private String className ; 
 	private String classTeacher ;
 	
@@ -24,7 +24,7 @@ public class Student_class {
 	
 	public Student_class(int studentClass, String className , String classTeacher) {
 		
-		this.StudentClass = studentClass ; 
+		this.StudentClassName = studentClass ; 
 		this.className = className;
 		this.classTeacher = classTeacher ; 
 	} 
@@ -75,16 +75,30 @@ public class Student_class {
 	
 
 	protected int getStudentClass() {
-		return StudentClass;
+		return StudentClassName;
 	}
 	protected void setStudentClass(int studentClass) {
-		StudentClass = studentClass;
+		StudentClassName = studentClass;
 	}
 	protected String getClassName() {
 		return className;
 	}
 	protected void setClassName(String className) {
 		this.className = className;
+	}
+
+	protected int getStudentClassName() {
+		return StudentClassName;
+	}
+
+
+
+	protected void setStudentClassName(int studentClassName) {
+		StudentClassName = studentClassName;
+	}
+	
+	protected String getClassTeacher() {
+		return classTeacher;
 	}
 	
 	
