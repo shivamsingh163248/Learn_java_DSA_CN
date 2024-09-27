@@ -25,6 +25,16 @@ public class freaction {
 		// find the greatest common division 
 		int minvalues = Math.min(nominator, denominator) ; 
 		
+		// creating the loop find the greatest commas divisor 
+		int gcd   = 0 ; 
+		for (int i = 2; i <= minvalues; i++) {
+			
+			// creating the condition 
+			if (this.denominator%i == 0 && this.nominator%i == 0 ) {
+				// now updating the values 
+				
+			}
+		}
 		
 		
 	}
