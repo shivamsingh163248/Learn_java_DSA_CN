@@ -4,6 +4,9 @@ public class student {
 	
 	
 
+
+
+
 	// writing the student property writing the basic rule of the student 
 	private String studentName ; 
 	private  int studentRollNumber ;
@@ -62,6 +65,21 @@ protected static int getToalStudent() {
 protected static void setToalStudent(int toalStudent) {
 	student.toalStudent = toalStudent;
 }
+
+protected int getMathMrk() {
+	return mathMrk;
+}
+
+protected int getEnglishMark() {
+	return EnglishMark;
+}
+
+protected int getScineceMark() {
+	return ScineceMark;
+}
+
+
+
 
 
 
