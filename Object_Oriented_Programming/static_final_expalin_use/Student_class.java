@@ -7,9 +7,9 @@ public class Student_class {
 
 	// creating the arrays of the class 
 	// creating the arrays list  list 
-	ArrayList<student> allStudents ; 
+	private ArrayList<student> allStudents ; 
 	
-	student[] allStudent ; 
+	private student[] allStudent = new student[10] ; 
 	// also crating the arrays 
 	
 	// writing the property of the class 
@@ -49,19 +49,37 @@ public class Student_class {
 	
 	
 	// creating the function    // print all student of the class 
-	public void PintAllStudent() {
+//	public void PintAllStudent() {
+//		
+//		// using the for loop for the retrieval all the data 
+//		
+//		for (int i = 0; i < allStudent.length; i++) {
+//		//	System.out.println("|---------------------------------------------------------------------------------|");
+//			System.out.print("Student name : "+allStudent[i].getStudentName()+" | ");
+//			System.out.print("Student name : "+allStudent[i].getStudentRollNumber()+" | ");
+//			
+//			// now printing all the mark 
+//			System.out.print("Math Mark : "+allStudent[i].getMathMrk()+" | ");
+//			System.out.print("science Mrak : "+allStudent[i].getScineceMark()+" | ");
+//			System.out.println("English Mark : "+allStudent[i].getEnglishMark()+" | ");
+//			System.out.println("|---------------------------------------------------------------------------------|");
+//			
+//		}
+//	}
+	
+public void PintAllStudent() {
 		
 		// using the for loop for the retrieval all the data 
 		
-		for (int i = 0; i < allStudent.length; i++) {
+		for (int i = 0; i < allStudents.size(); i++) {
 		//	System.out.println("|---------------------------------------------------------------------------------|");
-			System.out.print("Student name : "+allStudent[i].getStudentName()+" | ");
-			System.out.print("Student name : "+allStudent[i].getStudentRollNumber()+" | ");
+			System.out.print("Student name : "+allStudents.get(i).getStudentName()+" | ");
+			System.out.print("Student name : "+allStudents.get(i).getStudentRollNumber()+" | ");
 			
 			// now printing all the mark 
-			System.out.print("Math Mark : "+allStudent[i].getMathMrk()+" | ");
-			System.out.print("science Mrak : "+allStudent[i].getScineceMark()+" | ");
-			System.out.println("English Mark : "+allStudent[i].getEnglishMark()+" | ");
+			System.out.print("Math Mark : "+allStudents.get(i).getMathMrk()+" | ");
+			System.out.print("science Mrak : "+allStudents.get(i).getScineceMark()+" | ");
+			System.out.println("English Mark : "+allStudents.get(i).getEnglishMark()+" | ");
 			System.out.println("|---------------------------------------------------------------------------------|");
 			
 		}

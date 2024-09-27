@@ -2,7 +2,7 @@ package static_final_expalin_use;
 
 import java.util.ArrayList;
 
-import simplebacktracking.printAllPosibleNumber;
+
 
 public class controler_student {
 	
@@ -44,6 +44,15 @@ public class controler_student {
 	public void printallclass() {
 		
 		// now printing all the class details 
+		// now hear i will print all the class 
+		// using the arrays 
+		for (int i = 0; i < AllClasses.size(); i++) {
+			
+			System.out.println("class name : "+AllClasses.get(i).getClassName()+" | ");
+			System.out.println("class teacher name : "+AllClasses.get(i).getClassTeacher()+" | ");
+			System.out.println("Name of class "+AllClasses.get(i).getStudentClassName()+" | ");
+		}
+		 
 		
 		
 	}
@@ -60,7 +69,14 @@ public class controler_student {
 		
 		System.out.println("class name : "+PritcularClassStudentDetails.getClassName()+" | ");
 		System.out.println("class teacher name : "+PritcularClassStudentDetails.getClassTeacher()+" | ");
-		System.out.println(PritcularClassStudentDetails.getClassName()+" | ");
+		System.out.println("Name of class "+PritcularClassStudentDetails.getStudentClassName()+" | ");
+		
+		
+		
+		// now printing all the student details of the class 
+		
+		PritcularClassStudentDetails.PintAllStudent();
+		
 		
 		
 		
