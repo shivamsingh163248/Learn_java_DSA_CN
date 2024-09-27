@@ -9,7 +9,12 @@ public class freaction {
 	int denominator ; 
 	
 	
-	// creating the add  function 
+	// creating the add  function
+	
+	public freaction(int nomin , int denominator) {
+		this.nominator = nomin ; 
+		this.denominator = denominator ; 
+	}
 	
 	public void  add (freaction num) {
 		
@@ -17,10 +22,11 @@ public class freaction {
 		
 		
 		
+		
 	}
 	
 	// creating the simply function 
-	public void simpliy(freaction num) {
+	public void simpliy() {
 		
 		// find the greatest common division 
 		int minvalues = Math.min(nominator, denominator) ; 
@@ -32,9 +38,14 @@ public class freaction {
 			// creating the condition 
 			if (this.denominator%i == 0 && this.nominator%i == 0 ) {
 				// now updating the values 
+				gcd = i ; 
 				
 			}
 		}
+		
+		// now dividing 
+		this.nominator = this.nominator/gcd ; 
+		this.denominator = this.denominator/gcd ; 
 		
 		
 	}
@@ -49,6 +60,7 @@ public class freaction {
 	
 	public void print() {
 		
+		System.out.println(this.nominator+"/"+this.denominator);
 		
 	}
 	
