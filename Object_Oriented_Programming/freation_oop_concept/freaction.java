@@ -1,6 +1,3 @@
-package freation_oop_concept;
-
-import shivam.frection;
 
 public class freaction {
 	
@@ -20,9 +17,14 @@ public class freaction {
 		
 		// returning the values 
 		
+		int nom = this.nominator ; 
+		int denomi = this.denominator ; 
+		this.nominator = (this.denominator*num.nominator)+(this.nominator*num.denominator) ;
+		this.denominator = nom*denomi ; 
 		
+		simpliy();
 		
-		
+	
 	}
 	
 	// creating the simply function 
@@ -49,22 +51,21 @@ public class freaction {
 		
 		
 	}
+	
+	
 	public void increment(freaction num) {
+		
+		// now adding the values 
+		this.nominator = this.nominator+this.denominator ; 
+		simpliy();
 		
 	}
 	
-	public void multi(freaction num) {
-		
-		
-	}
+
 	
 	public void print() {
 		
 		System.out.println(this.nominator+"/"+this.denominator);
 		
 	}
-	
-	
-	
-
 }
