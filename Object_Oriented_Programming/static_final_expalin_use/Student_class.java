@@ -18,14 +18,15 @@ public class Student_class {
 	
 	private int StudentClass  ; 
 	private String className ; 
-	private static String classTeacher ;
+	private String classTeacher ;
 	
 	
-	public Student_class(student[] allStudent, int studentClass, String className) {
-		super();
-		this.allStudent = allStudent;
-		StudentClass = studentClass;
+	
+	public Student_class(int studentClass, String className , String classTeacher) {
+		
+		this.StudentClass = studentClass ; 
 		this.className = className;
+		this.classTeacher = classTeacher ; 
 	} 
 	
 	
@@ -53,7 +54,7 @@ public class Student_class {
 		// using the for loop for the retrieval all the data 
 		
 		for (int i = 0; i < allStudent.length; i++) {
-			System.out.println("|---------------------------------------------------------------------------------|");
+		//	System.out.println("|---------------------------------------------------------------------------------|");
 			System.out.print("Student name : "+allStudent[i].getStudentName()+" | ");
 			System.out.print("Student name : "+allStudent[i].getStudentRollNumber()+" | ");
 			
@@ -85,12 +86,7 @@ public class Student_class {
 	protected void setClassName(String className) {
 		this.className = className;
 	}
-	protected static String getClassTeacher() {
-		return classTeacher;
-	}
-	protected static void setClassTeacher(String classTeacher) {
-		Student_class.classTeacher = classTeacher;
-	}
+	
 	
 	
 
