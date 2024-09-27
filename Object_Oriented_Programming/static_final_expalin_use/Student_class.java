@@ -13,6 +13,9 @@ public class Student_class {
 	// also crating the arrays 
 	
 	// writing the property of the class 
+	private int count = 0  ; // using for the 
+	
+	
 	private int StudentClass  ; 
 	private String className ; 
 	private static String classTeacher ;
@@ -38,10 +41,18 @@ public class Student_class {
 	public void AddStudentDetail(int mathMrk, int scineceMark, int englishMark ,String studentName){
 		allStudents.add(addStudent(mathMrk, scineceMark, englishMark, studentName)) ; 
 		
+		allStudent[count] = addStudent(mathMrk, scineceMark, englishMark, studentName) ; 
+		count++ ; 
+		
 	}
 	
 	
-	// creating the function 
+	// creating the function    // print all student of the class 
+	public void PintAllStudent() {
+		
+		// 
+	}
+	
     
 	
 	
