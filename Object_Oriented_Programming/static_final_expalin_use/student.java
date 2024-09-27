@@ -62,9 +62,7 @@ protected static int getToalStudent() {
 
 
 
-protected static void setToalStudent(int toalStudent) {
-	student.toalStudent = toalStudent;
-}
+
 
 protected int getMathMrk() {
 	return mathMrk;

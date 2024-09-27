@@ -50,7 +50,20 @@ public class Student_class {
 	// creating the function    // print all student of the class 
 	public void PintAllStudent() {
 		
-		// 
+		// using the for loop for the retrieval all the data 
+		
+		for (int i = 0; i < allStudent.length; i++) {
+			System.out.println("|---------------------------------------------------------------------------------|");
+			System.out.print("Student name : "+allStudent[i].getStudentName()+" | ");
+			System.out.print("Student name : "+allStudent[i].getStudentRollNumber()+" | ");
+			
+			// now printing all the mark 
+			System.out.print("Math Mark : "+allStudent[i].getMathMrk()+" | ");
+			System.out.print("science Mrak : "+allStudent[i].getScineceMark()+" | ");
+			System.out.println("English Mark : "+allStudent[i].getEnglishMark()+" | ");
+			System.out.println("|---------------------------------------------------------------------------------|");
+			
+		}
 	}
 	
     
