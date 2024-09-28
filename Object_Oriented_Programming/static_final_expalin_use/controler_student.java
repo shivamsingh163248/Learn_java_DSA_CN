@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 
 
+
 public class controler_student {
 	
 	//  creating the controller of the class 
 	// creating the arrays of the all class 
 	Student_class[] AllClass ; 
-	private ArrayList<Student_class> AllClasses ; 
+	private ArrayList<Student_class> AllClasses = new ArrayList<>() ; 
 	
 	
 	// creating the class of the controller 
@@ -48,9 +49,9 @@ public class controler_student {
 		// using the arrays 
 		for (int i = 0; i < AllClasses.size(); i++) {
 			
-			System.out.println("class name : "+AllClasses.get(i).getClassName()+" | ");
-			System.out.println("class teacher name : "+AllClasses.get(i).getClassTeacher()+" | ");
-			System.out.println("Name of class "+AllClasses.get(i).getStudentClassName()+" | ");
+			System.out.print("class name : "+AllClasses.get(i).getClassName()+" | ");
+			System.out.print("class teacher name : "+AllClasses.get(i).getClassTeacher()+" | ");
+			System.out.print("Name of class "+AllClasses.get(i).getStudentClassName()+" | ");
 		}
 		 
 		
@@ -67,11 +68,11 @@ public class controler_student {
 		// details of the class and print all the student details 
 		Student_class PritcularClassStudentDetails = findObject(classNumber); 
 		
-		System.out.println("class name : "+PritcularClassStudentDetails.getClassName()+" | ");
-		System.out.println("class teacher name : "+PritcularClassStudentDetails.getClassTeacher()+" | ");
-		System.out.println("Name of class "+PritcularClassStudentDetails.getStudentClassName()+" | ");
+		System.out.print("class name : "+PritcularClassStudentDetails.getClassName()+" | ");
+		System.out.print("class teacher name : "+PritcularClassStudentDetails.getClassTeacher()+" | ");
+		System.out.print("Name of class "+PritcularClassStudentDetails.getStudentClassName()+" | ");
 		
-		
+		System.out.println();
 		
 		// now printing all the student details of the class 
 		
@@ -81,6 +82,21 @@ public class controler_student {
 		
 		
 		
+	}
+	
+	// now updating the student of the class 
+	public void UpdatingStudent(int classNumber , int mathMark , int ScienceMark , int englistMark , String studentName ) {
+		
+		Student_class PritcularClassStudentDetails = findObject(classNumber); 
+		
+		// creating the scanner function 
+		
+		
+		PritcularClassStudentDetails.AddStudentDetail(mathMark, englistMark, mathMark, studentName);
+	}
+	
+	public void totalClass() {
+		System.out.println(AllClasses.size());
 	}
 	
 	

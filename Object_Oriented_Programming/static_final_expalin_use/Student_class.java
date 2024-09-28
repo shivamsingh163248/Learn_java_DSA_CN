@@ -7,7 +7,7 @@ public class Student_class {
 
 	// creating the arrays of the class 
 	// creating the arrays list  list 
-	private ArrayList<student> allStudents ; 
+	private ArrayList<student> allStudents = new ArrayList<>() ; 
 	
 	private student[] allStudent = new student[10] ; 
 	// also crating the arrays 
@@ -74,16 +74,28 @@ public void PintAllStudent() {
 		for (int i = 0; i < allStudents.size(); i++) {
 		//	System.out.println("|---------------------------------------------------------------------------------|");
 			System.out.print("Student name : "+allStudents.get(i).getStudentName()+" | ");
-			System.out.print("Student name : "+allStudents.get(i).getStudentRollNumber()+" | ");
+			
 			
 			// now printing all the mark 
 			System.out.print("Math Mark : "+allStudents.get(i).getMathMrk()+" | ");
 			System.out.print("science Mrak : "+allStudents.get(i).getScineceMark()+" | ");
 			System.out.println("English Mark : "+allStudents.get(i).getEnglishMark()+" | ");
-			System.out.println("|---------------------------------------------------------------------------------|");
+			System.out.println("|-----------------------------------------------------------------------------------|");
 			
 		}
+		
+		// now printing total student 
+		totalStudent() ; 
 	}
+
+
+// creating the function of the total 
+     public int totalStudent() {
+    	 System.out.println(allStudents.size());
+		return student.getToalStudent() ; 
+
+	}
+     
 	
     
 	
