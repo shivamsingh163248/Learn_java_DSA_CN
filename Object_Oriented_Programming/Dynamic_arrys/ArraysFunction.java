@@ -10,6 +10,7 @@ public class ArraysFunction {
 	public ArraysFunction() {
 		
 		arr = new int[5] ; 
+		System.out.println(arr);
 	}
 	
 	
@@ -21,12 +22,28 @@ public class ArraysFunction {
 		
 		// first check the size 
 		
-		if (count == arr.length) {
+		if (count == arr.length-1) {
 			size() ; 
-		}else {
+		}
            arr[count] = num ; 
            count++ ; 
-		}
+		
+	
+		// creating the try catch finaly 
+//		try {
+//			arr[count] = num ; 
+//	           count++ ; 
+//			
+//			
+//		} catch (Exception e) {
+//			size();
+//			
+//		}finally {
+//			
+//			arr[count] = num ; 
+//	           count++ ; 
+//			
+//		}
 		 
 		
 	}
@@ -44,10 +61,43 @@ public class ArraysFunction {
 		}
 		
 		// now arrays 
-		arr = new int[arr.length*2] ; 
+		arr = new int[arr.length*2] ;
+		System.out.println(arr);
 		
+		
+		// again creating the loop  the values in the arrays 
+		for (int i = 0; i < copyarr.length; i++) {
+			arr[i] = copyarr[i] ; 
+		}
 		
 	}
+	
+	public void print(){
+		
+		// creating the loop for the print
+		for (int i = 0; i < count; i++) {
+			System.out.print(arr[i]+" ") ; 
+		}
+	}
+	
+	// now creating the remove and last element function 
+	
+	public void lastElement() {
+		 
+		System.out.println(arr[count-1]);
+	}
+	
+	public void remove() {
+		
+		if (count > 1) {
+			count-- ; 
+		}
+	
+	}
+	
+	
+	
+	
 	
     
 }
