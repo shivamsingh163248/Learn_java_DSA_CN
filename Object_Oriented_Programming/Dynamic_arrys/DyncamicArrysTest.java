@@ -15,6 +15,28 @@ public class DyncamicArrysTest {
 	  
 	  marks.print();
 	  
+	  // now printing the last element 
+	  marks.remove();
+	  System.out.println();
+	  marks.print();
+	  marks.set(75);
+	  System.out.println();
+	  marks.print();
+	  marks.remove();
+	  marks.remove();
+	  marks.remove();
+	  marks.remove();
+	  marks.remove();
+	  marks.remove();
+	  marks.remove();
+	  marks.remove();
+	  marks.remove();
+	  marks.print();
+	  marks.set(75);
+	  System.out.println();
+	  marks.print();
+	  
+	  
 }
 	
 	
