@@ -20,6 +20,8 @@ public class RunningApplication {
 		
 		shps.UpdatingStudent(1, 685, 365, 655, "shivamgi");
 		shps.UpdatingStudent(1, 655, 6655, 6455, "cjeka");
+		shps.UpdatingStudent(1, 685, 365, 655, "shivamgi");
+		shps.UpdatingStudent(1, 66434, 66528955, 64376555, "cjeka");
 		
 		// noe check and printing 
 		//  shps.printallclass();
