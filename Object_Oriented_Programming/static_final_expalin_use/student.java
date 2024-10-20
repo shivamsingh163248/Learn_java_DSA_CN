@@ -16,6 +16,8 @@ public class student {
 	private final int mathMrk ; 
 	private final int EnglishMark ; 
 	private final int ScineceMark ;
+	//creating the next variable for the computer mark 
+	
 	
 	
 	
