@@ -16,6 +16,8 @@ public class SwepTwoNumber {
 		y = temp ; 
 		
 		System.out.println(x+" "+y);
+		
+		// this is the appropriate 
 	}
 
 }
