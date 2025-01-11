@@ -64,6 +64,8 @@ public class Presiceformate {
 	for (Float i : value) {
 		System.out.println(i);
 	}
+	
+	// we got the answer correct 
 		
 	  
 
