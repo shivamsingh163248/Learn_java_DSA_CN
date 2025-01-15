@@ -55,7 +55,19 @@ public class Presiceformate {
 	
 	public static void main(String[] args) {
 		
+		// now calling the function to check the result 
+		ArrayList<Float>value = new ArrayList<>() ; 
+		// calling the function 
+	value = divisionWithPrecision(5, 7) ; 
 	
+	// creating the loop 
+	for (Float i : value) {
+		System.out.println(i);
+	}
+	
+	// we got the answer correct 
+		
+	  
 
 	}
 
