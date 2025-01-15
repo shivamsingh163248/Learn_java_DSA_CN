@@ -52,15 +52,27 @@ public class Equilibrium_Point {
 		for (int i = n-2; i >= 0 ; i--) {
 			
 			// now stored the values 
+			postfixSum[i] = postfixSum[i+1]+arr[i] ; 
 		}
 		
+		// creating the loop for the checking the condtion 
+		for (int i = 0; i < arr.length; i++) {
+			// creating the conditon 
+			if (postfixSum[i]==prifixsum[i]) {
+				return i ; 
+			}
+		}
+		return -1 ; 
 		
 	}
 	
 	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		int arr[] = {-7, 1, 5, 2, -4, 3, 0};
+
+		System.out.println(EqulibirumPoin(arr));
 
 	}
 
