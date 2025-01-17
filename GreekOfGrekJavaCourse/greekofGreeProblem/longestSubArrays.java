@@ -13,7 +13,7 @@ public class longestSubArrays {
 			int sum = 0 ; 
 			
 			
-			for (int j = i; j < arr.length; j= j+2) {
+			for (int j = i; j < arr.length; j++) {
 				
 				// hear we are the checking creating 
 				sum += arr[j] ; 
@@ -21,8 +21,8 @@ public class longestSubArrays {
 				// creating the condtion if the longest array 
 				if (sum == k) {
 					// now writing the condition using the math max function to test the condition 
-					int logarys = j-i ; 
-					largestArr = Math.max(largestArr, j) ; 
+					int logarys = j-i+1 ; 
+					largestArr = Math.max(largestArr, logarys) ; 
 				}
 			}
 			
@@ -62,7 +62,9 @@ public class longestSubArrays {
 
 	public static void main(String[] args) {
 		
-       
+       int[]arr = {10, 5, 2, 7, 1, -10} ; 
+       int k = 15 ; 
+       System.out.println(maxLen(arr, k));
 	}
 
 }
