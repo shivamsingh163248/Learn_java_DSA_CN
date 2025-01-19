@@ -14,7 +14,7 @@ public class LongestSubArryasSumk {
 		int res = 0 ; 
 		
 		
-		HashMap<Integer, Integer>map = new HashMap<>() ;
+		HashMap<Integer,Integer>map = new HashMap<>() ;
 		// hasMap the property to set the values 
 		// creating the loop 
 		for (int i = 0; i < arr.length; i++) {
@@ -24,14 +24,34 @@ public class LongestSubArryasSumk {
 			prefixSum += arr[i]  ; // hear we are the storing the value 
 			
 			
-			if ( == k) {
+			if ( prefixSum == k) {
+				res = i+1 ; 
+			}else if (map.containsKey(prefixSum-k)) {
 				
+				// using the math length 
+				//now getting the length 
+				res = Math.max(res, i - map.get(prefixSum-k)) ; 
 			}
+			
+			// creating the 
+			if(!map.containsKey(prefixSum)) {
+				// adding the values in the hasMap
+				map.put(prefixSum, i) ; 
+			}
+			
+			
+			
 		}
+		
+		return res ; 
 		
 	}
 
 	public static void main(String[] args) {
+		
+		int[] arr = {10, 5, 2, 7, 1, -10};
+        int k = 15;
+        System.out.println(LongestSubArray(arr, k));
 		
 
 	}
