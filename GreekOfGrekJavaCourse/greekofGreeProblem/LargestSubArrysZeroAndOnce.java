@@ -1,5 +1,7 @@
 package greekofGreeProblem;
 
+import java.util.HashMap;
+
 // creating the function of the longest sum arrys 
 // creating the static function 
 
@@ -10,6 +12,10 @@ public class LargestSubArrysZeroAndOnce {
 		
 		int sum = 0 ; 
 		int LongestArrys = 0  ; 
+		
+		// creating the hasMap
+		HashMap<Integer, Integer>map = new HashMap<>() ; 
+		
 		
 		// creating the condition 
 	    // creating the loop 
