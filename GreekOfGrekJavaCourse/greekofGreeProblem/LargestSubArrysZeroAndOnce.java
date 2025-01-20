@@ -24,9 +24,27 @@ public class LargestSubArrysZeroAndOnce {
 			// creating a sum 
 			sum += (arr[i] == 0 )? 1:-1 ; 
 			
+			// now creating the condtion 
+			if(sum == 0) {
+			  LongestArrys = i+1 ; 	
+			}
+			
+			//creating the condition checking in the hasMap 
+			if(map.containsKey(sum)) {
+			 // updating the values 
+				Math.max(LongestArrys, i - map.get(sum)) ; 
+			}
+			
+			if(!map.containsKey(sum)) {
+				// adding the key 
+				map.put(sum, i) ; 
+			}
+			
 			
 			
 		}
+		
+		return LongestArrys ; 
 		
 	}
 
