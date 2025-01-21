@@ -24,6 +24,23 @@ public static String revStr(String s) {
             
         }
 
+// creating using the  
+public static String reversingString(String s) {
+	
+	String revers = "" ; 
+	
+	// creating the loop 
+	int count = 1 ; 
+	for (int i = 0; i < s.length(); i++) {
+		// using the substring method to find the string 
+		String rev = s.substring(i ,count) ; 
+		revers = rev+revers ; 
+		count++ ; 
+	}
+	
+	return revers ; 
+}
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
