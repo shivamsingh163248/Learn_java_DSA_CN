@@ -1,5 +1,7 @@
 package BasricDataTypeVariable;
 
+import java.util.Stack;
+
 public class OutPut {
 	
 	// Creating the function 
@@ -44,8 +46,32 @@ public static String reversingString(String s) {
 // reversing the string using the stringBuilder Function 
 public static String revString(String s) {
 	// creating the string builder function 
-	StringBuilder st = new StringBuilder() ; 
+	StringBuilder st = new StringBuilder(s) ; 
 	// creating the for loop funciton '
+	 st.reverse() ; 
+	
+	return st.toString() ; 
+}
+
+// creating the reverse using the stack function 
+public static String revusingStack(String s) {
+	
+	// creating the stack 
+	Stack<Character>rev = new Stack<>() ; 
+	
+	// reversing the push and pop operation 
+	for (int i = 0; i < s.length(); i++) {
+		rev.push(s.charAt(i)) ; 
+	}
+	// creating the stringBulder and append the char
+	StringBuilder st = new StringBuilder() ; 
+	
+	for (int i = 0; i < s.length(); i++) {
+		st.append(rev.pop());
+	}
+	
+	// return the 
+	return st.toString() ; 
 	
 }
 
@@ -58,6 +84,8 @@ public static String revString(String s) {
 		System.out.println(a+b);
 		char name = 'a' ; 
 		char singh = 'b' ; 
+		
+		System.out.println(revString("shivamsingh"));
 	
 
 	}
