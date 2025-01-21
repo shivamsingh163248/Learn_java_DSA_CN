@@ -41,6 +41,13 @@ public static String reversingString(String s) {
 	return revers ; 
 }
 
+// reversing the string using the stringBuilder Function 
+public static String revString(String s) {
+	// creating the string builder function 
+	StringBuilder st = new StringBuilder() ; 
+	// creating the for loop funciton '
+	
+}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
