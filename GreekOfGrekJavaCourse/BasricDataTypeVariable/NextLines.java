@@ -14,6 +14,7 @@ public class NextLines {
 		 Scanner s = new Scanner(System.in);
 		 System.out.println("Enter Your Age: ");
 	        int age = s.nextInt();
+	        s.nextInt();
 	        System.out.println("Enter Your Name: ");
 	        String name = s.nextLine();
 	        System.out.println("Enter Your E-mail: ");
