@@ -43,10 +43,22 @@ public class ArraysPuzzleProblem {
 		for (int i = 0; i < reult.length; i++) {
 			product *= arr[i] ; 
 		}
-		for (int j = 0; j < reult.length; j++) {
-		    reult[j] = product / arr[j] ; 
+		
+		try {
+			
+			for (int j = 0; j < reult.length; j++) {
+				
+				// creatng the try and catch 
+		
+			    reult[j] = product / arr[j] ; 
+			}
+			
+			
+		} catch (Exception e) {
+			
 		}
 		
+
 		return reult ; 
 		
 		// this found the error 
@@ -54,9 +66,44 @@ public class ArraysPuzzleProblem {
 	}
 	
 	// creating the another approch 
+	public static int[] puzzele(int[]arr) {
+		
+		// creating tha arrays 
+		int[]res = new int[arr.length] ; 
+		
+		// creating the while loop 
+		
+		int skip = 0 ;
+		int j = 0 ; 
+		int product = 1 ; 
+		while (skip<arr.length) {
+			
+			// creating the conditon of the multiplication 
+			if(j!=skip) {
+				product *= arr[j] ; 
+			}
+			// creating the conditon 
+		
+			if(j == arr.length -1) {
+				// and the add the sum 
+				res[skip] = product ; 
+				System.out.println(product);
+				product = 1 ; 
+				j = 0  ; 
+				skip++ ; 
+			}
+			j++ ; 
+		}
+		return res ; 
+		
+	}
+	
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int rr[] = {10, 3, 5, 6, 2} ; 
+		puzzele(rr) ; 
 
 	}
 
