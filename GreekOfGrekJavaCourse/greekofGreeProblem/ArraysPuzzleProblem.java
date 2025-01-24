@@ -81,16 +81,19 @@ public class ArraysPuzzleProblem {
 			// creating the conditon of the multiplication 
 			if(j!=skip) {
 				product *= arr[j] ; 
+				System.out.print(j+" ");
 			}
 			// creating the conditon 
-		
+		     
 			if(j == arr.length -1) {
 				// and the add the sum 
+				System.out.println();
 				res[skip] = product ; 
-				System.out.println(product);
+				System.out.println(product+" "+skip);
 				product = 1 ; 
 				j = 0  ; 
 				skip++ ; 
+				continue ; 
 			}
 			j++ ; 
 		}
@@ -98,6 +101,9 @@ public class ArraysPuzzleProblem {
 		
 	}
 	
+	
+	// this method will pased 
+	//update the algo 
 	
 	
 	public static void main(String[] args) {
