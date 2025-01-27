@@ -110,6 +110,7 @@ public class ArraysPuzzleProblem {
 		// TODO Auto-generated method stub
 		int rr[] = {10, 3, 5, 6, 2} ; 
 		puzzele(rr) ; 
+		System.out.println("shivam");
 
 	}
 
